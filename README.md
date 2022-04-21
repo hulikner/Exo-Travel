@@ -1,4 +1,4 @@
-# Reactive Exo-Travel: The Information Dashboard
+# Exo-Travel: The Information Dashboard
 
 ## Setup: Follow these steps exactly
 
@@ -11,9 +11,9 @@
 
 > **Note:** Your `database.json` file is already in the `.gitignore` file for this project, so it will never be added to the repo or pushed to Github.
 
-## What is Reactive Nutshell?
+## What is Exo-Travel?
 
-Nutshell is a new product offering that you have been tasked with building. It's an app for people to use to organize their daily tasks, events, news article, friends, and chat messages.
+Exo-Travel is a new product offering that you have been tasked with building. It's an app for people to use to organize their daily tasks, events, news article, friends, and chat messages.
 
 You will be using the React library to build out this application.
 
