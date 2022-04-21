@@ -1,4 +1,4 @@
-# Reactive Nutshell: The Information Dashboard
+# Reactive Exo-Travel: The Information Dashboard
 
 ## Setup: Follow these steps exactly
 

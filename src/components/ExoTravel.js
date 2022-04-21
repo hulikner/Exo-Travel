@@ -1,9 +1,9 @@
 import React, {useState} from "react"
 import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./nav/NavBar"
-import "./Nutshell.css"
+import "./ExoTravel.css"
 
-export const Nutshell = () => {
+export const ExoTravel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("nutshell_user") !== null)
 
     const setAuthUser = (user) => {
