@@ -9,7 +9,7 @@
 }
 .exoPlanet-home-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;   
     margin: 1em;
     width: 15em;
