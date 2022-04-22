@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    justify-items: center;
+    margin-top: 3em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.exoPlanet-home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    margin: 1em;
+    width: 15em;
+    background-color:  #2283dd;
+    border: 10px black;
+    border-radius: 5px;
+}
+
+.home {
+    margin: 2em;
+    background-color: gray;
+    border: 4px black solid;
+    border-radius: 10px;
+}
+
+img.exoPlanet-home-img {
+   height: 75px;
+   width: 75px;
+} 
