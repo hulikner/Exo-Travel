@@ -11,12 +11,12 @@
 
 .exoPlanet-card {
     margin: 2em;
-    background-color: white;
+    background-color: gray;
     border: 4px black solid;
     border-radius: 10px;
 }
 
 img.card-exoPlanet-img {
-   height: 50px;
-   width: 50px;
+   height: 75px;
+   width: 75px;
 } 
