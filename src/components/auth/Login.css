@@ -42,12 +42,13 @@ h2 {
 }
 
 h1 {
-  background-color: rgb(176, 176, 176);
+  background-color: gray;
   box-shadow: 4px 4px 4px 4px black;
   width: 115%;
   position: absolute;
   top: -9%;
   left: -8%;
+  color:black;
 }
 
 .form--login {
@@ -69,6 +70,9 @@ h1 {
 .link--register a:hover {
   color: gray;
 }
+.inputEmail{
+  color:black;
+}
 
 fieldset {
   display: flex;
@@ -76,6 +80,8 @@ fieldset {
   align-items: center;
   border: none;
 }
+
+
 
 button {
   margin: 0;

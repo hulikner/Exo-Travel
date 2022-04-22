@@ -39,14 +39,15 @@ export const Register = () => {
 					},
 					body: JSON.stringify({
 						email: registerUser.email,
-						name: `${registerUser.firstName} ${registerUser.lastName}`,
+						firstName: `${registerUser.firstName}`,
+						lastName: `${registerUser.lastName}`
 					}),
 				})
 					.then((res) => res.json())
 					.then((createdUser) => {
 						if (createdUser.hasOwnProperty("id")) {
 							// The user id is saved under the key nutshell_user in session Storage. Change below if needed!
-							sessionStorage.setItem("nutshell_user", createdUser.id);
+							sessionStorage.setItem('exoPlanet_user_name', createdUser.id);
 							navigate("/");
 						}
 					});
