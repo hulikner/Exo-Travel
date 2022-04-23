@@ -24,7 +24,7 @@ export const NavBar = ({clearUser}) => {
         </li>
     
         <li className="navBar_item item_left">
-          <Link className={`navbar__link ${location.pathname === '/aboutus' ? 'active':''}`} to="/aboutus"> <FontAwesomeIcon icon={faUserAstronaut} /> About Us </Link>
+          <Link className={`navbar__link ${location.pathname === '/abouts' ? 'active':''}`} to="/abouts"> <FontAwesomeIcon icon={faUserAstronaut} /> About Us </Link>
         </li>
         <li className="navBar_item item_left">
           <Link className={`navbar__link ${location.pathname === '/itineraries' ? 'active':''}`} to="/itineraries"> <FontAwesomeIcon icon={faPassport} /> Itineraries </Link>

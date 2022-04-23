@@ -5,6 +5,7 @@ import { Register } from "./auth/Register"
 import { ExoPlanetDetail } from "./exoPlanets/ExoPlanetDetail"
 import { ExoPlanetList } from "./exoPlanets/ExoPlanetList"
 import { ItineraryList } from "./itineraries/ItineraryList"
+import { HubDriveList } from "./hubDrive/HubDriveList"
 import { Home } from "./home/Home"
 
 export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
@@ -19,7 +20,7 @@ export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
         <Route path="/home" element={<Home />} />
         <Route path="/exoPlanets" element={<ExoPlanetList />} />
         <Route path="/exoPlanets/:exoPlanetId" element={<ExoPlanetDetail />} />
-        {/* <Route path="/howitworks" element={<HubDriveList />} /> */}
+        <Route path="/howitworks" element={<HubDriveList />} />
         <Route path="/events" element={''} />
         <Route path="/itineraries" element={<ItineraryList />} />
       </Route>
