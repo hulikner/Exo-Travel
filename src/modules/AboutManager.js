@@ -10,3 +10,8 @@ export const getAboutById = (id) => {
     return fetch(`${remoteURL}/abouts/${id}`)
     .then(res => res.json())
 }
+
+export const getUsersById = (id) => {
+    return fetch(`${remoteURL}/users/${id}`)
+    .then(res => res.json())
+}

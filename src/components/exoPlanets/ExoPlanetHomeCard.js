@@ -23,8 +23,8 @@ export const ExoPlanetHomeCard = () => {
   return (
 
     <>
-      <div className="exoPlanet-home-content">
       <h2 className="exoPlanet-home-header">ExoPlanets</h2>
+      <div className="exoPlanet-home-content">
       {exoPlanets.map(x =>( 
 
         <div className='exoPlanet-home-content' key={x.id}>
