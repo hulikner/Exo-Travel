@@ -2,12 +2,13 @@ const remoteURL = "http://localhost:8088"
 
 
 export const getAllItineraries = () => {
-    return fetch(`${remoteURL}/itineraries?_expand=exoPlanets&_expand=users`)
+    return fetch(`${remoteURL}/itineraries?_expand=exoPlanets&_expand=users&_sort_asc=return`)
     .then(res => res.json())
 }
 
 export const getItineraryById = (id) => {
-    return fetch(`${remoteURL}/itineraries?${id}&_expand=exoPlanets&_expand=users`)
+  console.log(id)
+    return fetch(`${remoteURL}/itineraries/${id}?_expand=exoPlanets&_expand=users`)
     .then(res => res.json())
 }
 
@@ -18,7 +19,7 @@ export const deleteItinerary = id => {
 }
 
 export const updateItinerary  = (editedItinerary) => {
-    return fetch(`${remoteURL}/Itinerary/${editedItinerary.id}`, {
+    return fetch(`${remoteURL}/itineraries/${editedItinerary.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"

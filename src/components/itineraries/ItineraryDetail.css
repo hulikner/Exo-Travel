@@ -1,0 +1,9 @@
+.itinerary-detail-summary{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.itinerary-detail-title{
+    position: relative;
+    top:auto;
+}

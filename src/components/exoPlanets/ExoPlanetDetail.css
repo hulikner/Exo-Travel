@@ -1,0 +1,108 @@
+.ion-selected {
+    grid-area: favorite;
+    border: none;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: lightgreen;
+    font-size: x-large;
+}
+.ion-not-selected {
+    grid-area: favorite;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    border: none;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: grey;
+    font-size: x-large;
+}
+
+.ion-selected:hover {
+    background-color: #031424;
+    color: lightgreen;
+}
+
+.ion-not-selected:hover {
+    background-color: #031424;
+    color: grey;
+}
+.warp-selected {
+    grid-area: favorite;
+    border: none;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: lightgreen;
+    font-size: x-large;
+}
+.warp-not-selected {
+    grid-area: favorite;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    border: none;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: grey;
+    font-size: x-large;
+}
+
+.warp-selected:hover {
+    background-color: #031424;
+    color: lightgreen;
+}
+
+.warp-not-selected:hover {
+    background-color: #031424;
+    color: grey;
+}
+.wormhole-selected {
+    grid-area: favorite;
+    border: none;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: lightgreen;
+    font-size: x-large;
+}
+.wormhole-not-selected {
+    grid-area: favorite;
+    display: grid;
+    align-items: center;
+    height: 2em;
+    border: none;
+    background-color: #031424;
+    margin: auto;
+    transition: none;
+    color: grey;
+    font-size: x-large;
+}
+
+.wormhole-selected:hover {
+    background-color: #031424;
+    color: lightgreen;
+}
+
+.wormhole-not-selected:hover {
+    background-color: #031424;
+    color: grey;
+}
+
+.mode-buttons{
+    display:flex;
+    flex-direction: column;
+
+}
