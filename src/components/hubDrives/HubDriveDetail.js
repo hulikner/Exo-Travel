@@ -21,13 +21,13 @@ export const HubDriveDetail = () => {
   }, [hubDriveId]);
   return (
     <div className="hubDrive-detail">
+                <img className="detail-hubDrive-pic" src={`.${hubDrive.pic}`}/>
             <div className="hubDrive-detail-content">
-                <div>
-                <img className="detail-hubDrive-pic" src={`${hubDrive.pic}`}/>
+                
                 <h3 className="detail-hubDrive-name"> {hubDrive.name}</h3>
                 <p className="detail-hubDrive-cardDetail"> {hubDrive.cardDetail} </p>
                 <p className="detail-hubDrive-cardDetail"> {hubDrive.detail} </p>
-                </div>
+              
             </div>
         </div>
   );

@@ -21,9 +21,9 @@ export const AboutDetail = () => {
   }, [aboutId]);
   return (
     <div className="about-detail">
+                <img className="detail-about-pic" src={`.${about.pic}`}/>
             <div className="about-detail-content">
             
-                <img className="detail-about-pic" src={`${about.pic}`}/>
                 <h3 className="detail-about-name"> {about.name}</h3>
                 <p className="detail-about-cardDetail"> {about.cardDetail} </p>
                 <p className="detail-about-detail"> {about.detail} </p>

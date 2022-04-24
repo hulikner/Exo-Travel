@@ -1,9 +1,135 @@
 .itinerary-detail-summary{
     display:flex;
+    flex-wrap: wrap;
     flex-direction:row;
     justify-content: space-around;
+    align-items: center;
+    width:auto;
+    font-size: 17px;
+    margin: 20px;
+    
 }
 .itinerary-detail-title{
     position: relative;
     top:auto;
 }
+.itinerary-img{
+    width:25vw;
+    height:300px;
+    /* border:5px solid black; */
+    border-radius: 50px;
+}
+
+.itinerary-img-name{
+    background-color: rgb(28, 70, 168);
+   border:2px solid black;
+   border-radius: 5px;
+    padding:4px;
+    margin:5px;
+    color:gray;
+}
+.itinerary-detail-img{
+    display:flex;
+    flex-direction: column;
+    width:30vw;
+    height:80%;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: gray;
+    padding:10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.itinerary-detail-total{
+    border-top: 2px solid black;
+}
+.itinerary-details-title{
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.itinerary-price-summary{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    border:5px solid black;
+    border-radius: 20px;
+    background-color: gray;
+    padding:15px;
+    height:250px;
+    width:45vw;
+
+    box-shadow: 5px 5px 5px 5px black;
+    font-weight: 600;
+
+
+}
+.itinerary-departure-return{
+    display:flex;
+    flex-direction: row;
+    border:5px solid black;
+    border-radius: 20px;
+    background-color: gray;
+    padding:10px;
+    margin:10px;
+    font-size:12px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.itinerary-detail-image{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    height:300px;
+    justify-content: space-evenly;
+}
+.itinerary-departureToReturn{
+    display:flex;
+    flex-direction: column;
+    border:5px solid black;
+    border-radius: 20px;
+    padding:10px;
+    background-color: rgb(28, 70, 168);
+    box-shadow: 5px 5px 5px 5px black;
+    font-weight: 600;
+    width:100%;
+    height:120px;
+
+
+    margin:19px;
+}
+
+.itinerary-price-summary-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.itinerary-price-summary-button{
+  
+    color:gray;
+    background-color: black;
+}
+.itinerary-price-summary-button:hover{
+    color:black;
+    background-color: gray;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.itinerary-page-buttons{
+    display:flex;
+    flex-direction: row;
+    margin:10px;
+    justify-content: flex-end;
+}
+
+.itinerary-page-button{
+    margin:10px;
+}
+
+

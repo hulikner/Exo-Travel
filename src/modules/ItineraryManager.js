@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:8088"
 
 
 export const getAllItineraries = () => {
-    return fetch(`${remoteURL}/itineraries?_expand=exoPlanets&_expand=users&_sort_asc=return`)
+    return fetch(`${remoteURL}/itineraries?_expand=exoPlanets&_expand=users&_sort=return&_order=desc`)
     .then(res => res.json())
 }
 

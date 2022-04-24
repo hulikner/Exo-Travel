@@ -21,7 +21,7 @@ export const ItineraryCard = ({ itinerary }) => {
 
       <Link className="itinerary-card-link" to={`/itineraries/${itinerary.id}` }>
         <div className="itinerary-card-img">
-        <img className="itinerary-img" src={`./Images/${itinerary.exoPlanets.name}.jpg`} />
+        <img className="itinerary-pic" src={`./Images/${itinerary.exoPlanets.name}.jpg`} />
         <span className="itinerary-card">{itinerary.exoPlanets.name}</span>
         </div>
         <div>

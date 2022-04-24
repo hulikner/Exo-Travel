@@ -47,11 +47,11 @@
     font-weight: 700;
 }
 
-.itinerary-img{
+.itinerary-pic{
   
         image-rendering: auto;
         width:auto;
-        height:50px;
+        height:75px;
         border-radius: 2em;
         padding:1em;
 }
