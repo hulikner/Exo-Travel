@@ -4,4 +4,5 @@
     flex-direction: row;
     align-content: stretch;
     background-color: black;
+    justify-content: space-evenly;
 }

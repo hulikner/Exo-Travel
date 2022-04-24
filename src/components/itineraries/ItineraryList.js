@@ -21,7 +21,7 @@ export const ItineraryList = () => {
     },[])
 
     return(
-        <div className="list-container">
+        <div className="itinerary-container">
             <div className ="itinerary-list"  >
                 <h2 className="itinerary-list-header">Itineraries</h2>
                 <div className="itinerary-list-content">

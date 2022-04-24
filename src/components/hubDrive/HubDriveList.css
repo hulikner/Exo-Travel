@@ -1,0 +1,22 @@
+.hubDrive-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    justify-items: center;
+    justify-content: center;
+    margin:2em;
+    /* align-items: center; */
+    min-height: 74vh;
+
+}
+
+.card-hubDrive-pic{
+    image-rendering: auto;
+    width:auto;
+    height:200px;
+    border-radius: 2em;
+    padding:1em;
+}

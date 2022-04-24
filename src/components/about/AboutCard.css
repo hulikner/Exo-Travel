@@ -1,0 +1,12 @@
+.about-link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid black;
+    border-radius: 20px;
+    color:black;
+    background-color: gray;
+    
+
+}

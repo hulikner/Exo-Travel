@@ -6,6 +6,8 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-evenly;
+    
+
 }
 .exoPlanet-home-content {
     display: flex;
@@ -16,6 +18,7 @@
     background-color:  #2283dd;
     border: 10px black;
     border-radius: 5px;
+    
 }
 
 .home {

@@ -2,7 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-between;
+    align-content: stretch;
     background-color: black;
-    max-width: 100% ;
+    justify-content: space-evenly;
+    
+}
+
+.itinerary-container{
+min-height: 74vh;
 }

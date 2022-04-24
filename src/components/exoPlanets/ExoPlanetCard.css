@@ -1,12 +1,14 @@
 .exoPlanet-card-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;   
     margin: 1em;
     width: 15em;
     background-color:  #2283dd;
     border: 10px black;
     border-radius: 5px;
+    padding:1em;
+    color:black;
 }
 
 .exoPlanet-card {
@@ -14,9 +16,21 @@
     background-color: gray;
     border: 4px black solid;
     border-radius: 10px;
+    color:black;
 }
 
 img.card-exoPlanet-img {
-   height: 75px;
-   width: 75px;
+    image-rendering: auto;
+    width:auto;
+    height:100px;
+    border-radius: 2em;
+    padding:1em;
 } 
+.card-exoPlanet-name{
+    color:black
+}
+
+.card-exoPlanet-lightyears{
+    color:black;
+    font-weight: 700;
+}

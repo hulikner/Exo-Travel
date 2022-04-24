@@ -4,14 +4,14 @@ import { getAllAbouts } from "../../modules/AboutManager";
 import "./AboutList.css"
 
 export const AboutList = () => {
-    const [Abouts, setAbouts] = useState([])
+    const [abouts, setAbouts] = useState([])
     
     const currentUser = sessionStorage.getItem("exoTravel_user")
    
 
     const getAbouts = () => {
-        return getAllAbouts(currentUser).then(AboutsFromDatabase => {
-            setAbouts(AboutsFromDatabase)
+        return getAllAbouts(currentUser).then(aboutsFromDatabase => {
+            setAbouts(aboutsFromDatabase)
         })
     }
 
@@ -23,10 +23,10 @@ export const AboutList = () => {
 
     return (
         //takes all of the data/"Abouts" returned from getAllAbouts and maps them to individual AboutCards
-        <div className="Abouts-container">
-            {Abouts.map(About => <AboutCard
-                About={About}
-                key={About.id}
+        <div className="abouts-container">
+            {abouts.map(about => <AboutCard
+                about={about}
+                key={about.id}
                 />)}
         </div>
     )
