@@ -1,0 +1,191 @@
+.edit-ion-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: white;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+}
+.edit-ion-not-selected {
+   display:flex;
+   flex-direction: column;
+    align-items: center;
+    height: 3em;
+    width:auto;
+    border: none;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: black;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.edit-ion-selected:hover {
+    background-color: gray;
+    color: white;
+}
+
+.edit-ion-not-selected:hover {
+    background-color: gray;
+    color: black;
+}
+.edit-warp-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: white;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+
+}
+.edit-warp-not-selected {
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     height: 3em;
+     width:auto;
+     border: none;
+     background-color: gray;
+     margin: auto;
+     transition: none;
+     color: black;
+     font-size: x-large;
+     border: 5px solid black;
+    border-radius: 20px;
+}
+
+.edit-warp-selected:hover {
+    background-color: gray;
+    color: white;
+}
+
+.edit-warp-not-selected:hover {
+    background-color: gray;
+    color: black;
+}
+.edit-wormhole-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: white;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+
+}
+.edit-wormhole-not-selected {
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     height: 3em;
+     width:auto;
+     border: none;
+     background-color: gray;
+     margin: auto;
+     transition: none;
+     color: black;
+     font-size: x-large;
+     border: 5px solid black;
+    border-radius: 20px;
+}
+
+.edit-wormhole-selected:hover {
+    background-color: black;
+    color: white;
+}
+
+.edit-wormhole-not-selected:hover {
+    background-color: black;
+    color: grey;
+}
+
+.edit-mode-buttons{
+    display:flex;
+    flex-direction: row;
+    margin:20px;
+
+}
+.edit-save-cancel{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.edit-save-button{
+    display:flex;
+    flex-direction: row;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+.edit-cancel-button{
+    display:flex;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+.edit-detailsContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: gray;
+    border:5px solid black;
+    border-radius: 20px;
+    max-width: 50vw;
+    min-width: 30vw;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+    margin:20px;
+}
+.editDetails{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+}
+.edit-itinerary-img{
+    height:200px;
+    width:auto;
+    border-radius: 20px;
+}
+.edit-itinerary-pic{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.edit-itinerary-img-name{
+    font-weight: 600;
+    font-size: 28px;
+    background-color: gray;
+    border:5px solid black;
+    border-radius: 20px;
+    padding:10px;
+}

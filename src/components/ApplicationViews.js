@@ -6,6 +6,7 @@ import { ExoPlanetDetail } from "./exoPlanets/ExoPlanetDetail"
 import { ExoPlanetList } from "./exoPlanets/ExoPlanetList"
 import { ItineraryList } from "./itineraries/ItineraryList"
 import { ItineraryDetail } from "./itineraries/ItineraryDetail"
+import { ItineraryEditForm } from "./itineraries/ItineraryEditForm"
 import { HubDriveList } from "./hubDrives/HubDriveList"
 import { HubDriveDetail } from "./hubDrives/HubDriveDetail"
 import { AboutList } from "./abouts/AboutList"
@@ -30,6 +31,7 @@ export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
         <Route path="/abouts/:aboutId" element={<AboutDetail />} />
         <Route path="/itineraries" element={<ItineraryList />} />
         <Route path="/itineraries/:itineraryId" element={<ItineraryDetail />} />
+        <Route path="/itineraries/:itineraryId/edit" element={<ItineraryEditForm />} />
       </Route>
       <Route path="/login" element={<Login setAuthUser={setAuthUser}/>}/>
       <Route path="/register" element={<Register/>}/>

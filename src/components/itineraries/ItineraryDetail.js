@@ -3,7 +3,8 @@ import { getItineraryById, deleteItinerary } from "../../modules/ItineraryManage
 import { useParams, useNavigate } from "react-router-dom"
 import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBitcoinSign} from '@fortawesome/free-solid-svg-icons';
+import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
+
 import "./ItineraryDetail.css";
 
 export const ItineraryDetail = () => {
@@ -65,10 +66,10 @@ export const ItineraryDetail = () => {
                 <div className="itinerary-detail-summary">
                     <div className="itinerary-price-summary">
                         <span className="itinerary-detail-title">Price Summary</span><br />
-                        <span className="itinerary-detail">Transport to The Citadel: <FontAwesomeIcon icon={faBitcoinSign}/> 10</span><br />
-                        <span className="itinerary-detail">{itinerary.mode} to {itinerary.exoPlanets?.name}: <FontAwesomeIcon icon={faBitcoinSign}/> {selectedVal}</span><br />
-                        <span className='itinerary-detail'>Exo-Travel Fees: <FontAwesomeIcon icon={faBitcoinSign}/> 5</span><br />
-                        <span className='itinerary-detail-total'>Total: <FontAwesomeIcon icon={faBitcoinSign}/> {finalPrice}</span><br />
+                        <span className="itinerary-detail">Transport to The Citadel: <FontAwesomeIcon icon={faBitcoin}/> 10</span><br />
+                        <span className="itinerary-detail">{itinerary.mode} to {itinerary.exoPlanets?.name}: <FontAwesomeIcon icon={faBitcoin}/> {selectedVal}</span><br />
+                        <span className='itinerary-detail'>Exo-Travel Fees: <FontAwesomeIcon icon={faBitcoin}/> 5</span><br />
+                        <span className='itinerary-detail-total'>Total: <FontAwesomeIcon icon={faBitcoin}/> {finalPrice}</span><br />
                         <div className='itinerary-price-summary-buttons'>
                         <button type="button" className="itinerary-price-summary-button" onClick={()=>navigate(`/itineraries/${itinerary.id}/edit`)}>Edit</button>
                         <button type="button" className="itinerary-price-summary-button" onClick={()=>handleDelete(itinerary.id)}>Delete</button>

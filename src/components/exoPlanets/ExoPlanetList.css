@@ -3,18 +3,19 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: stretch;
-    background-color: black;
     justify-content: space-evenly;
 }
 .asc-button{
     width:auto;
     border: 3px solid black;
     border-radius: 20px;
+    background-color: gray;
 }
 .desc-button{
     width:auto;
     border: 3px solid black;
     border-radius: 20px;
+    background-color: gray;
 }
 
 
