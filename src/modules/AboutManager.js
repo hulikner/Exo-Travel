@@ -1,7 +1,6 @@
 const remoteURL = "http://localhost:8088"
 
-export const getAllAbouts
- = () => {
+export const getAllAbouts = () => {
     return fetch(`${remoteURL}/abouts`)
     .then(res => res.json())
 }

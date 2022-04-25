@@ -186,7 +186,7 @@ export const ExoPlanetDetail = () => {
         <button type="button" className="back-button" onClick={() => navigate(`/exoPlanets`)}>
           Back
         </button>
-        <button type="button" className="review-button" onClick={() => navigate(`/reviews`)}>
+        <button type="button" className="review-button" onClick={() => navigate(`/exoPlanets/${exoPlanetId}/reviews`)}>
           Reviews
         </button>
       </div>
