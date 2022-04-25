@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2283dd;
+  background-color: rgb(28, 70, 168);
+  /* background-image: url('./Images/space_background.jpg'); */
 }
 
 code {

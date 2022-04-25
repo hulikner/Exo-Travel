@@ -1,0 +1,49 @@
+.review-pic{
+    height:100px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.review-card-img{
+    display:flex;
+    flex-direction: column;
+    width:15vw;
+    border:5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    background-color: gray;
+    align-items: center;
+    
+    box-shadow: 5px 5px 5px 5px black;
+}
+.review-card-name{
+    font-size:20px;
+    font-weight: 600;
+    background-color:rgb(28, 70, 168) ;
+    color:white;
+    border:3px solid black;
+    border-radius: 5px;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.review-card-details{
+    display:flex;
+    flex-direction: column;
+    border:5px solid black;
+    border-radius: 20px;
+    background-color:gray;
+    color:white;
+    padding:10px;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.review-list-header{
+    background-color: gray;
+    border-radius: 20px;
+    color: white;
+    border:5px solid black;
+}

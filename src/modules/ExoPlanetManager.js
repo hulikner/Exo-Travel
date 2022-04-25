@@ -1,8 +1,16 @@
 const remoteURL = "http://localhost:8088"
 
-//sends a fetch call to the JSON database to return all exoPlanets
 export const getAllExoPlanets = () => {
     return fetch(`${remoteURL}/exoPlanets`)
+    .then(res => res.json())
+}
+
+export const getAllExoPlanetsByLightYearsAsc = () => {
+    return fetch(`${remoteURL}/exoPlanets&_sort=lightYears&order=asc`)
+    .then(res => res.json())
+}
+export const getAllExoPlanetsByLightYearsDesc = () => {
+    return fetch(`${remoteURL}/exoPlanets&_sort=lightYears&order=desc`)
     .then(res => res.json())
 }
 

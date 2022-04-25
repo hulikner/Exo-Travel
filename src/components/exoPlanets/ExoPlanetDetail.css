@@ -1,0 +1,212 @@
+.ion-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: blue;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+}
+.ion-not-selected {
+   display:flex;
+   flex-direction: column;
+    align-items: center;
+    height: 3em;
+    width:auto;
+    border: none;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: black;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.ion-selected:hover {
+    background-color: gray;
+    color: blue;
+}
+
+.ion-not-selected:hover {
+    background-color: gray;
+    color: black;
+}
+.warp-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: blue;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+
+}
+.warp-not-selected {
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     height: 3em;
+     width:auto;
+     border: none;
+     background-color: gray;
+     margin: auto;
+     transition: none;
+     color: black;
+     font-size: x-large;
+     border: 5px solid black;
+    border-radius: 20px;
+}
+
+.warp-selected:hover {
+    background-color: gray;
+    color: blue;
+}
+
+.warp-not-selected:hover {
+    background-color: gray;
+    color: black;
+}
+.wormhole-selected {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    height: 3em;
+    background-color: gray;
+    margin: auto;
+    transition: none;
+    color: blue;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+
+}
+.wormhole-not-selected {
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     height: 3em;
+     width:auto;
+     border: none;
+     background-color: gray;
+     margin: auto;
+     transition: none;
+     color: black;
+     font-size: x-large;
+     border: 5px solid black;
+    border-radius: 20px;
+}
+
+.wormhole-selected:hover {
+    background-color: black;
+    color: blue;
+}
+
+.wormhole-not-selected:hover {
+    background-color: black;
+    color: grey;
+}
+
+.mode-buttons{
+    display:flex;
+    flex-direction: column;
+
+}
+.exoPlanet-detail-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.back-button{
+    display:flex;
+    background-color: gray;
+    border:5px solid black;
+    border-radius: 20px;
+    align-items: center;
+}
+.review-button{
+    display:flex;
+    background-color: gray;
+    border:5px solid black;
+    border-radius: 20px;
+    align-items: center;
+}
+.submit-itinerary-button{
+    display:flex;
+    background-color: gray;
+    border:5px solid black;
+    border-radius: 20px;
+    align-items: center;
+}
+.exoPlanet-img{
+    display:flex;
+    flex-direction: row;
+    width:auto;
+    align-items: center;
+}
+.exoPlanet-pic{
+    border-radius: 20px;
+    height:200px;
+    width:auto;
+}
+.exoPlanet-info{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    font-weight: 600;
+}
+.exoPlanet{
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.detailsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    font-weight: 600;
+    width:auto;
+    margin:20px;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.mode-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:20px;
+    height:auto;
+    
+}
+.exoPlanet__detail{
+    display:flex;
+    max-width: 30vw;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.exoPlanet__fields{
+    display:flex;
+    flex-direction: row;
+}

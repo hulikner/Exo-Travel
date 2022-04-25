@@ -3,9 +3,11 @@
     justify-items: center;
     margin-top: 3em;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    
+
 }
 .exoPlanet-home-content {
     display: flex;
@@ -16,16 +18,56 @@
     background-color:  #2283dd;
     border: 10px black;
     border-radius: 5px;
+    
 }
 
 .home {
+    display:flex;
+    flex-direction: column;
     margin: 2em;
     background-color: gray;
     border: 4px black solid;
     border-radius: 10px;
 }
 
-img.exoPlanet-home-img {
-   height: 75px;
-   width: 75px;
+.exoPlanet-home-img {
+   height: 50px;
+   width: auto;
 } 
+.itinerary-home-img {
+   height: 50px;
+   width: auto;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px 5px black;
+   margin:10px;
+
+}
+.itinerary-home-link{
+    display:flex;
+    flex-direction: row;
+    border:5px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    margin:10px;
+    
+
+}
+.itinerary-home{
+    border:5px solid black;
+    border-radius: 20px;
+    background-color: #2283dd;
+    box-shadow: 5px 5px 5px 5px black;
+    width: 40vw;
+    color:white;
+    height:auto;
+}
+.itinerary-home-img-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

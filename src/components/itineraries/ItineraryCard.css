@@ -1,17 +1,68 @@
 .itinerary-card-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;   
     margin: 1em;
-    width: 15em;
+    width: 20em;
     background-color:  #2283dd;
     border: 10px black;
     border-radius: 5px;
+    padding:1em;
+    color:black;
+    border:5px solid gray;
+    font-weight: 600;
 }
 
 .itinerary-card {
+   
+
     margin: 2em;
-    background-color: gray;
+    /* background-color: gray; */
     /* border: 4px black solid; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    color:black;
+    font-size:10px;
+    
+}
+
+.itinerary-card-img {
+    display:flex;
+    flex-direction: column;
+    image-rendering: auto;
+    width: 100px;
+    height:100px;
+    border-radius: 2em;
+    padding:1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.card-itinerary-name{
+    color:black
+}
+
+.card-itinerary-lightyears{
+    color:black;
+    font-weight: 700;
+}
+
+.itinerary-pic{
+  
+        image-rendering: auto;
+        width:auto;
+        height:75px;
+        border-radius: 2em;
+        padding:1em;
+}
+
+/* .itinerary-card-img{
+    display:flex;
+    flex-direction: column;
+} */
+.itinerary-card-link{
+    display:grid;
+    grid-template-areas: 'img info';
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
 }

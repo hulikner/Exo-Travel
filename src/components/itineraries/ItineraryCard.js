@@ -8,7 +8,7 @@ import { format } from 'date-fns';
 import { updateItinerary } from '../../modules/ItineraryManager';
 
 
-export const ItineraryCard = ({ itinerary, handleDeleteItinerary }) => {
+export const ItineraryCard = ({ itinerary }) => {
 
   const [ itineraries, setItinerary ] = useState(false)
 
@@ -20,14 +20,17 @@ export const ItineraryCard = ({ itinerary, handleDeleteItinerary }) => {
         <div className='itinerary-card-content'>
 
       <Link className="itinerary-card-link" to={`/itineraries/${itinerary.id}` }>
-       
-        <span className="itinerary-card">{itinerary.users.firstName}</span><br />
-        <span className="itinerary-card">{itinerary.users.lastName}</span><br />
-        <span className="itinerary-card">{itinerary.exoPlanets.name}</span><br />
-        <span className="itinerary-card">{formattedDeparture}</span><br />
-        <span className='itinerary-card'>{formattedReturn}</span><br />
-        <span className='itinerary-card'>{itinerary.mode}</span><br />
-    
+        <div className="itinerary-card-img">
+        <img className="itinerary-pic" src={`./Images/${itinerary.exoPlanets.name}.jpg`} />
+        <span className="itinerary-card">{itinerary.exoPlanets.name}</span>
+        </div>
+        <div>
+        <span className="itinerary-card">First Name: {itinerary.users.firstName}</span><br />
+        <span className="itinerary-card">Last Name: {itinerary.users.lastName}</span><br />
+        <span className="itinerary-card">Departure Date: {formattedDeparture}</span><br />
+        <span className='itinerary-card'>Return Date: {formattedReturn}</span><br />
+        <span className='itinerary-card'>Travel Mode: {itinerary.mode}</span><br />
+        </div>
       </Link>
         </div>
    
