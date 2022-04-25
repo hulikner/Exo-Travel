@@ -143,21 +143,21 @@ export const ExoPlanetDetail = () => {
         
           
         {itinerary.mode ? (
-          <button onClick={() => handleModeChange1(itinerary.mode)} className="ion-selected"> Ion-Drive 
+          <button onClick={() => handleModeChange1(itinerary.mode)} className="ion-select"> Ion-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
         ) : (
-          <button onClick={() => handleModeChange1(itinerary.mode)} className="ion-not-selected"> Ion-Drive 
+          <button onClick={() => handleModeChange1(itinerary.mode)} className="ion-not-select"> Ion-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
         )}
        
         {itinerary.mode ? (
-          <button onClick={() => handleModeChange2(itinerary.mode)} className="warp-selected"> Warp-Drive 
+          <button onClick={() => handleModeChange2(itinerary.mode)} className="warp-btn"> Warp-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
         ) : (
-          <button onClick={() => handleModeChange2(itinerary.mode)} className="warp-not-selected"> Warp-Drive 
+          <button onClick={() => handleModeChange2(itinerary.mode)} className="warp-not-btn"> Warp-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
         )}

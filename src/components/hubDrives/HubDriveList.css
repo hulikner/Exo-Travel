@@ -1,15 +1,17 @@
 .hubDrive-container{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     text-decoration: none;
     color: white;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin:2em;
     /* align-items: center; */
     min-height: 74vh;
+    font-weight: 600;
+    text-decoration: none;
 
 }
 
@@ -19,4 +21,5 @@
     height:200px;
     border-radius: 2em;
     padding:1em;
+    text-decoration: none;
 }

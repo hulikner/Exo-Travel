@@ -17,22 +17,22 @@ export const ItineraryCard = ({ itinerary }) => {
 
 
   return (
+    
+    <Link className="itinerary-card-link" to={`/itineraries/${itinerary.id}` }>
         <div className='itinerary-card-content'>
-
-      <Link className="itinerary-card-link" to={`/itineraries/${itinerary.id}` }>
         <div className="itinerary-card-img">
         <img className="itinerary-pic" src={`./Images/${itinerary.exoPlanets.name}.jpg`} />
-        <span className="itinerary-card">{itinerary.exoPlanets.name}</span>
+        <p className="itinerary-pic-title">{itinerary.exoPlanets.name}</p>
         </div>
-        <div>
+        <div className= "itinerary-card-info">
         <span className="itinerary-card">First Name: {itinerary.users.firstName}</span><br />
         <span className="itinerary-card">Last Name: {itinerary.users.lastName}</span><br />
         <span className="itinerary-card">Departure Date: {formattedDeparture}</span><br />
         <span className='itinerary-card'>Return Date: {formattedReturn}</span><br />
         <span className='itinerary-card'>Travel Mode: {itinerary.mode}</span><br />
         </div>
-      </Link>
         </div>
+      </Link>
    
   );
 }

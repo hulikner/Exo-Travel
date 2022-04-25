@@ -1,0 +1,82 @@
+.review-entire-form{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:20px;
+    padding:20px;
+}
+form.review-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    margin:10px;
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px black;
+    border:20px solid white;
+    border-radius: 20px;
+    width: 60vw;
+    margin:10px;
+    justify-content: center;
+
+}
+.review-header{
+    display:flex;
+    flex-direction: row;
+    font-size: 40px;
+    background-color: rgb(28, 70, 168);
+    border: 10px solid white;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 5px 5px 5px 5px black;
+    width:120%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.review-fields{
+    display:flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(28, 70, 168);
+    border:5px solid white;
+    border-radius: 20px;
+    max-width: 50vw;
+   
+    color:white;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.submit-review-button{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(28, 70, 168);
+    border:5px solid white;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 5px;
+    color:white;
+}
+.review-input-fields{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+#message.form-control.message{
+    background-color: black;
+    color:white;
+    box-shadow: 5px 5px 5px 5px black;
+    border:5px solid white;
+    border-radius: 20px;
+    padding:10px;
+    margin:20px;
+
+}
