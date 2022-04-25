@@ -14,15 +14,15 @@
     top:auto;
 }
 .itinerary-img{
-    width:25vw;
-    height:300px;
-    /* border:5px solid black; */
-    border-radius: 50px;
+    width:auto;
+    height:170px;
+     border:10px solid rgb(28, 70, 168); 
+    border-radius: 20px;
 }
 
 .itinerary-img-name{
     background-color: rgb(28, 70, 168);
-   border:2px solid black;
+   border:5px solid black;
    border-radius: 5px;
     padding:4px;
     margin:5px;
@@ -62,7 +62,6 @@
     padding:15px;
     height:250px;
     width:45vw;
-
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
 
@@ -108,6 +107,7 @@
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+ 
 }
 
 .itinerary-price-summary-button{

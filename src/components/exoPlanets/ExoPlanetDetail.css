@@ -1,125 +1,3 @@
-.ion-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background-color: gray;
-    margin: auto;
-    transition: none;
-    color: blue;
-    font-size: x-large;
-    border: 5px solid black;
-    border-radius: 20px;
-    width:auto;
-}
-.ion-not-selected {
-   display:flex;
-   flex-direction: column;
-    align-items: center;
-    height: 3em;
-    width:auto;
-    border: none;
-    background-color: gray;
-    margin: auto;
-    transition: none;
-    color: black;
-    font-size: x-large;
-    border: 5px solid black;
-    border-radius: 20px;
-}
-
-.ion-selected:hover {
-    background-color: gray;
-    color: blue;
-}
-
-.ion-not-selected:hover {
-    background-color: gray;
-    color: black;
-}
-.warp-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background-color: gray;
-    margin: auto;
-    transition: none;
-    color: blue;
-    font-size: x-large;
-    border: 5px solid black;
-    border-radius: 20px;
-    width:auto;
-
-}
-.warp-not-selected {
-    display:flex;
-    flex-direction: column;
-     align-items: center;
-     height: 3em;
-     width:auto;
-     border: none;
-     background-color: gray;
-     margin: auto;
-     transition: none;
-     color: black;
-     font-size: x-large;
-     border: 5px solid black;
-    border-radius: 20px;
-}
-
-.warp-selected:hover {
-    background-color: gray;
-    color: blue;
-}
-
-.warp-not-selected:hover {
-    background-color: gray;
-    color: black;
-}
-.wormhole-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background-color: gray;
-    margin: auto;
-    transition: none;
-    color: blue;
-    font-size: x-large;
-    border: 5px solid black;
-    border-radius: 20px;
-    width:auto;
-
-}
-.wormhole-not-selected {
-    display:flex;
-    flex-direction: column;
-     align-items: center;
-     height: 3em;
-     width:auto;
-     border: none;
-     background-color: gray;
-     margin: auto;
-     transition: none;
-     color: black;
-     font-size: x-large;
-     border: 5px solid black;
-    border-radius: 20px;
-}
-
-.wormhole-selected:hover {
-    background-color: black;
-    color: blue;
-}
-
-.wormhole-not-selected:hover {
-    background-color: black;
-    color: grey;
-}
 
 .mode-buttons{
     display:flex;
@@ -192,14 +70,6 @@
     border: 5px solid black;
     border-radius: 20px;
 }
-.mode-buttons{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin:20px;
-    height:auto;
-    
-}
 .exoPlanet__detail{
     display:flex;
     max-width: 30vw;
@@ -210,3 +80,151 @@
     display:flex;
     flex-direction: row;
 }
+button.ion-select {
+        display:flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+        height: auto;
+        background-color: gray;
+        margin: auto;
+        transition: none;
+        color: blue;
+        font-size: x-large;
+        border: 5px solid black;
+        border-radius: 20px;
+        width:10em;
+    }
+
+button.ion-not-select {
+    display:flex;
+    flex-direction: column;
+        align-items: center;
+        height: auto;
+        width:10em;
+        border: none;
+        background-color: gray;
+        margin: auto;
+        transition: none;
+        color: black;
+        font-size: x-large;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+    
+    button.ion-select:hover {
+        background-color: black;
+        color: blue;
+    }
+    
+    button.ion-not-select:hover {
+        background-color: black;
+        color: gray;
+    }
+    button.warp-btn {
+        display:flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+        height: auto;
+        background-color: gray;
+        margin: auto;
+        transition: none;
+        color: blue;
+        font-size: x-large;
+        border: 5px solid black;
+        border-radius: 20px;
+        width:10em;
+    
+    }
+    button.warp-not-btn {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+         height: auto;
+         width:10em;
+         border: none;
+         background-color: gray;
+         margin: auto;
+         transition: none;
+         color: black;
+         font-size: x-large;
+         border: 5px solid black;
+        border-radius: 20px;
+    }
+    
+    button.warp-btn:hover {
+        background-color: black;
+        color: blue;
+    }
+    
+    button.warp-not-btn:hover {
+        background-color: black;
+        color: gray;
+    }
+    button.wormhole-selected {
+        display:flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+        height: auto;
+        background-color: gray;
+        margin: auto;
+        transition: none;
+        color: blue;
+        font-size: x-large;
+        border: 5px solid black;
+        border-radius: 20px;
+        width:10em;
+    
+    }
+    button.wormhole-not-selected {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width:10em;
+         border: none;
+         background-color: gray;
+         margin: auto;
+         transition: none;
+         color: black;
+         font-size: x-large;
+         border: 5px solid black;
+        border-radius: 20px;
+    }
+    
+    button.wormhole-selected:hover {
+        background-color: black;
+        color: blue;
+    }
+    
+    button.wormhole-not-selected:hover {
+        background-color: black;
+        color: grey;
+    }
+    
+    .mode-buttons{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:20px;
+        height:auto;
+        
+    }
+
+    input#departure.form-control.departure{
+        background-color: black;
+        color:gray;
+        border-radius: 2em;
+
+    }
+
+    input#return.form-control.return{
+        display: flex;
+        background-color: black;
+        color:gray;
+        border-radius: 2em;
+        justify-items: center;
+        
+    }
