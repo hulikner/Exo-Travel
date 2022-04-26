@@ -143,7 +143,7 @@ export const ItineraryDetail = () => {
       </div>
 
       <div className="itinerary-page-buttons">
-        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoplanets/${itinerary.exoPlanetsId}/reviews/create`)}>
+        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoPlanets/:${itinerary.exoPlanetsId}/reviews/create`)}>
           Review
         </button>
         <button type="button" className="itinerary-page-button" onClick={() => navigate(`/itineraries`)}>

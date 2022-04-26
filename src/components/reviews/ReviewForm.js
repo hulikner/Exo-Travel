@@ -1,23 +1,23 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { useNavigate,useParams } from "react-router-dom";
 import { addReview } from "../../modules/ReviewManager";
 import "./ReviewForm.css"
 import { epochDateConverter } from "../util/epochDateConverter";
-import { getItineraryById } from "../../modules/ItineraryManager";
+import { getExoPlanetById } from "../../modules/ExoPlanetManager";
+import { getAllExoPlanetsByLightYearsDesc } from "../../modules/ExoPlanetManager";
 
 
 export const ReviewForm = () => {
-
-    const {itinerariesId} = useParams();
-    const itinerary = () => {
-        return getItineraryById(itinerariesId)
-    }
-    console.log(itinerary)
+    
+    const {exoPlanetId} = useParams();
+   
+    const currentUser = JSON.parse(sessionStorage.getItem("exoPlanet_user"));
+    
     const [review, setReview] = useState({
         id: '',
-        usersId: itinerary.usersId,
+        usersId: currentUser,
         date: new Date().getTime()/1000,
-        exoPlanetsId: itinerary.exoPlanetsId,
+        exoPlanetsId: Number(exoPlanetId),
         message: '',
         stars: '',
         
@@ -25,20 +25,11 @@ export const ReviewForm = () => {
 
 
     const [isLoading, setIsLoading] = useState(false)
-
-
-  
     const navigate = useNavigate();
     
     const handleControlledInputChange = (t) => {
-       
-      
-       
-       console.log(t.target.value)
         const newReview = {...review}
         let selectedVal = t.target.value;
-   
-
         newReview[t.target.id] = selectedVal;
         setReview(newReview);
     }
@@ -50,11 +41,12 @@ export const ReviewForm = () => {
             setIsLoading(true);
             
             addReview(review)
-            .then(() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews`))
+            .then(() => navigate(`/exoPlanets/${exoPlanetId}/reviews`))
         } else {
                 window.alert("Complete Each Field")
         }
     }
+
     return(
             <div className='review-entire-form'>
             <form className ="review-form">
@@ -75,6 +67,13 @@ export const ReviewForm = () => {
 				    className="submit-review-button"
 				    disabled={isLoading}
 				    onClick={handleClickSaveEvent}>
+				    Save Review
+                </button>
+                <button 
+				    type="cancel" 
+				    className="cancel-review-button"
+				    disabled={isLoading}
+				    onClick={() => navigate(`/itineraries`)}>
 				    Save Review
                 </button>
             </form>
