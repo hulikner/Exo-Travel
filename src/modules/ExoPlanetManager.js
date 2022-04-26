@@ -5,6 +5,16 @@ export const getAllExoPlanets = () => {
     .then(res => res.json())
 }
 
+export const updateExoPlanet  = (editedPlanet) => {
+    return fetch(`${remoteURL}/exoPlanets/${editedPlanet.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedPlanet)
+    }).then(data => data.json());
+  }
+  
 export const getAllExoPlanetsByLightYearsAsc = () => {
     return fetch(`${remoteURL}/exoPlanets&_sort=lightYears&order=asc`)
     .then(res => res.json())

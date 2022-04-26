@@ -14,13 +14,13 @@ export const ItineraryHomeCard = () => {
   const[itineraries, setItineraries] = useState([])
   const {itineraryId} = useParams();
   const formattedDeparture = itineraries.departure && epochDateConverter(itineraries.departure, 'eee. MMM do')
-
-
+  
+  
   useEffect(() => {
-  getAllItineraries().then(setItineraries)
- 
-},[])
-
+    getAllItineraries().then(setItineraries)
+  },[])
+  
+  
 
   return (
 

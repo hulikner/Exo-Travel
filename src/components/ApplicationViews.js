@@ -14,6 +14,8 @@ import { AboutDetail } from "./abouts/AboutDetail"
 import { ReviewList } from "./reviews/ReviewList"
 import { ReviewForm } from "./reviews/ReviewForm"
 import { ReviewEditForm } from "./reviews/ReviewEditForm"
+import { ReceiptList } from "./receipts/ReceiptList"
+import { ReceiptDetail } from "./receipts/ReceiptDetail"
 import { Home } from "./home/Home"
 
 export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
@@ -29,8 +31,8 @@ export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
         <Route path="/exoPlanets" element={<ExoPlanetList />} />
         <Route path="/exoPlanets/:exoPlanetId" element={<ExoPlanetDetail />} />
         <Route path="/exoPlanets/:exoPlanetId/reviews" element={<ReviewList />} />
-        <Route path="/exoPlanets/::exoPlanetId/reviews/create" element={<ReviewForm />} />
-        <Route path="/exoPlanets/:exoPlanetId/:reviewId/edit" element={<ReviewEditForm />} />
+        <Route path="/exoPlanets/:exoPlanetId/reviews/create" element={<ReviewForm />} />
+        <Route path="/exoPlanets/:exoPlanetId/reviews/:reviewId/edit" element={<ReviewEditForm />} />
         <Route path="/hubDrives" element={<HubDriveList />} />
         <Route path="/hubDrives/:hubDriveId" element={<HubDriveDetail />} />
         <Route path="/abouts" element={<AboutList />} />
@@ -38,6 +40,8 @@ export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
         <Route path="/itineraries" element={<ItineraryList />} />
         <Route path="/itineraries/:itineraryId" element={<ItineraryDetail />} />
         <Route path="/itineraries/:itineraryId/edit" element={<ItineraryEditForm />} />
+        <Route path="/itineraries/:itineraryId/receipts" element={<ReceiptList />} />
+        <Route path="/itineraries/:itineraryId/receipts/:receiptId" element={<ReceiptDetail />} />
       </Route>
       <Route path="/login" element={<Login setAuthUser={setAuthUser}/>}/>
       <Route path="/register" element={<Register/>}/>

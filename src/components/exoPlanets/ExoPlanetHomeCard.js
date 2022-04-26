@@ -4,6 +4,8 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { getAllExoPlanets } from '../../modules/ExoPlanetManager';
+import Rating from '@mui/material/Rating';
+
 
 
 export const ExoPlanetHomeCard = () => {
@@ -23,8 +25,9 @@ export const ExoPlanetHomeCard = () => {
   return (
 
     <>
+      <div className="exoPlanet-home-card">
       <h2 className="exoPlanet-home-header">ExoPlanets</h2>
-      <div className="exoPlanet-home-content">
+     
       {exoPlanets.map(x =>( 
 
         <div className='exoPlanet-home-content' key={x.id}>
@@ -33,12 +36,15 @@ export const ExoPlanetHomeCard = () => {
        
         <span className="exoPlanet-home-name">{x.name}</span>
        
+      
         <img className='exoPlanet-home-img' src={`./Images/${x.name}.jpg`} />
-    
+        <p className="card-home-exoPlanet-starRating"><Rating value={x.rating} readOnly/> </p>
+      
       </Link>
       </div>
       ))}
       </div>
+     
   </>
   );
 }

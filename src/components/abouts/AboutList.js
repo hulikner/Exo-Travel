@@ -23,11 +23,15 @@ export const AboutList = () => {
 
     return (
         //takes all of the data/"Abouts" returned from getAllAbouts and maps them to individual AboutCards
+        <>
+            <h3 className="detail-about-title"> About Us </h3>
         <div className="abouts-container">
+
             {abouts.map(about => <AboutCard
                 about={about}
                 key={about.id}
                 />)}
         </div>
+        </>
     )
 }

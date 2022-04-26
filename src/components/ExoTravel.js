@@ -8,7 +8,7 @@ export const ExoTravel = () => {
 
     const setAuthUser = (user) => {
       sessionStorage.setItem("exoPlanet_user", JSON.stringify(user.id))
-      // sessionStorage.setItem("exoPlanet_user", JSON.stringify(user.firstName))
+      sessionStorage.setItem("exoPlanet_user_firstName", JSON.stringify(user.firstName))
         setIsAuthenticated(sessionStorage.getItem("exoPlanet_user") !== null)
     }
     

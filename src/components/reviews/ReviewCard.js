@@ -13,6 +13,8 @@ export const ReviewCard = ({ review }) => {
   const [ reviews, setReview ] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+  const formattedDate = review?.date ? epochDateConverter(review?.date, 'yyy-MM-dd') : ''
+  const formattedEditDate = review?.editDate ? epochDateConverter(review.editDate, 'yyy-MM-dd') : ''
 
 
 
@@ -28,13 +30,18 @@ export const ReviewCard = ({ review }) => {
              <span className="review-card">Review: {review.message}</span><br />
              <span className='review-card'>Number of Stars: {review.stars}</span><br />
             </div>
+            <div className="review-card-dates">
+             <span className='review-card-time'>Created: {formattedDate}</span>
+             <span className='review-card-time'>Edited: {formattedEditDate}</span>
+             </div>
             <button 
 				    type="button" 
 				    className="edit-cancel-button"
 				    disabled={isLoading}
-				    onClick={()=>navigate(`/exoPlanets/${reviews.exoPlanetsId}/reviews/edit`)}>
+				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetsId}/reviews/${review.id}/edit`)}>
 				    Edit
                 </button>
+            
         </div>
    
   );

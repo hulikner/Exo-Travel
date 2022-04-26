@@ -1,39 +1,73 @@
 .home {
-    display: flex;
-    justify-items: center;
-    margin-top: 3em;
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    
-
+    margin:20px;
+    background-color: gray;
+    border: 5px white solid;
+    border-radius: 10px;
+    justify-content: center;
 }
+
 .exoPlanet-home-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;   
     margin: 1em;
-    width: 15em;
-    background-color:  #2283dd;
+    width: 30vw;
+    background-color:  rgb(28, 70, 168);
     border: 10px black;
     border-radius: 5px;
     
 }
-
-.home {
+.welcome{
     display:flex;
-    flex-direction: column;
-    margin: 2em;
+    flex-direction: row;
+    justify-content: center;
+    color:rgb(28, 70, 168);
     background-color: gray;
-    border: 4px black solid;
-    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    border:5px solid white;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.exoPlanet-home-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin: 10px;
+    width: 40vw;
+    border:5px solid white;
+    border-radius: 20px;
+    background-color: rgb(28, 70, 168);
+    box-shadow: 5px 5px 5px 5px black;
+    color:white;
+    height:auto;
+    
 }
 
 .exoPlanet-home-img {
    height: 50px;
    width: auto;
 } 
+.exoPlanet-home-link{
+    display:flex;
+    flex-direction: column;
+    border:5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    margin:10px;
+    padding:10px;
+    width:37vw
+    
+
+}
 .itinerary-home-img {
    height: 50px;
    width: auto;
@@ -45,7 +79,7 @@
 .itinerary-home-link{
     display:flex;
     flex-direction: row;
-    border:5px solid black;
+    border:5px solid white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px black;
     justify-content: space-evenly;
@@ -57,17 +91,19 @@
 
 }
 .itinerary-home{
-    border:5px solid black;
+    border:5px solid white;
     border-radius: 20px;
-    background-color: #2283dd;
+    background-color: rgb(28, 70, 168);
     box-shadow: 5px 5px 5px 5px black;
     width: 40vw;
     color:white;
     height:auto;
+    margin:1em;
 }
 .itinerary-home-img-container{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    
 }

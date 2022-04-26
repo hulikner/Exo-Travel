@@ -5,21 +5,25 @@
     margin: 1em;
     width: 12em;
     height: auto;
-    background-color:  rgb(28, 70, 168);
-    border: 5px solid black;
-    border-radius: 5px;
+    background-color:  gray;
+    border: 5px solid white;
+    border-radius: 50px;
     padding:1em;
-    color:white;
+    /* color:white; */
+    box-shadow: 5px 5px 5px 5px black;
+    
 }
 
 .exoPlanet-card {
     display:flex;
     flex-direction: column;
     margin: 2em;
-    background-color: gray;
-    border: 4px black solid;
-    border-radius: 10px;
+    background-color: rgb(28, 70, 168);
+    border: 10px white solid;
+    border-radius: 50px;
     color:black;
+    box-shadow: 5px 5px 5px 5px black;
+
 }
 
 img.card-exoPlanet-img {
@@ -27,11 +31,16 @@ img.card-exoPlanet-img {
     width:auto;
     height:100px;
     border-radius: 2em;
-    padding:1em;
+    padding:10px;
+    
 } 
 .card-exoPlanet-name{
-    color:white
+    color:white;
+
 }
+/* .card-exoPlanet-starRating{
+    color:white;
+} */
 
 .card-exoPlanet-lightyears{
     color:white;
@@ -43,4 +52,6 @@ img.card-exoPlanet-img {
     flex-direction: column;
     align-items: center;
     width:100%;
+    text-decoration: none;
+
 }

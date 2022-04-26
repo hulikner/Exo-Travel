@@ -17,12 +17,14 @@ export const HubDriveList = () => {
     }, [])
 
     return (
-        //takes all of the data/"HubDrive" returned from getAllHubDrive and maps them to individual HubDriveCards
+        <>
+        <h3 className="detail-hubDrive-title"> How It Works </h3>
         <div className="hubDrive-container">
             {hubDrive.map(hubDrive => <HubDriveCard
                 hubDrive={hubDrive}
                 key={hubDrive.id}
                 />)}
         </div>
+        </>
     )
 }
