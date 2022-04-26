@@ -3,12 +3,28 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: stretch;
-    background-color: black;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: gray;
+    padding:10px;
+    box-shadow: 5px 5px 5px 5px black;
     justify-content: space-evenly;
+    max-width: 90vw;
     
+}
+.itinerary-list-header{
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px black;
+    color:white;
 }
 
 .itinerary-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+   
 min-height: 74vh;
 }
 

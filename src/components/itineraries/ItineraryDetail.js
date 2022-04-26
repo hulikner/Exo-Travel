@@ -5,6 +5,7 @@ import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 import { ReviewForm } from "../reviews/ReviewForm";
+import { addReceipt } from "../../modules/ReceiptManager";
 
 import "./ItineraryDetail.css";
 
@@ -18,6 +19,28 @@ export const ItineraryDetail = () => {
   let selectedVal = 0;
   let finalPrice = 0;
   let tripDuration = 0;
+
+  const [receipt, setReceipt] = useState({
+    id: "",
+    usersId: itinerary.userId,
+    departure: itinerary.departure,
+    return: itinerary.return,
+    exoPlanetsId: itinerary.exoPlanetsId,
+  });
+  
+
+  const handleClickSaveEvent = (i) => {
+    i.preventDefault();
+
+    
+      setIsLoading(true);
+      
+      addReceipt(receipt).then(() => navigate(`/itineraries/${itineraryId}/receipts`));
+    
+    
+  };
+
+
   const drivePlanetCost = (m) => {
     if (m === "Ion-Drive") {
       selectedVal = 0.25;
@@ -41,7 +64,7 @@ export const ItineraryDetail = () => {
   useEffect(() => {
     getItineraryById(itineraryId).then((itinerary) => {
       setItinerary(itinerary);
-      setIsLoading(false);
+      setReceipt()
     });
   }, [itineraryId]);
   console.log(itinerary);
@@ -86,7 +109,7 @@ export const ItineraryDetail = () => {
               <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itinerary.id)}>
                 Delete
               </button>
-              <button type="button" className="itinerary-price-summary-button" onClick={() => navigate(`/itineraries/${itinerary.id}/receipt`)}>
+              <button type="button" className="itinerary-pay-summary-button" onClick={handleClickSaveEvent}>
                 Pay Now
               </button>
             </div>
@@ -143,7 +166,7 @@ export const ItineraryDetail = () => {
       </div>
 
       <div className="itinerary-page-buttons">
-        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoPlanets/:${itinerary.exoPlanetsId}/reviews/create`)}>
+        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
           Review
         </button>
         <button type="button" className="itinerary-page-button" onClick={() => navigate(`/itineraries`)}>

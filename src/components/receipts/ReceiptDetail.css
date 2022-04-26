@@ -1,4 +1,4 @@
-.itinerary-detail-summary{
+.receipt-detail-summary{
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
@@ -9,18 +9,18 @@
     margin: 20px;
     
 }
-.itinerary-detail-title{
+.receipt-detail-title{
     position: relative;
     top:auto;
 }
-.itinerary-img{
+.receipt-img{
     width:auto;
     height:170px;
      border:10px solid white; 
     border-radius: 20px;
 }
 
-.itinerary-img-name{
+.receipt-img-name{
     background-color: rgb(28, 70, 168);
    border:5px solid white;
    border-radius: 5px;
@@ -28,7 +28,7 @@
     margin:5px;
     color:white;
 }
-.itinerary-detail-img{
+.receipt-detail-img{
     display:flex;
     flex-direction: column;
     width:30vw;
@@ -42,17 +42,17 @@
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
 }
-.itinerary-detail-total{
+.receipt-detail-total{
     border-top: 2px solid white;
 }
-.itinerary-details-title{
+.receipt-details-title{
     border: 5px solid white;
     border-radius: 50px;
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     color:white;
 }
-.itinerary-price-summary{
+.receipt-price-summary{
     display:flex;
     flex-direction: column;
     align-items: left;
@@ -67,7 +67,7 @@
     color:white;
 
 }
-.itinerary-departure-return{
+.receipt-departure-return{
     display:flex;
     flex-direction: row;
     border:5px solid white;
@@ -79,7 +79,7 @@
     box-shadow: 5px 5px 5px 5px black;
 
 }
-.itinerary-detail-image{
+.receipt-detail-image{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -87,7 +87,7 @@
     height:300px;
     justify-content: space-evenly;
 }
-.itinerary-departureToReturn{
+.receipt-departureToReturn{
     display:flex;
     flex-direction: column;
     border:5px solid white;
@@ -103,25 +103,25 @@
     margin:19px;
 }
 
-.itinerary-price-summary-buttons{
+.receipt-price-summary-buttons{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
  
 }
 
-.itinerary-price-summary-button{
+.receipt-price-summary-button{
   
     color:gray;
     background-color: black;
 }
-.itinerary-price-summary-button:hover{
+.receipt-price-summary-button:hover{
     color:black;
     background-color: gray;
     transform: scale(1.1);
     transition: 0.5s;
 }
-.itinerary-page-buttons{
+.receipt-page-buttons{
     display:flex;
     flex-direction: row;
     margin:10px;
@@ -129,7 +129,7 @@
     
 }
 
-.itinerary-page-button{
+.receipt-page-button{
     margin:10px;
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;

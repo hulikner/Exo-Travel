@@ -1,4 +1,17 @@
-.review-pic{
+.receipt-card-link{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.receipt-list-header{
+    background-color: gray;
+    border-radius: 20px;
+    color: white;
+    border:5px solid white;
+    font-size:30px;
+}
+.receipt-pic{
     height:100px;
     width: auto;
     border-radius: 20px;
@@ -7,7 +20,7 @@
 
 
 }
-.review-card-img{
+.receipt-card-img{
     display:flex;
     flex-direction: column;
     width:15vw;
@@ -20,18 +33,21 @@
     
     box-shadow: 5px 5px 5px 5px black;
 }
-.review-card-name{
-    font-size:20px;
-    font-weight: 600;
-    background-color:rgb(28, 70, 168) ;
+
+.receipt-card-content{
+    display:flex;
+    flex-direction: column;
+    border:5px solid white;
+    border-radius: 20px;
+    background-color:black;
     color:white;
-    border:3px solid white;
-    border-radius: 5px;
+    padding:10px;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
+   
 
 }
-.review-card-details{
+.receipt-card-info{
     display:flex;
     flex-direction: column;
     border:5px solid white;
@@ -41,24 +57,22 @@
     padding:10px;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
+    align-items: center;
    
 
 }
-.review-list-header{
+.receipt-pic-title{
     background-color: gray;
     border-radius: 20px;
     color: white;
     border:5px solid white;
+    background-color: rgb(28, 70, 168);
+    box-shadow: 5px 5px 5px 5px black;
+    text-decoration:none;
+    width: auto;
+    height: auto;
+    padding:10px;
 }
-.review-card-dates{
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-    font-weight: 600;
-    color:white;
-
-}
-.edit-cancel-button{
-    border:5px solid white;
-    color:white;
+.receipt-card{
+    text-decoration: none;
 }

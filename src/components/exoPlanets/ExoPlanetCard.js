@@ -1,5 +1,6 @@
 import react from "react";
 import { Link } from "react-router-dom";
+import Rating from '@mui/material/Rating';
 import { StarRating } from "../reviews/StarRating"
 import "./ExoPlanetCard.css"
 
@@ -14,7 +15,7 @@ export const ExoPlanetCard = ({exoPlanet}) => {
                 <p className="card-exoPlanet-lightyears">Light-Years Away: {exoPlanet.lightYears} </p>
                
             </Link>
-                <p className="card-exoPlanet-starRating"> <StarRating /> </p>
+                <p className="card-exoPlanet-starRating"><Rating value={exoPlanet.rating} readOnly/> </p>
             </div>
         </div>
     )

@@ -7,15 +7,16 @@
 }
 .asc-button{
     width:auto;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 20px;
     background-color: gray;
+    color:white;
 }
 .desc-button{
     width:auto;
     border: 3px solid black;
     border-radius: 20px;
-    background-color: gray;
+    background-color: white;
 }
 
 

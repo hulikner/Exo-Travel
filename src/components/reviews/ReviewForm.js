@@ -1,18 +1,29 @@
 import React, { useState, useEffect} from "react";
 import { useNavigate,useParams } from "react-router-dom";
-import { addReview } from "../../modules/ReviewManager";
+import { addReview, getReviewsByExoPlanet } from "../../modules/ReviewManager";
 import "./ReviewForm.css"
 import { epochDateConverter } from "../util/epochDateConverter";
-import { getExoPlanetById } from "../../modules/ExoPlanetManager";
+import { getExoPlanetById, updateExoPlanet } from "../../modules/ExoPlanetManager";
 import { getAllExoPlanetsByLightYearsDesc } from "../../modules/ExoPlanetManager";
 
 
 export const ReviewForm = () => {
     
     const {exoPlanetId} = useParams();
-   
+   const [allReviews, setAllReviews] = useState();
+
     const currentUser = JSON.parse(sessionStorage.getItem("exoPlanet_user"));
-    
+ getReviewsByExoPlanet(exoPlanetId)
+
+    const getStarTotal =(newStars)=>{
+        const reviewCount = +allReviews.length +1
+        let totalStars = +newStars
+        allReviews.map((review)=> totalStars+= +review.stars
+        )
+        console.log()
+        return totalStars/reviewCount
+
+    } 
     const [review, setReview] = useState({
         id: '',
         usersId: currentUser,
@@ -39,13 +50,23 @@ export const ReviewForm = () => {
 
         if(review.message !== "" && review.stars) {
             setIsLoading(true);
-            
-            addReview(review)
+           
+            const newStarRating = getStarTotal(review.stars)
+            const exoPlanetObject= {id: +exoPlanetId, rating: newStarRating}
+            console.log('exoPlanetObject:',exoPlanetObject)
+            updateExoPlanet(exoPlanetObject).then(
+
+                addReview(review)
+            )
             .then(() => navigate(`/exoPlanets/${exoPlanetId}/reviews`))
         } else {
                 window.alert("Complete Each Field")
         }
     }
+
+    useEffect(()=>{
+        getReviewsByExoPlanet(exoPlanetId).then(setAllReviews)
+    },[])
 
     return(
             <div className='review-entire-form'>

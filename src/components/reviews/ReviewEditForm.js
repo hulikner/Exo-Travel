@@ -12,6 +12,9 @@ export const ReviewEditForm = () => {
     const [isLoading, setIsLoading] = useState(false);
     const {reviewId} = useParams();
     const navigate = useNavigate();
+    const {exoPlanetId} = useParams();
+
+
 
     const handleFieldChange = i => {
        
@@ -20,14 +23,15 @@ export const ReviewEditForm = () => {
       setReview(stateToChange);
     };
   
-    const updateExistingReview = t => {
+    const updateExistingReview = i => {
         // t.preventDefault()
         setIsLoading(true);
 
         const editedReview = {
             id: reviewId,
-            review: review.message,
+            message: review.message,
             stars: review.stars,
+            editDate: new Date().getTime()/1000,
           };
 
           updateReview(editedReview)
