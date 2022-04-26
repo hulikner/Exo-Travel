@@ -8,21 +8,15 @@ import "./ReviewEditForm.css"
 
 
 export const ReviewEditForm = () => {
-    const [review, setReview] = useState({ review: "", stars: ""});
+    const [review, setReview] = useState({ message: "", stars: ""});
     const [isLoading, setIsLoading] = useState(false);
     const {reviewId} = useParams();
     const navigate = useNavigate();
 
     const handleFieldChange = i => {
-        const isDate = i.target.id === 'departure' || 'return'
-        let epochDate = ''
-          if(isDate){
-             epochDate = new Date(i.target.value).getTime()/ 1000
        
-  
-         }
       const stateToChange = { ...review };
-      stateToChange[i.target.id] =  isDate? epochDate : i.target.value;
+      stateToChange[i.target.id] =   i.target.value;
       setReview(stateToChange);
     };
   

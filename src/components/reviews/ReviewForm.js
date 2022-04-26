@@ -10,7 +10,7 @@ import { getAllExoPlanetsByLightYearsDesc } from "../../modules/ExoPlanetManager
 export const ReviewForm = () => {
     
     const {exoPlanetId} = useParams();
-    
+   
     const currentUser = JSON.parse(sessionStorage.getItem("exoPlanet_user"));
     
     const [review, setReview] = useState({
@@ -67,6 +67,13 @@ export const ReviewForm = () => {
 				    className="submit-review-button"
 				    disabled={isLoading}
 				    onClick={handleClickSaveEvent}>
+				    Save Review
+                </button>
+                <button 
+				    type="cancel" 
+				    className="cancel-review-button"
+				    disabled={isLoading}
+				    onClick={() => navigate(`/itineraries`)}>
 				    Save Review
                 </button>
             </form>
