@@ -12,8 +12,7 @@ export const ExoPlanetDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { exoPlanetId } = useParams();
   const navigate = useNavigate();
-  const currentUser = JSON.parse(sessionStorage.getItem("exoPlanet_user"));
-  console.log(currentUser);
+  const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
   const [itinerary, setItinerary] = useState({
     id: "",
     usersId: currentUser,
@@ -58,7 +57,6 @@ export const ExoPlanetDetail = () => {
 
     if (itinerary.departure !== "" && itinerary.return !== "" && itinerary.mode !== "") {
       setIsLoading(true);
-      console.log("payload:", itinerary);
       addItinerary(itinerary).then(() => navigate("/itineraries"));
     } else {
       window.alert("Complete Each Field");

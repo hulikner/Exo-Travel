@@ -30,7 +30,7 @@ export const NavBar = ({clearUser}) => {
           <Link className={`navbar__link ${location.pathname === '/itineraries' ? 'active':''}`} to="/itineraries"> <FontAwesomeIcon icon={faPassport} /> Itineraries </Link>
         </li>
         <li className="navBar_item item_left">
-        {sessionStorage.getItem('exoPlanet_user') != null ? <Link className="navbar__link" to="/login" onClick={clearUser}> <FontAwesomeIcon icon={faArrowRightFromBracket} /> Logout </Link> : ''}
+        {sessionStorage.getItem('exoTravel_user') != null ? <Link className="navbar__link" to="/login" onClick={clearUser}> <FontAwesomeIcon icon={faArrowRightFromBracket} /> Logout </Link> : ''}
         </li>
       </ul>
     </nav>

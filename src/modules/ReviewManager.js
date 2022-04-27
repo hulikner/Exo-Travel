@@ -2,13 +2,11 @@ const remoteURL = "http://localhost:8088"
 
 
 export const getReviewsByExoPlanet = (id) => {
-    console.log(id)
     return fetch(`${remoteURL}/reviews?_expand=exoPlanets&_expand=users&exoPlanetsId=${id}`)
     .then(res => res.json())
 }
 
 export const getReviewById = (id) => {
-  console.log(id)
     return fetch(`${remoteURL}/reviews/${id}?_expand=exoPlanets&_expand=users`)
     .then(res => res.json())
 }

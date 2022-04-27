@@ -47,7 +47,7 @@ export const Register = () => {
 					.then((createdUser) => {
 						if (createdUser.hasOwnProperty("id")) {
 							// The user id is saved under the key nutshell_user in session Storage. Change below if needed!
-							sessionStorage.setItem('exoPlanet_user_name', createdUser.id);
+							sessionStorage.setItem('exoTravel_user', createdUser.id);
 							navigate("/");
 						}
 					});

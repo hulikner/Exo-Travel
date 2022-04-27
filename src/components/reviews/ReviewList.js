@@ -19,7 +19,6 @@ export const ReviewList = () => {
     useEffect(() => {
         getReviewsByExoPlanet(exoPlanetId).then(setReviews)
     },[])
-        console.log(reviews)
     return(
         <div className="review-container">
             <div className ="review-list"  >

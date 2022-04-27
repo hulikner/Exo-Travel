@@ -25,17 +25,14 @@ export const ExoPlanetList = () => {
             setExoPlanets(ExoPlanetsFromDatabase)
         })
     }
-console.log(exoPlanets)
    
 
     useEffect(() => {
         getExoPlanets();
-        console.log('efffect hit')
     }, [])
     useEffect(() => {
         if(!ascending){
             setExoPlanets(exoPlanets.sort((a,b)=> b.lightYears-a.lightYears))
-            console.log(ascending)
         }else{
             setExoPlanets(exoPlanets.sort((a,b)=> a.lightYears-b.lightYears))
         }

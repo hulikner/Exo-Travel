@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ItineraryList.css"
-import { getAllItineraries, deleteItinerary } from "../../modules/ItineraryManager";
+import { getAllItineraries, deleteItinerary, getItinerariesByUserId } from "../../modules/ItineraryManager";
 import { useNavigate } from "react-router-dom";
 import { ItineraryCard } from "./ItineraryCard";
 
@@ -8,16 +8,17 @@ import { ItineraryCard } from "./ItineraryCard";
 
 export const ItineraryList = () => {
     const [itineraries, setItineraries] = useState([])
-    
+    const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
+
     const navigate = useNavigate();
 
     const handleDeleteItinerary = id => {
         deleteItinerary(id)
-        .then(() => getAllItineraries().then(setItineraries));
+        .then(() => getItinerariesByUserId(currentUser).then(setItineraries));
     };
 
     useEffect(() => {
-        getAllItineraries().then(setItineraries)
+        getItinerariesByUserId(currentUser).then(setItineraries)
     },[])
 
     return(

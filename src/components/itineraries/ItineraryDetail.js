@@ -10,7 +10,7 @@ import { addReceipt } from "../../modules/ReceiptManager";
 import "./ItineraryDetail.css";
 
 export const ItineraryDetail = () => {
-  const [itinerary, setItinerary] = useState({});
+  const [itinerary, setItinerary] = useState({usersId: "", departure: "", return: "", exoPlanetsId: "", mode: ""});
   const [isLoading, setIsLoading] = useState(true);
   const { itineraryId } = useParams();
   const navigate = useNavigate();
@@ -22,16 +22,22 @@ export const ItineraryDetail = () => {
 
   const [receipt, setReceipt] = useState({
     id: "",
-    usersId: itinerary.userId,
+    usersId: itinerary.usersId,
     departure: itinerary.departure,
     return: itinerary.return,
     exoPlanetsId: itinerary.exoPlanetsId,
+    mode: itinerary.mode,
+    itinerariesId: itinerary.id,
   });
   
 
   const handleClickSaveEvent = (i) => {
     i.preventDefault();
+    const newReceipt = { ...receipt };
+    
 
+    newReceipt[receipt] = itinerary;
+    setReceipt(newReceipt);
     
       setIsLoading(true);
       
@@ -64,10 +70,9 @@ export const ItineraryDetail = () => {
   useEffect(() => {
     getItineraryById(itineraryId).then((itinerary) => {
       setItinerary(itinerary);
-      setReceipt()
+      
     });
   }, [itineraryId]);
-  console.log(itinerary);
   drivePlanetCost(itinerary.mode);
   finalPrice = selectedVal + 15;
   return (
