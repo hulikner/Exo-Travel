@@ -50,7 +50,24 @@ form.review-form{
     box-shadow: 5px 5px 5px 5px black;
 
 }
+.review-form-buttons{
+    display:flex;
+    flex-direction: row;
+}
 .submit-review-button{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(28, 70, 168);
+    border:5px solid white;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 5px;
+    color:white;
+}
+.cancel-review-button{
     display:flex;
     flex-direction: row;
     background-color: rgb(28, 70, 168);

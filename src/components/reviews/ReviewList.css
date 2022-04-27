@@ -41,6 +41,7 @@
     padding:10px;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
+    font-weight: 600;
    
 
 }
@@ -55,10 +56,30 @@
     flex-direction: column;
     align-items:flex-end;
     font-weight: 600;
-    color:white;
+    color:black;
+    padding:10px;
 
 }
 .edit-cancel-button{
+    display:flex;
     border:5px solid white;
     color:white;
+    justify-content: flex-start;
+    max-width:50px;
+    justify-content: center;
+}
+
+.review-card-content{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    
+    border:10px solid white;
+    border-radius: 50px;
+    margin:5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.review-card-time{
+    color:white;
+    padding:5px;
 }

@@ -1,0 +1,55 @@
+.review__edit__header{
+    background-color: gray;
+    border:5px solid white;
+    border-radius: 20px;
+    width:100vw;
+
+}
+.review__edit__form{
+    background-color: gray;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 50vw;
+}
+.review-inputs{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-review-save-cancel{
+    display:flex;
+    flex-direction: row;
+    background-color: gray;
+    justify-content: flex-end;
+    align-items: center;
+    
+  
+}
+.edit-review-save-button{
+    display:flex;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: auto;
+    height: 30px;
+    color:white;
+    font-weight: 600;
+}
+.review-edit-fields{
+    display:flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.edit-cancel-button{
+    display:flex;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: auto;
+    height: 30px;
+    color:white;
+    font-weight: 600;
+}

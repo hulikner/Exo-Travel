@@ -72,6 +72,7 @@ export const ItineraryEditForm = () => {
 
   return(
     <>
+        <div className='itinerary-edit-form'>
         <h2 className='edit-itinerary-title'>Edit Itinerary</h2>    
         <div className='editDetails'>
             <div className='edit-itinerary-pic'>
@@ -98,7 +99,7 @@ export const ItineraryEditForm = () => {
       <div className="edit-mode-buttons">
         
           
-        {itinerary.mode  ? (
+        {itinerary.mode === "Ion-Drive" ? (
           <button onClick={() => handleModeChange1(itinerary.mode)} className="edit-ion-selected"> Ion-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
@@ -108,7 +109,7 @@ export const ItineraryEditForm = () => {
           </button>
         )}
        
-        {itinerary.mode  ? (
+        {itinerary.mode === "Warp-Drive" ? (
           <button onClick={() => handleModeChange2(itinerary.mode)} className="edit-warp-selected"> Warp-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
@@ -118,7 +119,7 @@ export const ItineraryEditForm = () => {
           </button>
         )}
         
-        {itinerary.mode ? (
+        {itinerary.mode = "Wormhole-Drive" ? (
           <button onClick={() => handleModeChange3(itinerary.mode)} className="edit-wormhole-selected"> Wormhole-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
@@ -133,7 +134,7 @@ export const ItineraryEditForm = () => {
                 <div className='edit-save-cancel'>
                 <button 
 				    type="button" 
-				    className="edit-save-button"
+				    className="itinerary-edit-save-button"
 				    disabled={isLoading}
 				    onClick={updateExistingItinerary}>
 				    Save
@@ -141,13 +142,14 @@ export const ItineraryEditForm = () => {
 
                 <button 
 				    type="button" 
-				    className="edit-cancel-button"
+				    className="itinerary-edit-cancel-button"
 				    disabled={isLoading}
 				    onClick={()=>navigate("/itineraries")}>
 				    Cancel
                 </button>
                 </div>
                 </div>  
+                </div>
     </>
     )
 }

@@ -27,4 +27,18 @@
    
 min-height: 74vh;
 }
+.itinerary-page-review{
+    display:flex;
+    flex-direction: row;
+    color:white;
+    font-size: 20px;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px black;
+    padding:10px;
+    margin:10px;
+    max-height: 10px;
+    align-items: center;
+}
 

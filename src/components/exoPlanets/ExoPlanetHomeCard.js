@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { getAllExoPlanets } from '../../modules/ExoPlanetManager';
 import Rating from '@mui/material/Rating';
+import Carousel from 'react-material-ui-carousel'
+import { Paper, Button } from '@mui/material'
 
 
 
@@ -24,9 +26,9 @@ export const ExoPlanetHomeCard = () => {
 
   return (
 
-    <>
+    
       <div className="exoPlanet-home-card">
-      <h2 className="exoPlanet-home-header">ExoPlanets</h2>
+      <h2 className="exoPlanet-home-header">Exo-Planets</h2>
      
       {exoPlanets.map(x =>( 
 
@@ -45,6 +47,6 @@ export const ExoPlanetHomeCard = () => {
       ))}
       </div>
      
-  </>
+  
   );
 }

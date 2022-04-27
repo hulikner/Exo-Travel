@@ -81,7 +81,7 @@ export const ExoPlanetDetail = () => {
     newItinerary.mode = selectedVal;
     setItinerary(newItinerary);
   };
-
+console.log(itinerary.mode)
   useEffect(() => {
     getExoPlanetById(exoPlanetId).then((exoPlanet) => {
       setExoPlanet(exoPlanet);
@@ -89,10 +89,11 @@ export const ExoPlanetDetail = () => {
   }, [exoPlanetId]);
   return (
     <div className="exoPlanetContainer">
-      <h2>{exoPlanet.name}</h2>
-      <section className="exoPlanet">
+      <h2 className="exoPlanet-title">{exoPlanet.name}</h2>
         <div className="exoPlanet-img">
           <img className="exoPlanet-pic" src={`../Images/${exoPlanet.name}.jpg`} />
+          </div>
+      <section className="exoPlanet">
           <div className="exoPlanet-info">
             <div className="exoPlanet__mass">
               <span className="detailsLabel">Ratio to Earth's Mass- 1 : </span>
@@ -109,15 +110,15 @@ export const ExoPlanetDetail = () => {
             </div>
             <div className="exoPlanet__lightYears">
               <span className="detailsLabel">Light-Years Away: </span> {exoPlanet.lightYears} Light-Years
-            </div><br />
-            
-          </div>
-            <div className="exoPlanet__detail">
-              <span className="detailsLabel"> </span> {exoPlanet.detail}
             </div>
+            
+         
         </div>
         
       </section>
+            <div className="exoPlanet-detail">
+              <span className="detailsLabel"> </span> {exoPlanet.detail}
+            </div>
 
 
         <div className="detailsContainer">
@@ -140,7 +141,7 @@ export const ExoPlanetDetail = () => {
       <div className="mode-buttons">
         
           
-        {itinerary.mode ? (
+        {itinerary.mode === "Ion-Drive" ? (
           <button onClick={() => handleModeChange1(itinerary.mode)} className="ion-select"> Ion-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
@@ -150,7 +151,7 @@ export const ExoPlanetDetail = () => {
           </button>
         )}
        
-        {itinerary.mode ? (
+        {itinerary.mode === "Warp-Drive" ? (
           <button onClick={() => handleModeChange2(itinerary.mode)} className="warp-btn"> Warp-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>
@@ -160,7 +161,7 @@ export const ExoPlanetDetail = () => {
           </button>
         )}
         
-        {itinerary.mode ? (
+        {itinerary.mode === "Wormhole-Drive" ? (
           <button onClick={() => handleModeChange3(itinerary.mode)} className="wormhole-selected"> Wormhole-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>

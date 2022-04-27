@@ -30,12 +30,12 @@
 
 .navbar__link{
     text-decoration: none;
-    color: rgb(28, 70, 168);
+    color: white;
     transition: color 1s, scale 1s;
 }
 
 .navbar__link:visited{
-    color: rgb(28, 70, 168);
+    color: white;
 }
 
 .navBar_item a:hover{
@@ -44,7 +44,7 @@
 }
 
 .navBar_item>.active{
-    color:white;
+    color:rgb(28, 70, 168);
     transition: 0.75;
     transform: scale(1.3);
     ;

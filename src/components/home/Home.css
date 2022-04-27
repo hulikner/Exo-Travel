@@ -62,11 +62,17 @@
     align-items: center;
     text-decoration: none;
     color:white;
-    margin:10px;
+    /* margin:10px; */
     padding:10px;
     width:37vw
     
 
+}
+.exoPlanet-home-header{
+    display:flex;
+    flex-direction: row;
+    width:40vw;
+    justify-content: center;
 }
 .itinerary-home-img {
    height: 50px;
@@ -87,6 +93,7 @@
     text-decoration: none;
     color:white;
     margin:10px;
+    padding:10px;
     
 
 }
@@ -98,7 +105,7 @@
     width: 40vw;
     color:white;
     height:auto;
-    margin:1em;
+    margin:10px;
 }
 .itinerary-home-img-container{
     display:flex;

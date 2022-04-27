@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getItineraryById, deleteItinerary } from "../../modules/ItineraryManager";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
@@ -14,30 +14,33 @@ export const ItineraryDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { itineraryId } = useParams();
   const navigate = useNavigate();
+  const today = new Date().getTime()/1000;
   const formattedDeparture = itinerary?.departure && epochDateConverter(itinerary.departure, "MM/dd/yyy");
   const formattedReturn = itinerary?.return && epochDateConverter(itinerary.return, "MM/dd/yyy");
   let selectedVal = 0;
   let finalPrice = 0;
   let tripDuration = 0;
-
+  
+  
   const [receipt, setReceipt] = useState({
-    id: "",
+    
     usersId: itinerary.usersId,
     departure: itinerary.departure,
     return: itinerary.return,
     exoPlanetsId: itinerary.exoPlanetsId,
     mode: itinerary.mode,
     itinerariesId: itinerary.id,
+    paid: +finalPrice,
   });
   
 
   const handleClickSaveEvent = (i) => {
     i.preventDefault();
-    const newReceipt = { ...receipt };
+    let newReceipt = { ...receipt };
     
 
-    newReceipt[receipt] = itinerary;
-    setReceipt(newReceipt);
+    newReceipt[receipt]= itinerary
+    setReceipt(receipt);
     
       setIsLoading(true);
       
@@ -114,7 +117,7 @@ export const ItineraryDetail = () => {
               <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itinerary.id)}>
                 Delete
               </button>
-              <button type="button" className="itinerary-pay-summary-button" onClick={handleClickSaveEvent}>
+              <button type="button" className="itinerary-price-summary-button" onClick={handleClickSaveEvent}>
                 Pay Now
               </button>
             </div>
@@ -171,9 +174,18 @@ export const ItineraryDetail = () => {
       </div>
 
       <div className="itinerary-page-buttons">
-        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
+
+
+      {itinerary.return < today ? (
+            <Link to={`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`} >
+             <button type="button" className="itinerary-page-button" onClick= {() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
           Review
         </button>
+            </Link>
+          ) : (
+           <span></span>
+          )}
+       
         <button type="button" className="itinerary-page-button" onClick={() => navigate(`/itineraries`)}>
           Back
         </button>

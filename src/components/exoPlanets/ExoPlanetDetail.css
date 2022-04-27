@@ -1,4 +1,20 @@
 
+.exoPlanet-title{
+    display:flex;
+    flex-direction: row;
+    border:5px solid white;
+    border-radius: 20px;
+    width: 98vw;
+    background-color: gray;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.exoPlanetContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
 .mode-buttons{
     display:flex;
     flex-direction: column;
@@ -13,21 +29,24 @@
 .back-button{
     display:flex;
     background-color: gray;
-    border:5px solid black;
+    border:5px solid white;
+    color:white;
     border-radius: 20px;
     align-items: center;
 }
 .review-button{
     display:flex;
     background-color: gray;
-    border:5px solid black;
+    border:5px solid white;
+    color:white;
     border-radius: 20px;
     align-items: center;
 }
 .submit-itinerary-button{
     display:flex;
     background-color: gray;
-    border:5px solid black;
+    border:5px solid white;
+    color:white;
     border-radius: 20px;
     align-items: center;
 }
@@ -38,9 +57,10 @@
     align-items: center;
 }
 .exoPlanet-pic{
-    border-radius: 20px;
-    height:200px;
+    border-radius: 50px;
+    height:400px;
     width:auto;
+    border:10px solid white;
 }
 .exoPlanet-info{
     display:flex;
@@ -51,13 +71,29 @@
 .exoPlanet{
     display:flex;
     flex-direction: column;
-    margin:20px;
+    margin:10px;
     background-color: gray;
-    border: 5px solid black;
-    border-radius: 20px;
-    width:auto;
+    border: 5px solid white;
+    border-radius: 50px;
+    max-width: 75vw;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10px;
+    color:white;
+}
+.exoPlanet-detail{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    margin-bottom: 20px;;
+    background-color: gray;
+    border: 5px solid white;
+    border-radius: 50px;
+    max-width: 75vw;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    color:white;
 }
 .detailsContainer{
     display:flex;
@@ -65,10 +101,12 @@
     justify-content: space-evenly ;
     font-weight: 600;
     width:auto;
-    margin:20px;
+    margin:0px;
     background-color: gray;
-    border: 5px solid black;
+    border: 5px solid white;
+    color:white;
     border-radius: 20px;
+    padding:10px;
 }
 .exoPlanet__detail{
     display:flex;
@@ -106,9 +144,9 @@ button.ion-not-select {
         background-color: gray;
         margin: auto;
         transition: none;
-        color: black;
         font-size: x-large;
-        border: 5px solid black;
+        border: 5px solid white;
+        color:white;
         border-radius: 20px;
     }
     
@@ -147,9 +185,9 @@ button.ion-not-select {
          background-color: gray;
          margin: auto;
          transition: none;
-         color: black;
          font-size: x-large;
-         border: 5px solid black;
+         border: 5px solid white;
+         color:white;
         border-radius: 20px;
     }
     
@@ -188,9 +226,9 @@ button.ion-not-select {
          background-color: gray;
          margin: auto;
          transition: none;
-         color: black;
          font-size: x-large;
-         border: 5px solid black;
+         border: 5px solid white;
+         color:white;
         border-radius: 20px;
     }
     
@@ -214,17 +252,17 @@ button.ion-not-select {
     }
 
     input#departure.form-control.departure{
-        background-color: black;
-        color:gray;
+        background-color: white;
+        color:black;
         border-radius: 2em;
 
     }
 
     input#return.form-control.return{
         display: flex;
-        background-color: black;
-        color:gray;
+        background-color: white;
+        color:black;
         border-radius: 2em;
         justify-items: center;
-        
+        margin:5px;
     }

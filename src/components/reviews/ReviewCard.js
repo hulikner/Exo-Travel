@@ -6,6 +6,8 @@ import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { epochDateConverter } from '../util/epochDateConverter';
 import { format } from 'date-fns';
 import { updateReview } from '../../modules/ReviewManager';
+import Rating from '@mui/material/Rating';
+
 
 
 export const ReviewCard = ({ review }) => {
@@ -15,7 +17,7 @@ export const ReviewCard = ({ review }) => {
   const navigate = useNavigate();
   const formattedDate = review?.date ? epochDateConverter(review?.date, 'yyy-MM-dd') : ''
   const formattedEditDate = review?.editDate ? epochDateConverter(review.editDate, 'yyy-MM-dd') : ''
-
+  let userName = JSON.parse(sessionStorage.getItem('exoTravel_user'))
 
 
 
@@ -26,22 +28,49 @@ export const ReviewCard = ({ review }) => {
              <span className="review-card-name">{review.exoPlanets?.name}</span>
             </div>
             <div className='review-card-details'>
-             <span className="review-card">Name: {review.users?.firstName} {review.users?.lastName}</span><br />
-             <span className="review-card">Review: {review.message}</span><br />
-             <span className='review-card'>Number of Stars: {review.stars}</span><br />
+             <span className="review-card">By: {review.users?.firstName} {review.users?.lastName}</span><br />
+             <span className="review-card"> {review.message}</span><br />
+             <p className="review-card"><Rating value={+review.stars} readOnly/> </p>
+             
             </div>
-            <div className="review-card-dates">
-             <span className='review-card-time'>Created: {formattedDate}</span>
-             <span className='review-card-time'>Edited: {formattedEditDate}</span>
-             </div>
-            <button 
+             {review.usersId === +userName ? (
+            <>
+              <button 
 				    type="button" 
 				    className="edit-cancel-button"
 				    disabled={isLoading}
 				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetsId}/reviews/${review.id}/edit`)}>
 				    Edit
-                </button>
+            </button>
+            </>
+          ) : (
+           <span></span>
+          )}
+
+              <div className="review-card-dates">
+             <span className='review-card-time'>Created: {formattedDate}</span>
             
+             </div>
+           
+          {formattedEditDate != 0 ? (
+            <>
+            <div className="review-card-dates">
+             <span className='review-card-time'>Edited: {formattedEditDate}</span>
+             </div>
+             </>
+          ):(<span></span>)
+        }
+          
+
+
+
+
+
+            
+            
+
+
+
         </div>
    
   );

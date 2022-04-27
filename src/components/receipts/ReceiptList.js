@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ReceiptList.css"
-import { getAllReceipts, deleteReceipt, getReceiptByItineraryId } from "../../modules/ReceiptManager";
+import { getAllReceipts, deleteReceipt, getReceiptByItineraryId, getReceiptById, addReceipt } from "../../modules/ReceiptManager";
 import { useNavigate, useParams } from "react-router-dom";
 import { ReceiptCard } from "./ReceiptCard";
 
@@ -8,6 +8,7 @@ import { ReceiptCard } from "./ReceiptCard";
 
 export const ReceiptList = () => {
     const [receipts, setReceipts] = useState([])
+    
     const {itineraryId} = useParams();
 
     const navigate = useNavigate();
@@ -19,7 +20,9 @@ export const ReceiptList = () => {
 
     useEffect(() => {
         getReceiptByItineraryId(itineraryId).then(setReceipts)
+       
     },[])
+    
 
     return(
         <div className="receipt-container">
