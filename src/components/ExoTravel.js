@@ -4,17 +4,18 @@ import { NavBar } from "./nav/NavBar"
 import "./ExoTravel.css"
 
 export const ExoTravel = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("exoPlanet_user") !== null)
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("exoTravel_user") !== null)
 
     const setAuthUser = (user) => {
-      sessionStorage.setItem("exoPlanet_user", JSON.stringify(user.id))
-      sessionStorage.setItem("exoPlanet_user_firstName", JSON.stringify(user.firstName))
-        setIsAuthenticated(sessionStorage.getItem("exoPlanet_user") !== null)
+      sessionStorage.setItem("exoTravel_user", JSON.stringify(user.id))
+      sessionStorage.setItem("exoTravel_user_firstName", JSON.stringify(user.firstName))
+        setIsAuthenticated(sessionStorage.getItem("exoTravel_user") !== null)
     }
+    
     
     const clearUser = () => {
         sessionStorage.clear();
-        setIsAuthenticated(sessionStorage.getItem("exoPlanet_user") !== null)
+        setIsAuthenticated(sessionStorage.getItem("exoTravel_user") !== null)
       }
     
 return (

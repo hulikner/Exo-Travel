@@ -12,7 +12,7 @@ export const ReviewForm = () => {
     const {exoPlanetId} = useParams();
    const [allReviews, setAllReviews] = useState();
 
-    const currentUser = JSON.parse(sessionStorage.getItem("exoPlanet_user"));
+    const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
  getReviewsByExoPlanet(exoPlanetId)
 
     const getStarTotal =(newStars)=>{
@@ -20,7 +20,6 @@ export const ReviewForm = () => {
         let totalStars = +newStars
         allReviews.map((review)=> totalStars+= +review.stars
         )
-        console.log()
         return totalStars/reviewCount
 
     } 
@@ -53,7 +52,6 @@ export const ReviewForm = () => {
            
             const newStarRating = getStarTotal(review.stars)
             const exoPlanetObject= {id: +exoPlanetId, rating: newStarRating}
-            console.log('exoPlanetObject:',exoPlanetObject)
             updateExoPlanet(exoPlanetObject).then(
 
                 addReview(review)

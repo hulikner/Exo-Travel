@@ -50,7 +50,7 @@ export const Login = ({setAuthUser}) => {
 					<h1>Exo-Travel</h1>
 					<h2>Sign In</h2>
 					<fieldset>
-						<label htmlFor="inputEmail"> Email Address</label>
+						<label className="login-email" htmlFor="inputEmail"> Email Address</label>
 						<input
 							type="email"
 							id="email"
@@ -63,7 +63,7 @@ export const Login = ({setAuthUser}) => {
 						/>
 					</fieldset>
 					<fieldset>
-						<button type="submit">Sign in</button>
+						<button className="login-btn" type="submit">Sign in</button>
 					</fieldset>
 				</form>
 			</section>

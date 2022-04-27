@@ -45,7 +45,6 @@ export const ReceiptDetail = () => {
     
     });
   }, [receiptId]);
-  console.log(receipt);
   drivePlanetCost(receipt.mode);
   finalPrice = selectedVal + 15;
   return (

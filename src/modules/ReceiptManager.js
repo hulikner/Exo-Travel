@@ -7,7 +7,6 @@ export const getAllReceipts = () => {
 }
 
 export const getReceiptById = (id) => {
-  console.log(id)
     return fetch(`${remoteURL}/receipts/${id}?_expand=exoPlanets&_expand=users&_expand=itineraries`)
     .then(res => res.json())
 }
@@ -39,7 +38,6 @@ export const updateReceipt  = (editedReceipt) => {
   }
 
   export const getReceiptByItineraryId = (id) => {
-    console.log(id)
     return fetch(`${remoteURL}/receipts?_expand=exoPlanets&_expand=users&_expand=itineraries&itinerariesId=${id}`)
     .then(res => res.json())
 }
