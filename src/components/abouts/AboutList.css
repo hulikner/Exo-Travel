@@ -34,6 +34,7 @@ div.abouts-container{
     box-shadow: 5px 5px 5px 5px black;
     text-decoration: none;
     border:3px solid white;
+    margin:10px;
 }
 .card-about-cardDetail{
     font-weight: 600;
@@ -49,4 +50,5 @@ div.abouts-container{
     text-decoration: none;
     color:white;
     box-shadow: 5px 5px 5px 5px black;
+    padding:20px;
 }

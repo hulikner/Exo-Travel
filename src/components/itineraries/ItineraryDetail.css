@@ -36,7 +36,7 @@
 .itinerary-detail-img{
     display:flex;
     flex-direction: column;
-    width:30vw;
+    width:25vw;
     height:80%;
     align-items: center;
     font-size: 24px;
@@ -51,11 +51,16 @@
     border-top: 2px solid white;
 }
 .itinerary-details-title{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: 5px solid white;
     /* border-radius: 50px; */
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     color:white;
+    
 }
 .itinerary-price-summary{
     display:flex;
@@ -65,8 +70,8 @@
     /* border-radius: 20px; */
     background-color: gray;
     padding:15px;
-    height:250px;
-    width:45vw;
+    height:225px;
+    width:30vw;
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     color:white;

@@ -34,7 +34,31 @@
     
      
 } 
+.itinerary-price-summary{
+    width:400px;
+}
+.itinerary-detail-data{
+   
+    color:black;
+}
+.itinerary-detail{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
 
+}
+.itinerary-detail-title{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    color:black;
+}
+.itinerary-detail-total{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 .itinerary-card-info{
     border:3px solid white;
     padding:10px;

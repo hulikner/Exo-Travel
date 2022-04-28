@@ -49,18 +49,28 @@ export const ItineraryDetail = () => {
   const drivePlanetCost = (m) => {
     if (m === "Ion-Drive") {
       selectedVal = 0.25;
-      tripDuration = itinerary.exoPlanets?.lightYears / 10;
     }
     if (m === "Warp-Drive") {
       selectedVal = 0.5;
+    }
+    if (m === "Wormhole-Drive") {
+      selectedVal = 2;
+    }
+    return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears);
+  };
+  const drivePlanetDuration = (m) => {
+    if (m === "Ion-Drive") {
+      tripDuration = itinerary.exoPlanets?.lightYears / 10;
+    }
+    if (m === "Warp-Drive") {
       tripDuration = itinerary.exoPlanets?.lightYears / 50;
     }
     if (m === "Wormhole-Drive") {
-      selectedVal = 1;
       tripDuration = 2;
     }
-    return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears && tripDuration);
+    return  tripDuration;
   };
+  
   const handleDelete = () => {
     setIsLoading(true);
     deleteItinerary(itineraryId).then(() => navigate("/itineraries"));
@@ -70,6 +80,7 @@ export const ItineraryDetail = () => {
     getItineraryById(itineraryId).then(setItinerary);
   }, [itineraryId]);
   drivePlanetCost(itinerary.mode);
+  drivePlanetDuration(itinerary.mode);
   finalPrice = selectedVal + 15;
   console.log(itinerary)
   return (
@@ -88,19 +99,19 @@ export const ItineraryDetail = () => {
             <span className="itinerary-detail-title">Price Summary</span>
             <br />
             <span className="itinerary-detail">
-              Transport to The Citadel: /> <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} 10</span>
+              Transport to The Citadel: <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} />10</span>
             </span>
             <br />
             <span className="itinerary-detail">
-              {itinerary.mode} to {itinerary.exoPlanets?.name}: /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} {selectedVal} </span>
+              {itinerary.mode} to {itinerary.exoPlanets?.name}:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {selectedVal} </span>
             </span>
             <br />
             <span className="itinerary-detail">
-              Exo-Travel Fees:  /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} 5</span>
+              Exo-Travel Fees:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> 5</span>
             </span>
             <br />
             <span className="itinerary-detail-total">
-              Total: /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} {finalPrice}</span>
+              Total: <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {finalPrice}</span>
             </span>
             <br />
 

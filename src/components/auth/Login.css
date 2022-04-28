@@ -2,9 +2,7 @@
   min-width: 15rem;
   min-height: 5rem;
 }
-.container--login{
-  
-}
+
 main {
   background-color: rgb(179, 9, 9);
   padding: 1em;
@@ -20,7 +18,11 @@ main {
   transform: translate(-50%, -50%);
   
 }
-
+.bottom--login{
+  display:flex;
+  flex-direction: row;
+  min-height: 89vh;
+}
 h1, h2 {
   text-align: center;
 }

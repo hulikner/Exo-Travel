@@ -35,6 +35,7 @@ div.hubDrive-container{
     text-decoration: none;
     border:3px solid white;
     max-width: 300px;
+    margin: 20px;
 }
 .card-hubDrive-cardDetail{
     font-weight: 600;
