@@ -12,7 +12,7 @@ const root = createRoot(rootElement);
 root.render(
     <Router>
       <ExoTravel />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
 );
 

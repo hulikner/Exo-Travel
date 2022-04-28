@@ -2,9 +2,11 @@
   min-width: 15rem;
   min-height: 5rem;
 }
-
+.container--login{
+  
+}
 main {
-  background-color: rgb(28, 70, 168);
+  background-color: rgb(179, 9, 9);
   padding: 1em;
   font-size: xx-large;
   box-shadow: 4px 4px 4px 4px black;
@@ -16,6 +18,7 @@ main {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  
 }
 
 h1, h2 {

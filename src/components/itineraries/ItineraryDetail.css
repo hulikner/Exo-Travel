@@ -13,17 +13,22 @@
     position: relative;
     top:auto;
 }
+.itinerary-page-bottom{
+    display:flex;
+    flex-direction: column;
+    min-height: 37vh;
+}
 .itinerary-img{
     width:auto;
     height:170px;
      border:5px solid white; 
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .itinerary-img-name{
-    background-color: rgb(28, 70, 168);
+    background-color: rgb(179, 9, 9);
    border:5px solid white;
-   border-radius: 50px;
+   /* border-radius: 50px; */
     padding:5px;
     margin:5px;
     color:white;
@@ -37,7 +42,7 @@
     font-size: 24px;
     font-weight: 700;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: gray;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
@@ -47,7 +52,7 @@
 }
 .itinerary-details-title{
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     color:white;
@@ -57,7 +62,7 @@
     flex-direction: column;
     align-items: left;
     border:5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color: gray;
     padding:15px;
     height:250px;
@@ -71,7 +76,7 @@
     display:flex;
     flex-direction: row;
     border:5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color: gray;
     padding:10px;
     margin:10px;
@@ -91,9 +96,9 @@
     display:flex;
     flex-direction: column;
     border:5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding:10px;
-    background-color: rgb(28, 70, 168);
+    background-color: rgb(179, 9, 9);
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     width:100%;
@@ -107,17 +112,18 @@
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: 'Play', sans-serif;
  
 }
 
 .itinerary-price-summary-button{
     border:3px solid white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color:white;
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
-
+    font-family: 'Play', sans-serif;
 }
 .itinerary-price-summary-button:hover{
     color:black;
@@ -125,13 +131,14 @@
     transform: scale(1.1);
     transition: 0.5s;
     font-weight: 600;
+    font-family: 'Play', sans-serif;
 }
 .itinerary-page-buttons{
     display:flex;
     flex-direction: row;
     margin:10px;
     justify-content: flex-end;
-    
+    font-family: 'Play', sans-serif;
 }
 
 .itinerary-page-button{
@@ -139,10 +146,10 @@
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     border:3px solid white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color:white;
     font-weight: 600;
-
+    font-family: 'Play', sans-serif;
 }
 .itinerary-page-button:hover{
     color:black;
@@ -152,4 +159,5 @@
     font-weight: 600;
     margin:10px;
     font-weight: 600;
+    font-family: 'Play', sans-serif;
 }

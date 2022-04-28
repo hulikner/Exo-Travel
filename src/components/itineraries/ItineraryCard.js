@@ -26,11 +26,14 @@ export const ItineraryCard = ({ itinerary }) => {
         <p className="itinerary-pic-title">{itinerary.exoPlanets.name}</p>
         </div>
         <div className= "itinerary-card-info">
-        <span className="itinerary-card">First Name: {itinerary.users.firstName}</span><br />
-        <span className="itinerary-card">Last Name: {itinerary.users.lastName}</span><br />
-        <span className="itinerary-card">Departure Date: {formattedDeparture}</span><br />
-        <span className='itinerary-card'>Return Date: {formattedReturn}</span><br />
-        <span className='itinerary-card'>Travel Mode: {itinerary.mode}</span><br />
+        <span className="itinerary-card">First Name: <span className="itinerary-card-data">{itinerary.users.firstName}</span></span><br />
+        <span className="itinerary-card">Last Name: <span className="itinerary-card-data">{itinerary.users.lastName}</span></span><br />
+        <span className="itinerary-card">Departure Date: <span className="itinerary-card-data">{formattedDeparture}</span></span><br />
+        <span className="itinerary-card">Departure Date: <span className="itinerary-card-data">{formattedDeparture}</span></span><br />
+        <span className="itinerary-card">Departure Date: <span className="itinerary-card-data">{formattedDeparture}</span></span><br />
+        <span className='itinerary-card'>Return Date: <span className="itinerary-card-data">{formattedReturn}</span></span><br />
+        <span className="itinerary-card">Departure Date: <span className="itinerary-card-data">{formattedDeparture}</span></span><br />
+        <span className='itinerary-card'>Travel Mode:  <span className="itinerary-card-data">{itinerary.mode}</span></span><br />
         </div>
        </div>
           </Link>

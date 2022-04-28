@@ -11,6 +11,9 @@
     border-radius: 20px;
     background-color: gray;
     color:white;
+    font-family: 'Play', sans-serif;
+    margin:22px;
+   
 }
 .desc-button{
     width:auto;
@@ -25,5 +28,7 @@
 .exoPlanet-list-buttons{
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    
    
 }

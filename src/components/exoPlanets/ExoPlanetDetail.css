@@ -3,7 +3,7 @@
     display:flex;
     flex-direction: row;
     border:5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: 98vw;
     background-color: gray;
     justify-content: center;
@@ -14,16 +14,20 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    min-height: 87vh;
 }
 .mode-buttons{
     display:flex;
     flex-direction: column;
+    
 
 }
 .exoPlanet-detail-buttons{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    
     
 }
 .back-button{
@@ -31,24 +35,28 @@
     background-color: gray;
     border:5px solid white;
     color:white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     align-items: center;
+    margin:10px;
+    font-family: 'Play', sans-serif;
 }
 .review-button{
     display:flex;
     background-color: gray;
     border:5px solid white;
     color:white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     align-items: center;
+    font-family: 'Play', sans-serif;
 }
 .submit-itinerary-button{
     display:flex;
     background-color: gray;
     border:5px solid white;
     color:white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     align-items: center;
+    font-family: 'Play', sans-serif;
 }
 .exoPlanet-img{
     display:flex;
@@ -57,7 +65,7 @@
     align-items: center;
 }
 .exoPlanet-pic{
-    border-radius: 50px;
+    /* border-radius: 50px; */
     height:400px;
     width:auto;
     border:10px solid white;
@@ -67,6 +75,7 @@
     flex-direction: column;
     margin: 20px;
     font-weight: 600;
+    width: 15vw;
 }
 .exoPlanet{
     display:flex;
@@ -74,7 +83,7 @@
     margin:10px;
     background-color: gray;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     max-width: 75vw;
     align-items: center;
     justify-content: space-evenly;
@@ -88,7 +97,7 @@
     margin-bottom: 20px;;
     background-color: gray;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     max-width: 75vw;
     align-items: center;
     justify-content: space-evenly;
@@ -105,8 +114,9 @@
     background-color: gray;
     border: 5px solid white;
     color:white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding:10px;
+    align-items: center;
 }
 .exoPlanet__detail{
     display:flex;
@@ -114,9 +124,57 @@
     justify-content: space-between;
     font-weight: 600;
 }
+.exoPlanet__mass{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(179, 9, 9);
+}
+.exoPlanet__radius{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(179, 9, 9);
+}
+.exoPlanet__eqTemp{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(179, 9, 9);
+}
+.exoPlanet__orbit{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(179, 9, 9);
+}
+.exoPlanet__lightYears{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(179, 9, 9);
+}
+.exoPlanet-mass-label{
+    color:black;
+}
+.exoPlanet-radius-label{
+    color:black;
+}
+.exoPlanet-eqTemp-label{
+    color:black;
+}
+.exoPlanet-orbit-label{
+    color:black;
+}
+.exoPlanet-lightYears-label{
+    color:black;
+}
 .exoPlanet__fields{
     display:flex;
     flex-direction: row;
+    align-items: center;
+    margin:10px;
+    color:rgb(179, 9, 9);
 }
 button.ion-select {
         display:flex;
@@ -127,11 +185,12 @@ button.ion-select {
         background-color: gray;
         margin: auto;
         transition: none;
-        color: blue;
+        color: rgb(179, 9, 9);
         font-size: x-large;
         border: 5px solid black;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         width:10em;
+        font-family: 'Play', sans-serif;
     }
 
 button.ion-not-select {
@@ -147,17 +206,20 @@ button.ion-not-select {
         font-size: x-large;
         border: 5px solid white;
         color:white;
-        border-radius: 20px;
+        /* border-radius: 20px; */
+        font-family: 'Play', sans-serif;
     }
     
     button.ion-select:hover {
         background-color: black;
-        color: blue;
+        color: rgb(179, 9, 9);
+        font-family: 'Play', sans-serif;
     }
     
     button.ion-not-select:hover {
         background-color: black;
         color: gray;
+        font-family: 'Play', sans-serif;
     }
     button.warp-btn {
         display:flex;
@@ -166,14 +228,14 @@ button.ion-not-select {
         align-items: center;
         height: auto;
         background-color: gray;
-        margin: auto;
+        margin: 10px;
         transition: none;
-        color: blue;
+        color: rgb(179, 9, 9);
         font-size: x-large;
         border: 5px solid black;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         width:10em;
-    
+        font-family: 'Play', sans-serif;
     }
     button.warp-not-btn {
         display:flex;
@@ -183,22 +245,25 @@ button.ion-not-select {
          width:10em;
          border: none;
          background-color: gray;
-         margin: auto;
+         margin: 10px;
          transition: none;
          font-size: x-large;
          border: 5px solid white;
          color:white;
-        border-radius: 20px;
+        /* border-radius: 20px; */
+        font-family: 'Play', sans-serif;
     }
     
     button.warp-btn:hover {
         background-color: black;
-        color: blue;
+        color: rgb(179, 9, 9);
+        font-family: 'Play', sans-serif;
     }
     
     button.warp-not-btn:hover {
         background-color: black;
         color: gray;
+        font-family: 'Play', sans-serif;
     }
     button.wormhole-selected {
         display:flex;
@@ -209,12 +274,12 @@ button.ion-not-select {
         background-color: gray;
         margin: auto;
         transition: none;
-        color: blue;
+        color: rgb(179, 9, 9);
         font-size: x-large;
         border: 5px solid black;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         width:10em;
-    
+        font-family: 'Play', sans-serif;
     }
     button.wormhole-not-selected {
         display:flex;
@@ -229,17 +294,20 @@ button.ion-not-select {
          font-size: x-large;
          border: 5px solid white;
          color:white;
-        border-radius: 20px;
+        /* border-radius: 20px; */
+        font-family: 'Play', sans-serif;
     }
     
     button.wormhole-selected:hover {
         background-color: black;
-        color: blue;
+        color: rgb(179, 9, 9);
+        font-family: 'Play', sans-serif;
     }
     
     button.wormhole-not-selected:hover {
         background-color: black;
         color: grey;
+        font-family: 'Play', sans-serif;
     }
     
     .mode-buttons{
@@ -248,21 +316,23 @@ button.ion-not-select {
         justify-content: space-evenly;
         margin:20px;
         height:auto;
+        font-family: 'Play', sans-serif;
         
     }
 
     input#departure.form-control.departure{
         background-color: white;
         color:black;
-        border-radius: 2em;
-
+        /* border-radius: 2em; */
+        font-family: 'Play', sans-serif;
     }
 
     input#return.form-control.return{
         display: flex;
         background-color: white;
         color:black;
-        border-radius: 2em;
+        /* border-radius: 2em; */
         justify-items: center;
         margin:5px;
+        font-family: 'Play', sans-serif;
     }

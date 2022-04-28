@@ -4,9 +4,9 @@
     align-items: center;   
     margin: 20px;
     width: auto;
-    height: 375px;
-    background-color:  rgb(28, 70, 168);
-    border-radius: 50px;
+    height: auto;
+    background-color:  rgb(179, 9, 9);
+    /* border-radius: 50px; */
     border:5px solid white;
     padding:10px;
     color:white;
@@ -17,13 +17,15 @@
 .itinerary-card-link{
     text-decoration: none;
     padding:10px;
+    height:auto;
+    width:auto;
 }
 .itinerary-card-img {
     display:flex;
     flex-direction: column;
     width: 100px;
     height:100px;
-    border-radius: 2em;
+    /* border-radius: 2em; */
     padding:1em;
     justify-items: center;
     align-items: center;
@@ -38,14 +40,21 @@
     padding:10px;
     text-decoration: none;
     box-shadow: 5px 5px 5px 5px black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin:10px;
     font-weight: 600;
+    background-color: gray;
+    width:250px;
 
 }
 .itinerary-card-img{
     display:flex;
 
+}
+.itinerary-card{
+    display:flex;
+    /* margin:10px; */
+    justify-content: space-between;
 }
 
 .itinerary-pic{

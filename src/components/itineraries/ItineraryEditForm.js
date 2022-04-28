@@ -32,7 +32,7 @@ export const ItineraryEditForm = () => {
         setIsLoading(true);
 
         const editedItinerary = {
-            id: itineraryId,
+            id: +itineraryId,
             departure: itinerary.departure,
             return: itinerary.return,
             mode: itinerary.mode,
@@ -119,7 +119,7 @@ export const ItineraryEditForm = () => {
           </button>
         )}
         
-        {itinerary.mode = "Wormhole-Drive" ? (
+        {itinerary.mode === "Wormhole-Drive" ? (
           <button onClick={() => handleModeChange3(itinerary.mode)} className="edit-wormhole-selected"> Wormhole-Drive 
             <FontAwesomeIcon icon={faSpaceShuttle} />
           </button>

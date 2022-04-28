@@ -20,27 +20,23 @@ export const ItineraryDetail = () => {
   let selectedVal = 0;
   let finalPrice = 0;
   let tripDuration = 0;
-  
-  
-  const [receipt, setReceipt] = useState({
-    
-    usersId: itinerary.usersId,
-    departure: itinerary.departure,
-    return: itinerary.return,
-    exoPlanetsId: itinerary.exoPlanetsId,
-    mode: itinerary.mode,
-    itinerariesId: itinerary.id,
-    paid: +finalPrice,
-  });
+
   
 
   const handleClickSaveEvent = (i) => {
     i.preventDefault();
-    let newReceipt = { ...receipt };
+    
     
 
-    newReceipt[receipt]= itinerary
-    setReceipt(receipt);
+    const receipt = {
+      usersId: itinerary.usersId,
+      departure: itinerary.departure,
+      return: itinerary.return,
+      exoPlanetsId: itinerary.exoPlanetsId,
+      mode: itinerary.mode,
+      itinerariesId: itinerary.id,
+      paid: +finalPrice,
+    }
     
       setIsLoading(true);
       
@@ -61,7 +57,7 @@ export const ItineraryDetail = () => {
     }
     if (m === "Wormhole-Drive") {
       selectedVal = 1;
-      tripDuration = itinerary.exoPlanets?.lightYears * 2;
+      tripDuration = 2;
     }
     return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears && tripDuration);
   };
@@ -71,13 +67,11 @@ export const ItineraryDetail = () => {
   };
 
   useEffect(() => {
-    getItineraryById(itineraryId).then((itinerary) => {
-      setItinerary(itinerary);
-      
-    });
+    getItineraryById(itineraryId).then(setItinerary);
   }, [itineraryId]);
   drivePlanetCost(itinerary.mode);
   finalPrice = selectedVal + 15;
+  console.log(itinerary)
   return (
     <>
       <h2 className="itinerary-details-title">
@@ -94,19 +88,19 @@ export const ItineraryDetail = () => {
             <span className="itinerary-detail-title">Price Summary</span>
             <br />
             <span className="itinerary-detail">
-              Transport to The Citadel: <FontAwesomeIcon icon={faBitcoin} /> 10
+              Transport to The Citadel: /> <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} 10</span>
             </span>
             <br />
             <span className="itinerary-detail">
-              {itinerary.mode} to {itinerary.exoPlanets?.name}: <FontAwesomeIcon icon={faBitcoin} /> {selectedVal}
+              {itinerary.mode} to {itinerary.exoPlanets?.name}: /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} {selectedVal} </span>
             </span>
             <br />
             <span className="itinerary-detail">
-              Exo-Travel Fees: <FontAwesomeIcon icon={faBitcoin} /> 5
+              Exo-Travel Fees:  /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} 5</span>
             </span>
             <br />
             <span className="itinerary-detail-total">
-              Total: <FontAwesomeIcon icon={faBitcoin} /> {finalPrice}
+              Total: /><span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} {finalPrice}</span>
             </span>
             <br />
 
@@ -189,7 +183,7 @@ export const ItineraryDetail = () => {
         <button type="button" className="itinerary-page-button" onClick={() => navigate(`/itineraries`)}>
           Back
         </button>
-      </div>
+      </div><div className="itinerary-page-bottom"></div>
     </>
   );
 };

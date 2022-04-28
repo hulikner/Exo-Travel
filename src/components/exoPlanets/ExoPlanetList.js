@@ -6,6 +6,7 @@ import "./ExoPlanetList.css"
 export const ExoPlanetList = () => {
     const [exoPlanets, setExoPlanets] = useState([])
     const [ascending, setAscending] = useState(true)
+    const [ascend, setAscend] = useState(true)
 
     const currentUser = sessionStorage.getItem("exoTravel_user")
    
@@ -36,16 +37,21 @@ export const ExoPlanetList = () => {
         }else{
             setExoPlanets(exoPlanets.sort((a,b)=> a.lightYears-b.lightYears))
         }
-
-            
-        
     }, [ascending])
+    useEffect(() => {
+        if(!ascend){
+            setExoPlanets(exoPlanets.sort((a,b)=> b.rating-a.rating))
+        }else{
+            setExoPlanets(exoPlanets.sort((a,b)=> a.rating-b.rating))
+        }  
+    }, [ascend])
 
     return (
         //takes all of the data/"ExoPlanets" returned from getAllExoPlanets and maps them to individual ExoPlanetCards
         <>
         <div className="exoPlanet-list-buttons">
             <button type="button" className="asc-button" onClick={()=>setAscending(!ascending)}>Sort by LightYears</button>
+            <button type="button" className="asc-button" onClick={()=>setAscend(!ascend)}>Sort by Rating</button>
         </div>
         <div className="exoPlanets-container">
             {exoPlanets.map(exoPlanet => <ExoPlanetCard

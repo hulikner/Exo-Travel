@@ -12,10 +12,10 @@ export const ExoPlanetCard = ({exoPlanet}) => {
             <Link className="exoPlanet-link" to={`/exoPlanets/${exoPlanet.id}` }>
             <img className="card-exoPlanet-img" src={`./Images/${exoPlanet.name}.jpg`}/>
                 <h3 className="card-exoPlanet-name"> {exoPlanet.name}</h3>
-                <p className="card-exoPlanet-lightyears">Light-Years Away: {exoPlanet.lightYears} </p>
+                <p className="card-exoPlanet-lightyears">Light-Years Away:<span className='exoPlanet-lightYears-number'> {exoPlanet.lightYears}</span> </p>
                
             </Link>
-                <p className="card-exoPlanet-starRating"><Rating value={exoPlanet.rating} readOnly/> </p>
+                <p className="card-exoPlanet-starRating"><Rating style={{ color:"rgb(179, 9, 9)" }} value={exoPlanet.rating} readOnly/> </p>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 .review__edit__header{
     background-color: gray;
     border:5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width:100vw;
 
 }
@@ -11,13 +11,14 @@
     display:flex;
     flex-direction: column;
     border: 5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: 50vw;
 }
 .review-inputs{
     display:flex;
     flex-direction: column;
     align-items: center;
+    min-height: 87vh;
 }
 .edit-review-save-cancel{
     display:flex;
@@ -32,7 +33,7 @@
     display:flex;
     align-items: center;
     border: 5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: auto;
     height: 30px;
     color:white;
@@ -47,7 +48,7 @@
     display:flex;
     align-items: center;
     border: 5px solid white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: auto;
     height: 30px;
     color:white;

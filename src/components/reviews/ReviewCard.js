@@ -30,7 +30,7 @@ export const ReviewCard = ({ review }) => {
             <div className='review-card-details'>
              <span className="review-card">By: {review.users?.firstName} {review.users?.lastName}</span><br />
              <span className="review-card"> {review.message}</span><br />
-             <p className="review-card"><Rating value={+review.stars} readOnly/> </p>
+             <p className="review-card"><Rating style={{ color:"white" }} value={+review.stars} readOnly/> </p>
              
             </div>
              {review.usersId === +userName ? (
