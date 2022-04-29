@@ -4,8 +4,8 @@ import { ExoPlanetHomeCard } from "../exoPlanets/ExoPlanetHomeCard"
 import { ExoPlanetCard} from "../exoPlanets/ExoPlanetCard"
 import { ItineraryHomeCard } from "../itineraries/ItineraryHomeCard";
 import { getAllExoPlanets } from "../../modules/ExoPlanetManager";
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+// import Carousel from 'react-material-ui-carousel'
+// import { Paper, Button } from '@mui/material'
 
 import "./Home.css"
 let user = JSON.parse(sessionStorage.getItem('exoTravel_user_firstName'))

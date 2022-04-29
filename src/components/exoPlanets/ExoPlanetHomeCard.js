@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { getAllExoPlanets } from '../../modules/ExoPlanetManager';
 import Rating from '@mui/material/Rating';
-import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
 
