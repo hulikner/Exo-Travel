@@ -1,24 +1,24 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./ReceiptCard.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { epochDateConverter } from '../util/epochDateConverter';
 import { format } from 'date-fns';
-import { updateReceipt } from '../../modules/ReceiptManager';
+import { addReceipt, getReceiptById, updateReceipt } from '../../modules/ReceiptManager';
 
 
 export const ReceiptCard = ({ receipt }) => {
 
-  const [ receipts, setReceipt ] = useState(false)
-
+  const [ receipts, setReceipt ] = useState([])
+ 
   const formattedDeparture = receipt?.departure && epochDateConverter(receipt.departure, 'eee. MMM do')
   const formattedReturn = receipt?.return && epochDateConverter(receipt.return, 'eee. MMM do')
-
-
+  
+  
   return (
     
-    <Link className="receipt-card-link" to={`/itineraries/:itineraryId/receipts/${receipt.id}` }>
+    <Link className="receipt-card-link" to={`/itineraries/itineraryId/receipts/${receipt.id}` }>
         <div className='receipt-card-content'>
         <div className="receipt-card-img">
         <img className="receipt-pic" src={`../../Images/${receipt.exoPlanets.name}.jpg`} />

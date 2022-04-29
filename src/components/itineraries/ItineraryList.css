@@ -4,17 +4,18 @@
     flex-direction: row;
     align-content: stretch;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: gray;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
     justify-content: space-evenly;
     max-width: 90vw;
-    
+    height:auto;
+   
 }
 .itinerary-list-header{
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     color:white;
@@ -25,6 +26,22 @@
     flex-direction: row;
     justify-content: center;
    
-min-height: 74vh;
+    min-height: 90vh;
 }
-
+.itinerary-page-review{
+    display:flex;
+    flex-direction: row;
+    color:white;
+    font-size: 20px;
+    border: 5px solid white;
+    /* border-radius: 50px; */
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px black;
+    padding:10px;
+    margin:10px;
+    max-height: 10px;
+    align-items: center;
+}
+.itinerary-card-data{
+    color:black;
+}

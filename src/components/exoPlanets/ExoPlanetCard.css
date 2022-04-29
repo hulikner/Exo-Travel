@@ -7,7 +7,7 @@
     height: auto;
     background-color:  gray;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding:1em;
     /* color:white; */
     box-shadow: 5px 5px 5px 5px black;
@@ -18,14 +18,16 @@
     display:flex;
     flex-direction: column;
     margin: 2em;
-    background-color: rgb(28, 70, 168);
+    background-color: rgb(179, 9, 9);
     border: 10px white solid;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     color:black;
     box-shadow: 5px 5px 5px 5px black;
 
 }
-
+.exoPlanet-lightYears-number{
+    color:black;
+}
 img.card-exoPlanet-img {
     image-rendering: auto;
     width:auto;

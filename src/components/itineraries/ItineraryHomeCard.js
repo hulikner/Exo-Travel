@@ -8,12 +8,12 @@ import { epochDateConverter } from '../util/epochDateConverter';
 
 
 export const ItineraryHomeCard = () => {
-//   let today= new Date().getTime()/1000;
+  let today= new Date().getTime()/1000;
   
   
   const[itineraries, setItineraries] = useState([])
   const {itineraryId} = useParams();
-  const formattedDeparture = itineraries.departure && epochDateConverter(itineraries.departure, 'eee. MMM do')
+  
   
   
   useEffect(() => {
@@ -38,7 +38,7 @@ export const ItineraryHomeCard = () => {
                 <span className="itinerary-home-img-name">{x.exoPlanets?.name}</span>
             </div>
             <div className= 'itinerary-home-departure'>
-            Departure: {formattedDeparture}
+            Departure: {epochDateConverter(x.departure, 'eee. MMM do')}
             </div>
       </Link>
       </div>

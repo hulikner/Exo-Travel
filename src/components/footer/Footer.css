@@ -7,10 +7,12 @@ footer {
     bottom:0;
     height: 5em;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 4px 4px 4px 4px black;
     font-weight: bold;
+    color:white;
+    /* margin:10px;/ */
 }
 
 .team {

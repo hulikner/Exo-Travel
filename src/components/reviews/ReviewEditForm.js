@@ -51,14 +51,14 @@ export const ReviewEditForm = () => {
 
   return(
     <>
-           <form className="review__edit__form">
+                <div className='review-inputs'>
                 <h2 className="review__edit__header">Edit Review</h2>
-
+           <form className="review__edit__form">
 
                 <fieldset className="review-edit-fields">
                     <div>
                         <label htmlFor="message">Review:</label>
-                        <input type="text" id="message" onChange={handleFieldChange} required className="form-control-message" placeholder="Review" value={review.message}/>
+                        <textarea type="text" id="message" onChange={handleFieldChange} required className="form-control-message" placeholder="Review" value={review.message}/>
                     </div>
                 </fieldset>
 
@@ -90,6 +90,7 @@ export const ReviewEditForm = () => {
 
                 </div>
                </form>
+                </div>
     </>
     )
 }

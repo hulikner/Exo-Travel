@@ -35,6 +35,7 @@ export const Login = ({setAuthUser}) => {
 	};
 
 	return (
+		<>
 		<main className="container--login">
 			<dialog className="dialog dialog--auth" open={existDialog}>
 				<div>User does not exist</div>
@@ -71,5 +72,7 @@ export const Login = ({setAuthUser}) => {
 				<Link to="/register">Register for an account</Link>
 			</section>
 		</main>
+		<div className="bottom--login"></div>
+	</>
 	);
 };

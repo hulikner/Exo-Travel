@@ -81,20 +81,22 @@ export const ReviewForm = () => {
                         <input type="text" id="stars" onChange={handleControlledInputChange} required className="form-control stars" placeholder="stars" value={review.stars}/>
                 </fieldset>
                 </div>
+                <div className="review-form-buttons">
                 <button 
 				    type="submit" 
 				    className="submit-review-button"
 				    disabled={isLoading}
 				    onClick={handleClickSaveEvent}>
-				    Save Review
+				    Submit
                 </button>
                 <button 
 				    type="cancel" 
 				    className="cancel-review-button"
 				    disabled={isLoading}
 				    onClick={() => navigate(`/itineraries`)}>
-				    Save Review
+				    Cancel
                 </button>
+                </div>
             </form>
             </div>
  

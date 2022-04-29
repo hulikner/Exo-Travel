@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getItineraryById, deleteItinerary } from "../../modules/ItineraryManager";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
@@ -14,30 +14,29 @@ export const ItineraryDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { itineraryId } = useParams();
   const navigate = useNavigate();
+  const today = new Date().getTime()/1000;
   const formattedDeparture = itinerary?.departure && epochDateConverter(itinerary.departure, "MM/dd/yyy");
   const formattedReturn = itinerary?.return && epochDateConverter(itinerary.return, "MM/dd/yyy");
   let selectedVal = 0;
   let finalPrice = 0;
   let tripDuration = 0;
 
-  const [receipt, setReceipt] = useState({
-    id: "",
-    usersId: itinerary.usersId,
-    departure: itinerary.departure,
-    return: itinerary.return,
-    exoPlanetsId: itinerary.exoPlanetsId,
-    mode: itinerary.mode,
-    itinerariesId: itinerary.id,
-  });
   
 
   const handleClickSaveEvent = (i) => {
     i.preventDefault();
-    const newReceipt = { ...receipt };
+    
     
 
-    newReceipt[receipt] = itinerary;
-    setReceipt(newReceipt);
+    const receipt = {
+      usersId: itinerary.usersId,
+      departure: itinerary.departure,
+      return: itinerary.return,
+      exoPlanetsId: itinerary.exoPlanetsId,
+      mode: itinerary.mode,
+      itinerariesId: itinerary.id,
+      paid: +finalPrice,
+    }
     
       setIsLoading(true);
       
@@ -50,31 +49,40 @@ export const ItineraryDetail = () => {
   const drivePlanetCost = (m) => {
     if (m === "Ion-Drive") {
       selectedVal = 0.25;
-      tripDuration = itinerary.exoPlanets?.lightYears / 10;
     }
     if (m === "Warp-Drive") {
       selectedVal = 0.5;
+    }
+    if (m === "Wormhole-Drive") {
+      selectedVal = 2;
+    }
+    return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears);
+  };
+  const drivePlanetDuration = (m) => {
+    if (m === "Ion-Drive") {
+      tripDuration = itinerary.exoPlanets?.lightYears / 10;
+    }
+    if (m === "Warp-Drive") {
       tripDuration = itinerary.exoPlanets?.lightYears / 50;
     }
     if (m === "Wormhole-Drive") {
-      selectedVal = 1;
-      tripDuration = itinerary.exoPlanets?.lightYears * 2;
+      tripDuration = 2;
     }
-    return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears && tripDuration);
+    return  tripDuration;
   };
+  
   const handleDelete = () => {
     setIsLoading(true);
     deleteItinerary(itineraryId).then(() => navigate("/itineraries"));
   };
 
   useEffect(() => {
-    getItineraryById(itineraryId).then((itinerary) => {
-      setItinerary(itinerary);
-      
-    });
+    getItineraryById(itineraryId).then(setItinerary);
   }, [itineraryId]);
   drivePlanetCost(itinerary.mode);
+  drivePlanetDuration(itinerary.mode);
   finalPrice = selectedVal + 15;
+  console.log(itinerary)
   return (
     <>
       <h2 className="itinerary-details-title">
@@ -91,19 +99,19 @@ export const ItineraryDetail = () => {
             <span className="itinerary-detail-title">Price Summary</span>
             <br />
             <span className="itinerary-detail">
-              Transport to The Citadel: <FontAwesomeIcon icon={faBitcoin} /> 10
+              Transport to The Citadel: <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} />10</span>
             </span>
             <br />
             <span className="itinerary-detail">
-              {itinerary.mode} to {itinerary.exoPlanets?.name}: <FontAwesomeIcon icon={faBitcoin} /> {selectedVal}
+              {itinerary.mode} to {itinerary.exoPlanets?.name}:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {selectedVal} </span>
             </span>
             <br />
             <span className="itinerary-detail">
-              Exo-Travel Fees: <FontAwesomeIcon icon={faBitcoin} /> 5
+              Exo-Travel Fees:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> 5</span>
             </span>
             <br />
             <span className="itinerary-detail-total">
-              Total: <FontAwesomeIcon icon={faBitcoin} /> {finalPrice}
+              Total: <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {finalPrice}</span>
             </span>
             <br />
 
@@ -114,7 +122,7 @@ export const ItineraryDetail = () => {
               <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itinerary.id)}>
                 Delete
               </button>
-              <button type="button" className="itinerary-pay-summary-button" onClick={handleClickSaveEvent}>
+              <button type="button" className="itinerary-price-summary-button" onClick={handleClickSaveEvent}>
                 Pay Now
               </button>
             </div>
@@ -171,13 +179,22 @@ export const ItineraryDetail = () => {
       </div>
 
       <div className="itinerary-page-buttons">
-        <button type="button" className="itinerary-page-button" onClick={() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
+
+
+      {itinerary.return < today ? (
+            <Link to={`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`} >
+             <button type="button" className="itinerary-page-button" onClick= {() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
           Review
         </button>
+            </Link>
+          ) : (
+           <span></span>
+          )}
+       
         <button type="button" className="itinerary-page-button" onClick={() => navigate(`/itineraries`)}>
           Back
         </button>
-      </div>
+      </div><div className="itinerary-page-bottom"></div>
     </>
   );
 };

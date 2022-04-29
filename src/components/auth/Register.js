@@ -58,6 +58,7 @@ export const Register = () => {
 	};
 
 	return (
+		<>
 		<main style={{ textAlign: "center" }}>
 			<dialog className="dialog dialog--password" open={conflictDialog}>
 				<div>Account with that email address already exists</div>
@@ -114,9 +115,10 @@ export const Register = () => {
 					/>
 				</fieldset>
 				<fieldset>
-					<button type="submit"> Sign in </button>
+					<button className="login-btn" type="submit"> Sign in </button>
 				</fieldset>
 			</form>
-		</main>
+		</main> <div className="bottom--login"></div>
+		</>
 	);
 };

@@ -7,14 +7,14 @@ div.hubDrive-container{
     justify-items: center;
     justify-content: space-evenly;
     /* align-items: center; */
-    min-height: 74vh;
+    min-height: 82vh;
     
 }
 .detail-hubDrive-title{
     display:flex;
     flex-direction: row;
     border: 5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: gray;
     box-shadow: 5px 5px 5px 5px black;
     color:white;
@@ -30,11 +30,12 @@ div.hubDrive-container{
     image-rendering: auto;
     width:auto;
     height:200px;
-    border-radius: 2em;
+    /* border-radius: 2em; */
     box-shadow: 5px 5px 5px 5px black;
     text-decoration: none;
     border:3px solid white;
     max-width: 300px;
+    margin: 20px;
 }
 .card-hubDrive-cardDetail{
     font-weight: 600;
@@ -51,7 +52,7 @@ div.hubDrive-container{
     color:white;
     box-shadow: 5px 5px 5px 5px black;
     border:5px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     align-items: center;
     background-color: gray;
 }

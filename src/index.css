@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Play', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(28, 70, 168);
-  /* background-image: url('./Images/space_background.jpg'); */
+  background-color: rgb(179, 9, 9);
+  background-image: url('../public/Images/space_background1.jpg');
+  background-size: repeat;
+  min-height: 100vh;
 }
 
 code {

@@ -139,7 +139,7 @@ export const ReceiptDetail = () => {
         <button type="button" className="receipt-page-button" onClick={() => navigate(`/itineraries`)}>
           Back
         </button>
-      </div>
+      </div><div className="receipt-page-bottom"></div>
     </>
   );
 };

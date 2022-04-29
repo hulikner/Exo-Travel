@@ -6,15 +6,26 @@
     padding: 1em;
     transition: color .5s;
     font-weight: bold;
-    background-color: gray;
-    border: 5px solid white;
-    border-radius: 50px;
+    /* background-color: gray; */
+    /* border: 5px solid white; */
+    /* border-radius: 50px; */
     max-height: 0px;
     box-shadow: 5px 5px 5px 5px black;
-    color:rgb(28, 70, 168);
+    color:rgb(179, 9, 9);
+    position:fixed bottom;
 }
-
-
+.nav-logo-home{
+    display:flex;
+    height:90px;
+    width:auto;
+    margin-bottom: -15px;
+}
+.nav-logo{
+    display:flex;
+    flex-direction: row;
+    width: 70vw;
+    text-decoration: none;
+}
 .navBar_item {
     flex-basis: 30%;
     list-style-type: none;
@@ -25,26 +36,29 @@
 }
 
 .item_left {
-    border-left: 3px white solid;
+    /* border-left: 3px white solid; */
 }
 
 .navbar__link{
+    display:flex;
+    flex-direction: row;
+    margin:10px;
     text-decoration: none;
-    color: rgb(28, 70, 168);
+    color: white;
     transition: color 1s, scale 1s;
 }
 
 .navbar__link:visited{
-    color: rgb(28, 70, 168);
+    color: white;
 }
 
 .navBar_item a:hover{
-    color:black;
+    color:rgb(179, 9, 9);
     transform: scale(1.3);
 }
 
 .navBar_item>.active{
-    color:white;
+    color:rgb(179, 9, 9);
     transition: 0.75;
     transform: scale(1.3);
     ;
