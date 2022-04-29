@@ -21,12 +21,12 @@ export const ReceiptCard = ({ receipt }) => {
     <Link className="receipt-card-link" to={`/itineraries/itineraryId/receipts/${receipt.id}` }>
         <div className='receipt-card-content'>
         <div className="receipt-card-img">
-        <img className="receipt-pic" src={`../../Images/${receipt.exoPlanets.name}.jpg`} />
-        <p className="receipt-pic-title">{receipt.exoPlanets.name}</p>
+        <img className="receipt-pic" src={`../../Images/${receipt.exoPlanet.name}.jpg`} />
+        <p className="receipt-pic-title">{receipt.exoPlanet.name}</p>
         </div>
         <div className= "receipt-card-info">
-        <span className="receipt-card">First Name: {receipt.users.firstName}</span><br />
-        <span className="receipt-card">Last Name: {receipt.users.lastName}</span><br />
+        <span className="receipt-card">First Name: {receipt.user.firstName}</span><br />
+        <span className="receipt-card">Last Name: {receipt.user.lastName}</span><br />
         <span className="receipt-card">Departure Date: {formattedDeparture}</span><br />
         <span className='receipt-card'>Return Date: {formattedReturn}</span><br />
         <span className='receipt-card'>Travel Mode: {receipt.mode}</span><br />

@@ -8,17 +8,17 @@ export const HubDriveDetail = () => {
   const [hubDrive, setHubDrive] = useState({name: '', pic:'',cardDetail:'', detail: ''});
   const [isLoading, setIsLoading] = useState(true);
 
-  const {hubDriveId} = useParams();
+  const {hubDrivesId} = useParams();
   const navigate = useNavigate();
 
 
   useEffect(() => {
-    getHubDriveById(hubDriveId)
+    getHubDriveById(hubDrivesId)
       .then(hubDrive=>{
         setHubDrive(hubDrive)
       })
      
-  }, [hubDriveId]);
+  }, [hubDrivesId]);
   return (
     <div className="hubDrive-detail">
                 <img className="detail-hubDrive-pic" src={`.${hubDrive.pic}`}/>

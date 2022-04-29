@@ -1,11 +1,9 @@
 import React, { useState, useEffect} from "react";
 import { useNavigate,useParams } from "react-router-dom";
 import { addReview, getReviewsByExoPlanet } from "../../modules/ReviewManager";
-import "./ReviewForm.css"
 import { epochDateConverter } from "../util/epochDateConverter";
-import { getExoPlanetById, updateExoPlanet } from "../../modules/ExoPlanetManager";
-import { getAllExoPlanetsByLightYearsDesc } from "../../modules/ExoPlanetManager";
-
+import { updateExoPlanet } from "../../modules/ExoPlanetManager";
+import "./ReviewForm.css"
 
 export const ReviewForm = () => {
     
@@ -25,9 +23,9 @@ export const ReviewForm = () => {
     } 
     const [review, setReview] = useState({
         id: '',
-        usersId: currentUser,
+        userId: currentUser,
         date: new Date().getTime()/1000,
-        exoPlanetsId: Number(exoPlanetId),
+        exoPlanetId: Number(exoPlanetId),
         message: '',
         stars: '',
         
@@ -51,12 +49,12 @@ export const ReviewForm = () => {
             setIsLoading(true);
            
             const newStarRating = getStarTotal(review.stars)
-            const exoPlanetObject= {id: +exoPlanetId, rating: newStarRating}
+            const exoPlanetObject= {id: +exoPlanetId, rating: +newStarRating,}
             updateExoPlanet(exoPlanetObject).then(
 
                 addReview(review)
             )
-            .then(() => navigate(`/exoPlanets/${exoPlanetId}/reviews`))
+            .then(() => navigate(`/exoPlanets/${+exoPlanetId}/reviews`))
         } else {
                 window.alert("Complete Each Field")
         }
@@ -67,6 +65,7 @@ export const ReviewForm = () => {
     },[])
 
     return(
+        <>
             <div className='review-entire-form'>
             <form className ="review-form">
                 <h2 className ="review-header">Create New Review</h2>
@@ -98,7 +97,7 @@ export const ReviewForm = () => {
                 </button>
                 </div>
             </form>
-            </div>
- 
+            </div> <div className="review-form-bottom"></div>
+        </>
     )
 }

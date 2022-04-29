@@ -34,8 +34,8 @@ export const ItineraryHomeCard = () => {
       <Link className="itinerary-home-link" to={`/itineraries/${x.id}` }>
        
             <div className="itinerary-home-img-container">
-                <img className="itinerary-home-img" src={`../Images/${x.exoPlanets?.name}.jpg`} />
-                <span className="itinerary-home-img-name">{x.exoPlanets?.name}</span>
+                <img className="itinerary-home-img" src={`../Images/${x.exoPlanet?.name}.jpg`} />
+                <span className="itinerary-home-img-name">{x.exoPlanet?.name}</span>
             </div>
             <div className= 'itinerary-home-departure'>
             Departure: {epochDateConverter(x.departure, 'eee. MMM do')}

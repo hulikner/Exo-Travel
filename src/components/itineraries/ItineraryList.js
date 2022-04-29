@@ -4,7 +4,7 @@ import { getAllItineraries, deleteItinerary, getItinerariesByUserId } from "../.
 import { useNavigate } from "react-router-dom";
 import { ItineraryCard } from "./ItineraryCard";
 
-// GROUP: display a list of all the Itinerarys from the database
+// GROUP: display a list of all the Itineraries from the database
 
 export const ItineraryList = () => {
     const [itineraries, setItineraries] = useState([])

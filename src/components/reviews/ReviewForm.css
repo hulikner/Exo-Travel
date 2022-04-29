@@ -4,6 +4,10 @@
     justify-content: center;
     margin:20px;
     padding:20px;
+    
+}
+.review-form-bottom{
+    min-height: 29vh;
 }
 form.review-form{
     display:flex;
