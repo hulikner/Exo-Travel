@@ -76,8 +76,8 @@ export const ItineraryEditForm = () => {
         <h2 className='edit-itinerary-title'>Edit Itinerary</h2>    
         <div className='editDetails'>
             <div className='edit-itinerary-pic'>
-                <img className="edit-itinerary-img" src={`../../Images/${itinerary.exoPlanets?.name}.jpg`} />
-                <span className="edit-itinerary-img-name">{itinerary.exoPlanets?.name}</span>
+                <img className="edit-itinerary-img" src={`../../Images/${itinerary.exoPlanet?.name}.jpg`} />
+                <span className="edit-itinerary-img-name">{itinerary.exoPlanet?.name}</span>
             </div>
             <div className="edit-detailsContainer">
           <div className="edit-exoPlanet-fields">

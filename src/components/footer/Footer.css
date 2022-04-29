@@ -2,14 +2,14 @@ footer {
     
     display: flex;
    
-    background-color: #080808;
+    /* background-color: #080808; */
     position: relative;
     bottom:0;
     height: 5em;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 4px 4px 4px 4px black;
+    /* box-shadow: 4px 4px 4px 4px black; */
     font-weight: bold;
     color:white;
     /* margin:10px;/ */
@@ -18,10 +18,14 @@ footer {
 .team {
     height: 76px;
     width: 76px;
-    border: 2px #080808 solid;
+    /* border: 2px #080808 solid; */
     border-radius: 15px;
 }
 
 .logo {
     height: 100%;
+    margin-left: 31px;
+}
+p{
+    margin-right: 45px;
 }

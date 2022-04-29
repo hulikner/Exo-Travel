@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { getItineraryById, deleteItinerary } from "../../modules/ItineraryManager";
+import { getItineraryById, deleteItinerary, updateItinerary } from "../../modules/ItineraryManager";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 import { ReviewForm } from "../reviews/ReviewForm";
-import { addReceipt } from "../../modules/ReceiptManager";
-
+import { addReceipt, getReceiptByItineraryId } from "../../modules/ReceiptManager";
 import "./ItineraryDetail.css";
 
 export const ItineraryDetail = () => {
-  const [itinerary, setItinerary] = useState({usersId: "", departure: "", return: "", exoPlanetsId: "", mode: ""});
+  const [itinerary, setItinerary] = useState({userId: "", departure: "", return: "", exoPlanetId: "", mode: ""});
+  const [receipt, setReceipt] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const { itineraryId } = useParams();
   const navigate = useNavigate();
@@ -20,31 +20,33 @@ export const ItineraryDetail = () => {
   let selectedVal = 0;
   let finalPrice = 0;
   let tripDuration = 0;
-
-  
-
-  const handleClickSaveEvent = (i) => {
+console.log(itinerary)
+  const handleClickSaveEvent = async (i) => {
+    console.log('you clicked payed')
     i.preventDefault();
-    
-    
-
     const receipt = {
-      usersId: itinerary.usersId,
+      userId: itinerary.userId,
       departure: itinerary.departure,
       return: itinerary.return,
-      exoPlanetsId: itinerary.exoPlanetsId,
+      exoPlanetId: itinerary.exoPlanetId,
       mode: itinerary.mode,
-      itinerariesId: itinerary.id,
       paid: +finalPrice,
+      itineraryId: itinerary.id,
     }
-    
+    const newItinerary={
+      id: itinerary.id,
+      userId: itinerary.userId,
+       departure: itinerary.departure,
+        return: itinerary.return,
+         exoPlanetId: itinerary.exoPlanetId,
+          mode: itinerary.mode, 
+          paid: true
+    }
       setIsLoading(true);
-      
-      addReceipt(receipt).then(() => navigate(`/itineraries/${itineraryId}/receipts`));
-    
-    
+     await addReceipt(receipt)
+     await updateItinerary({...newItinerary})
+     navigate(`/itineraries/${itineraryId}/receipts`);
   };
-
 
   const drivePlanetCost = (m) => {
     if (m === "Ion-Drive") {
@@ -56,42 +58,45 @@ export const ItineraryDetail = () => {
     if (m === "Wormhole-Drive") {
       selectedVal = 2;
     }
-    return (selectedVal = selectedVal * itinerary.exoPlanets?.lightYears);
+    return (selectedVal = selectedVal * itinerary.exoPlanet?.lightYears);
   };
+
   const drivePlanetDuration = (m) => {
     if (m === "Ion-Drive") {
-      tripDuration = itinerary.exoPlanets?.lightYears / 10;
+      tripDuration = itinerary.exoPlanet?.lightYears / 10;
     }
     if (m === "Warp-Drive") {
-      tripDuration = itinerary.exoPlanets?.lightYears / 50;
+      tripDuration = itinerary.exoPlanet?.lightYears / 50;
     }
     if (m === "Wormhole-Drive") {
       tripDuration = 2;
     }
     return  tripDuration;
   };
-  
+
   const handleDelete = () => {
     setIsLoading(true);
     deleteItinerary(itineraryId).then(() => navigate("/itineraries"));
   };
 
   useEffect(() => {
-    getItineraryById(itineraryId).then(setItinerary);
+    getItineraryById(itineraryId).then(setItinerary)
+
   }, [itineraryId]);
   drivePlanetCost(itinerary.mode);
   drivePlanetDuration(itinerary.mode);
   finalPrice = selectedVal + 15;
   console.log(itinerary)
+
   return (
     <>
       <h2 className="itinerary-details-title">
-        {itinerary.users?.firstName}, Here Is The Details On Your Trip To {itinerary.exoPlanets?.name}
+        {itinerary.user?.firstName}, Here Is The Details On Your Trip To {itinerary.exoPlanet?.name}
       </h2>
       <div className="itinerary-detail-image">
         <div className="itinerary-detail-img">
-          <img className="itinerary-img" src={`../Images/${itinerary.exoPlanets?.name}.jpg`} />
-          <span className="itinerary-img-name">{itinerary.exoPlanets?.name}</span>
+          <img className="itinerary-img" src={`../Images/${itinerary.exoPlanet?.name}.jpg`} />
+          <span className="itinerary-img-name">{itinerary.exoPlanet?.name}</span>
         </div>
 
         <div className="itinerary-detail-summary">
@@ -103,7 +108,7 @@ export const ItineraryDetail = () => {
             </span>
             <br />
             <span className="itinerary-detail">
-              {itinerary.mode} to {itinerary.exoPlanets?.name}:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {selectedVal} </span>
+              {itinerary.mode} to {itinerary.exoPlanet?.name}:  <span className="itinerary-detail-data"><FontAwesomeIcon icon={faBitcoin} /> {selectedVal} </span>
             </span>
             <br />
             <span className="itinerary-detail">
@@ -122,9 +127,12 @@ export const ItineraryDetail = () => {
               <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itinerary.id)}>
                 Delete
               </button>
+              {!itinerary.paid && 
               <button type="button" className="itinerary-price-summary-button" onClick={handleClickSaveEvent}>
                 Pay Now
               </button>
+              
+              }
             </div>
           </div>
         </div>
@@ -144,7 +152,7 @@ export const ItineraryDetail = () => {
 
         <div className="itinerary-departureToReturn">
           <span className="itinerary-detail">
-            Departure: {formattedDeparture} @ 12:00 PM to {itinerary.exoPlanetsId?.name}
+            Departure: {formattedDeparture} @ 12:00 PM to {itinerary.exoPlanetId?.name}
           </span>
           <br />
           <span className="itinerary-detail">Gate Number: X-4 </span>
@@ -182,8 +190,8 @@ export const ItineraryDetail = () => {
 
 
       {itinerary.return < today ? (
-            <Link to={`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`} >
-             <button type="button" className="itinerary-page-button" onClick= {() => navigate(`/exoPlanets/${itinerary.exoPlanetsId}/reviews/create`)}>
+            <Link to={`/exoPlanets/${itinerary.exoPlanetId}/reviews/create`} >
+             <button type="button" className="itinerary-page-button" onClick= {() => navigate(`/exoPlanets/${itinerary.exoPlanetId}/reviews/create`)}>
           Review
         </button>
             </Link>

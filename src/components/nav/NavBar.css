@@ -10,9 +10,14 @@
     /* border: 5px solid white; */
     /* border-radius: 50px; */
     max-height: 0px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
     color:rgb(179, 9, 9);
-    position:fixed bottom;
+    position:sticky;
+    
+    
+}
+.sticky-nav {
+    @apply fixed top-0 left-0 w-full shadow-md z-20;
 }
 .nav-logo-home{
     display:flex;

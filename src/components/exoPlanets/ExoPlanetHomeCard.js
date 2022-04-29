@@ -15,7 +15,7 @@ export const ExoPlanetHomeCard = () => {
   
   
   const[exoPlanets, setExoPlanets] = useState([])
-  const {exoPlanetId} = useParams();
+  const {exoPlanetsId} = useParams();
 
 
   useEffect(() => {

@@ -28,14 +28,14 @@ export const ReviewEditForm = () => {
         setIsLoading(true);
 
         const editedReview = {
-            id: reviewId,
+            id: +reviewId,
             message: review.message,
-            stars: review.stars,
+            stars: +review.stars,
             editDate: new Date().getTime()/1000,
           };
 
           updateReview(editedReview)
-    .then(() => navigate(`/exoPlanets/${review.exoPlanetsId}/reviews`)
+    .then(() => navigate(`/exoPlanets/${review.exoPlanetId}/reviews`)
     )
   }
 
@@ -83,7 +83,7 @@ export const ReviewEditForm = () => {
 				    type="button" 
 				    className="edit-cancel-button"
 				    disabled={isLoading}
-				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetsId}/reviews`)}>
+				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetId}/reviews`)}>
 				    Cancel
                 </button>
 

@@ -45,7 +45,7 @@
     color:white;
     padding:10px;
     margin:10px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
     font-weight: 600;
    
 
@@ -78,12 +78,12 @@
 .review-card-content{
     display:flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
     
-    border:10px solid white;
+    /* border:5px solid white; */
     /* border-radius: 50px; */
-    margin:5px;
-    box-shadow: 5px 5px 5px 5px black;
+    margin:15px;
+    /* box-shadow: 5px 5px 5px 5px black; */
 }
 .review-card-time{
     color:white;

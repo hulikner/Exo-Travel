@@ -2,12 +2,12 @@ const remoteURL = "http://localhost:8088"
 
 
 export const getAllReceipts = () => {
-    return fetch(`${remoteURL}/receipts?_expand=exoPlanets&_expand=users&_sort=return&_order=desc`)
+    return fetch(`${remoteURL}/receipts?_expand=exoPlanet&_expand=user&_sort=return&_order=desc`)
     .then(res => res.json())
 }
 
 export const getReceiptById = (id) => {
-    return fetch(`${remoteURL}/receipts/${id}?_expand=exoPlanets&_expand=users&_expand=itineraries`)
+    return fetch(`${remoteURL}/receipts/${id}?_expand=exoPlanet&_expand=user&_expand=itinerary`)
     .then(res => res.json())
 }
 
@@ -38,6 +38,6 @@ export const updateReceipt  = (editedReceipt) => {
   }
 
   export const getReceiptByItineraryId = (id) => {
-    return fetch(`${remoteURL}/receipts?_expand=exoPlanets&_expand=users&_expand=itineraries&itinerariesId=${id}`)
+    return fetch(`${remoteURL}/receipts?_expand=exoPlanet&_expand=user&_expand=itinerary&itineraryId=${id}`)
     .then(res => res.json())
 }

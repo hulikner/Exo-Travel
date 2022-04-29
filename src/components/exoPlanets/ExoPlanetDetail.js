@@ -17,12 +17,12 @@ export const ExoPlanetDetail = () => {
   const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
   const [itinerary, setItinerary] = useState({
     id: "",
-    usersId: currentUser,
+    userId: currentUser,
     departure: "",
     return: "",
-    exoPlanetsId: Number(exoPlanetId),
-    receiptsId:"",
-    reviewsId:"",
+    exoPlanetId: Number(exoPlanetId),
+    receiptId:"",
+    reviewId:"",
   });
 
   const formattedDeparture = itinerary?.departure ? epochDateConverter(itinerary.departure, "yyyy-MM-dd") : "";

@@ -24,22 +24,22 @@ export const ReviewCard = ({ review }) => {
   return (
         <div className='review-card-content'>
             <div className="review-card-img">
-             <img className="review-pic" src={`../../Images/${review.exoPlanets?.name}.jpg`} />
-             <span className="review-card-name">{review.exoPlanets?.name}</span>
+             <img className="review-pic" src={`../../Images/${review.exoPlanet?.name}.jpg`} />
+             <span className="review-card-name">{review.exoPlanet?.name}</span>
             </div>
             <div className='review-card-details'>
-             <span className="review-card">By: {review.users?.firstName} {review.users?.lastName}</span><br />
+             <span className="review-card">By: {review.user?.firstName} {review.user?.lastName}</span><br />
              <span className="review-card"> {review.message}</span><br />
              <p className="review-card"><Rating style={{ color:"white" }} value={+review.stars} readOnly/> </p>
              
             </div>
-             {review.usersId === +userName ? (
+             {review.userId === +userName ? (
             <>
               <button 
 				    type="button" 
 				    className="edit-cancel-button"
 				    disabled={isLoading}
-				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetsId}/reviews/${review.id}/edit`)}>
+				    onClick={()=>navigate(`/exoPlanets/${review.exoPlanetId}/reviews/${review.id}/edit`)}>
 				    Edit
             </button>
             </>
@@ -60,17 +60,6 @@ export const ReviewCard = ({ review }) => {
              </>
           ):(<span></span>)
         }
-          
-
-
-
-
-
-            
-            
-
-
-
         </div>
    
   );

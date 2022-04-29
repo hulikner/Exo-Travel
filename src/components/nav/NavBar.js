@@ -8,12 +8,17 @@ import { faGlobe, faUserGroup, faHouse, faClipboardCheck, faCalendarDays, faArro
 
 export const NavBar = ({clearUser}) => {
   const location = useLocation();
+
+
+
+
+  
   return (
     <nav>
       <ul className="navBar">
         <div className="nav-logo">
       {/* <li className="nav-logo-item"></li> */}
-          <Link className={`navbar__link ${location.pathname === '/home' ? 'active':''}`} to="/home"> <img className = "nav-logo-home" src="./Images/Exo-Travel-Logo.jpg" /> </Link>
+          <Link className={`navbar__link ${location.pathname === '/home' ? 'active':''}`} to="/home"> <img className = "nav-logo-home" src="/Images/Exo-Travel-Logo.jpg" /> </Link>
       </div>
         {/* <li className="navBar_item"> */}
  
