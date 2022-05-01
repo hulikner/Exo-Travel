@@ -41,8 +41,8 @@ img.detail-about-pic{
     display:flex;
     flex-direction: row;
     font-size: 40px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 10px solid #C0C0C0;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border: 10px solid #f4100f;
     border-radius: 20px;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
@@ -50,7 +50,7 @@ img.detail-about-pic{
     height: 100px;
     justify-content: center;
     align-items: center;
-    color: #C0C0C0;
+    color:#C0C0C0;
 
 
 }
@@ -62,8 +62,8 @@ h3.detail-about-name{
     display:flex;
     flex-direction: row;
     font-size: 40px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 10px solid #C0C0C0;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border: 10px solid #f4100f;
     border-radius: 20px;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
@@ -72,6 +72,7 @@ h3.detail-about-name{
     justify-content: center;
     align-items: center;
     color:#C0C0C0;
+
 
 }
 div.about-detail-content{

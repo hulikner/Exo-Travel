@@ -7,10 +7,10 @@
 }
 .asc-button{
     width:auto;
-    border: 3px solid white;
+    border: 3px solid #C0C0C0;
     border-radius: 20px;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:white;
+    color:#C0C0C0;
     font-family: 'Play', sans-serif;
     margin:22px;
     height:40px;
@@ -19,7 +19,7 @@
     width:auto;
     border: 3px solid black;
     border-radius: 20px;
-    background-color: white;
+    background-color: #C0C0C0;
 }
 
 

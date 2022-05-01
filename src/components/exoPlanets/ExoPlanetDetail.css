@@ -130,31 +130,31 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__radius{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__eqTemp{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__orbit{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__lightYears{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet-mass-label{
     color:#C0C0C0;
@@ -176,7 +176,7 @@
     flex-direction: row;
     align-items: center;
     margin:10px;
-    color:rgba(179, 9, 9,1);
+    color:#f4100f;
 }
 button.ion-select {
         display:flex;
@@ -184,10 +184,10 @@ button.ion-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: auto;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
         border-radius: 20px;
@@ -214,13 +214,13 @@ button.ion-not-select {
     
     button.ion-select:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.ion-not-select:hover {
         background-color: black;
-        color: gray;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     button.warp-btn {
@@ -229,10 +229,10 @@ button.ion-not-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: 10px;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
         border-radius: 20px;
@@ -258,13 +258,13 @@ button.ion-not-select {
     
     button.warp-btn:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.warp-not-btn:hover {
         background-color: black;
-        color: gray;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     button.wormhole-selected {
@@ -273,10 +273,10 @@ button.ion-not-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: auto;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
         border-radius: 20px;
@@ -302,13 +302,13 @@ button.ion-not-select {
     
     button.wormhole-selected:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.wormhole-not-selected:hover {
         background-color: black;
-        color: grey;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     
@@ -323,7 +323,7 @@ button.ion-not-select {
     }
 
     input#departure.form-control.departure{
-        background-color: #C0C0C0;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         color:black;
         border-radius: 2em;
         font-family: 'Play', sans-serif;
@@ -331,7 +331,7 @@ button.ion-not-select {
 
     input#return.form-control.return{
         display: flex;
-        background-color: #C0C0C0;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         color:black;
         border-radius: 2em;
         justify-items: center;

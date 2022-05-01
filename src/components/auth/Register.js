@@ -75,7 +75,7 @@ export const Register = () => {
 					Register
 				</h1>
 				<fieldset>
-					<label htmlFor="firstName"> First Name </label>
+					<label  htmlFor="firstName"> First Name </label>
 					<input
 						type="text"
 						name="firstName"

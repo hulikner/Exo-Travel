@@ -24,5 +24,22 @@
     border-radius: 50px;
 }
 p.detail-about-detail{
+    margin: 10px;
 color:#C0C0C0;
+}
+.detail-about-name{
+    display:flex;
+    flex-direction: row;
+    font-size: 40px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border: 10px solid #f4100f;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 5px 5px 5px 5px black;
+    width:120%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color:#C0C0C0;
+
 }
