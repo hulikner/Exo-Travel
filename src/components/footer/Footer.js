@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer>
       <img className="logo" src="/Images/Exo-Travel-Logo.jpg" />
-      <p>&copy; Derick Cravens - C55</p>
+      <p className="footer-signature">&copy; Derick Cravens - C55</p>
     </footer>
   );
 };

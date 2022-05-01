@@ -5,15 +5,25 @@ import { updateExoPlanet } from "../../modules/ExoPlanetManager";
 import { addReview, getReviewsByExoPlanet } from "../../modules/ReviewManager";
 import "./ReviewForm.css";
 
+export const defaultReview={
+    id: "",
+    userId: currentUser,
+    date: new Date().getTime() / 1000,
+    exoPlanetId: Number(exoPlanetId),
+    message: "",
+    stars: "",
+}
 export const ReviewForm = () => {
-  // React-Router-DOM use
-  const { exoPlanetId } = useParams();
-
-  // State setState for all reviews
-  const [allReviews, setAllReviews] = useState();
-
+    // React-Router-DOM use
+    const { exoPlanetId } = useParams();
+    
+    // State setState for all reviews
+    const [allReviews, setAllReviews] = useState();
+    
+    const [isLoading, setIsLoading] = useState(false);
+    const [review, setReview] = useState(defaultReview);
+    const navigate = useNavigate();
   const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
-  getReviewsByExoPlanet(exoPlanetId);
 
   const getStarTotal = (newStars) => {
     const reviewCount = +allReviews.length + 1;
@@ -21,17 +31,7 @@ export const ReviewForm = () => {
     allReviews.map((review) => (totalStars += +review.stars));
     return totalStars / reviewCount;
   };
-  const [review, setReview] = useState({
-    id: "",
-    userId: currentUser,
-    date: new Date().getTime() / 1000,
-    exoPlanetId: Number(exoPlanetId),
-    message: "",
-    stars: "",
-  });
 
-  const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleControlledInputChange = (t) => {
     const newReview = { ...review };
