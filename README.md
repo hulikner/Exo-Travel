@@ -1,77 +1,109 @@
-# Exo-Travel: The Information Dashboard
+# Exo-Travel
 
 ## Setup: Follow these steps exactly
 
+1. Clone the Exo-Travel-Database
+1. `cd` into the directory it creates
+1. Run `json-server -p 8088 -w database.json` from the `api` directory.
 1. Clone this repository
 1. `cd` into the directory it creates
-1. In the `api` directory, create a copy of the `database.json.example` and remove the `.example` extension.
-1. Run `json-server -p 8088 -w database.json` from the `api` directory.
 1. Run `npm install` and wait for all dependencies to be installed.
+1. Run `npm install @mui/material @emotion/react @emotion/styled` and wait for all dependencies to be installed.
+1. Run `npm i --save material-ui-rating` and wait for all dependencies to be installed.
+1. Run `npm install --save @fortawesome/fontawesome-free` and wait for all dependencies to be installed.
+1. Run `npm i react-material-ui-carousel` and wait for all dependencies to be installed.
+1. Run `npm install date-fns --save` and wait for all dependencies to be installed.
 1. Run `npm start` to verify that installation was successful.
 
-> **Note:** Your `database.json` file is already in the `.gitignore` file for this project, so it will never be added to the repo or pushed to Github.
 
 ## What is Exo-Travel?
 
-Exo-Travel is a new product offering that you have been tasked with building. It's an app for people to use to organize their daily tasks, events, news article, friends, and chat messages.
+Exo-Travel is a travel app for different Exo-Planets around the universe. After the founder, Hulikner, cracked FTL, (Faster than Light), travel, he quickly monopolized all transportation around the universe for Earth inhabitants.
 
-You will be using the React library to build out this application.
 
-To start you off, here's an example of what some of the resources in your API should look like once it's populated with some data from your application.
-
-### Users
+### users
 
 ```json
-{ "id": 1, "name": "Steve Brownlee", "email": "me@me.com" }
-```
-
-### Friends
-
-```json
-{ "id": 1, "userId": 1, "currentUserId": 3 }
-```
-
-### News Articles
-
-```json
-{
-    "id": 1,
-    "userId": 2,
-    "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-    "title": "Wormholes Allow Information to Escape Black Holes",
-    "synopsis": "Check out this recent discovery about workholes",
-    "timestamp": "2021-02-11T15:24"
+{ 
+   "id": 1, 
+   "firstName": "Genius", 
+   "lastName": "Hulikner", 
+   "email": "me@me.com" 
 }
 ```
 
-## Professional Requirements
+### exoPlanets
 
-1. All teammates must use React and JSON-server. 
-1. Each module should have a comment at the top with the following info: author(s) and purpose of module
-1. The README for your project should include instructions on how another person can download and run the application
-1. An ERD showing the database relationships. A screenshot/image should be included on your README.
+```json
+{
+   "id": 1,
+   "name": "Earth",
+   "mass": "1",
+   "radius": "1",
+   "eqTemp": "1",
+   "orbit": "365",
+   "lightYears": "0",
+   "rating": 0
+}
+```
 
-## A Note About Authentication
+### itineraries
 
-We want you to know that the login and registration code we have given you is fake, completely insecure, and would never be implemented in a professional application. It is a simulation authentication using very simplistic tools, because authentication is not a learning objective of students at NSS.
+```json
+{
+   "id": 1,
+   "usersId": 1,
+   "exoPlanetsId": 1,
+   "departure": 1650931200,
+   "return": 1651536000,
+   "mode": "Warp-Drive"
+}
+```
+### receipts
 
-You will be using [session storage](https://javascript.info/localstorage#sessionstorage) to keep track of which user has logged into Nutshell. You need to read the code in the **`Login.js`** and **`Register.js`** components so that you see what is going on, but you do not need to change it.
+```json
+{
+   "id": 1,
+   "usersId": 1,
+   "exoPlanetsId": 1,
+   "departure": 1650931200,
+   "return": 1651536000,
+   "mode": "Warp-Drive",
+   "itinerariesId": 1
+}
+```
+### hubDrives
 
-## Keep in mind some tips for a good usable app
-1. Use acceptable conventions
-   * Logo positioned at top left
-   * Navigation across the top or down the left side
-2. Visual hierarchy
-   * Most important information is the most prominent
-3. Break pages up into defined sections
-   * Logically related content should be related visually
-4. That which is clickable should be obviously clickable.
-5. Eliminate distractions
-   * Use only two typefaces
-   * Limit color pallet (3 colors with black and white)
-   * Use a grid
-6. Support scanning (users don't read)
-   * Use plenty of headings
-   * Short paragraphs
-   * Bulleted lists
-7. Strive for consistency.
+```json
+{
+   "id": 1,
+   "name": "The Citadel",
+   "detail": "The Citadel is the largest artificial structure in the galaxy, with a population of 13.2 million intelligent beings from across the Milky Way galaxy, and uses centrifugal force to create artificial gravity for its inhabitants. Initially, it was discovered by the asari and the salarians, the earliest post-Prothean races to discover the mass relays - megastructures scattered throughout the galaxy that facilitate FTL travel. Following this, an executive committee known as the Citadel Council was created, with the station functioning as the seat of galactic government. The Council holds great sway in the galaxy, and are recognized as an authority by most of explored space.",
+   "cardDetail": "The largest artificial structure in the galaxy.",
+   "pic": "./Images/Hub.jpg"
+}
+```
+### abouts
+
+```json
+{
+   "id": 1,
+   "name": "Exo-Travel",
+   "cardDetail": "The Space Frontier Corporation",
+   "detail": "Exo-Travel is an American space advocacy corporation organized to promote the interests of increased involvement of the private sector, in collaboration with government, in the exploration and development of space. Its advocate members design and lead a collection of projects with goals that align to the organization's goals as described by its credo. Exo-Travel is an organization of people dedicated to opening the Space Frontier to human settlement. Our goals include protecting the Earths fragile biosphere and creating a freer and more prosperous life for each generation by using the unlimited energy and material resources of space. Our purpose is to unleash the power of free enterprise and lead a united humanity permanently into the Universe.",
+   "pic": "./Images/Hub.jpg"
+}
+```
+### reviews
+
+```json
+{
+   "id": 1,
+   "usersId": 2,
+   "date": 1650937710.123,
+   "exoPlanetsId": 2,
+   "message": "Really loved this planet and the wormhole shuttle was crazy awesome!",
+   "stars": 5
+}
+```
+
