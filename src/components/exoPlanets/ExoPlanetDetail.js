@@ -19,7 +19,7 @@ export const ExoPlanetDetail = () => {
   const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
 
   // State setState
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [exoPlanet, setExoPlanet] = useState({
     name: "",
     mass: "",
@@ -199,7 +199,7 @@ export const ExoPlanetDetail = () => {
         <button
           type="submit"
           className="submit-itinerary-button"
-          // disabled={isLoading}
+          disabled={isLoading}
           onClick={handleClickSaveEvent}
         >
           Save

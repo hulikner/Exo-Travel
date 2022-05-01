@@ -4,9 +4,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(179, 9, 9);
-  background-image: url('../public/Images/space_background1.jpg');
+  background-image: url('/public/Images/space_background1.jpg');
   background-size: repeat;
   /* min-height: 100vh; */
+  background-attachment: fixed;
 }
 
 code {

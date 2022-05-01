@@ -12,12 +12,12 @@ export const NavBar = ({ clearUser }) => {
 
   // Displays NavBar on DOM
   return (
-    <nav>
+    <nav className="nav-bar">
       <ul className="navBar">
         <div className="nav-logo">
           <Link className={`navbar__link ${location.pathname === "/home" ? "active" : ""}`} to="/home">
             {" "}
-            <img className="nav-logo-home" src="/Images/Exo-Travel-Logo.jpg" />{" "}
+            <img height='50px' width='100px' className="nav-logo-home" src="/Images/Exo-Travel-Logo.svg" />{" "}
           </Link>
         </div>
         <Link className={`navbar__link ${location.pathname === "/exoPlanets" ? "active" : ""}`} to="/exoPlanets">

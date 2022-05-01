@@ -35,7 +35,7 @@
     justify-content: center;
     color:white;
     /* background-color: gray; */
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
     /* border:5px solid white; */
     /* border-radius: 20px; */
     font-size: 30px;
@@ -44,25 +44,41 @@
     align-items: center;
 
 }
-
+.exoPlanet-home-card > h2{
+    border-bottom: none;
+}
+.itinerary-home > h2{
+    border-bottom: none;
+}
+.exoPlanet-home-card::-webkit-scrollbar{
+    display: none;
+}
 .exoPlanet-home-card{
     display: flex;
+    max-height: 100vh;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-styles: none;
+
     flex-direction: column;
     align-items: center;   
     margin: 20px;
-    width: 40vw;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    flex-basis: 45%;
+   /* border:5px solid white;*/
+    border-radius: 20px;
     background-color: rgb(179, 9, 9);
-    box-shadow: 5px 5px 5px 5px black;
+    background-color: transparent;
+    /* box-shadow: 5px 5px 5px 5px black; */
     color:white;
     height:auto;
     
 }
 
 .exoPlanet-home-img {
-    height: 75px;
-    width: auto;
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
     border-radius: 10px;
     /* box-shadow: 5px 5px 5px 5px black; */
     margin:10px;
@@ -70,16 +86,16 @@
 .exoPlanet-home-link{
     display:flex;
     flex-direction: column;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    box-shadow: 5px 5px 5px 5px black;
-    justify-content: space-evenly;
     align-items: center;
+    border:5px solid white;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 10px;
+    
+   
     text-decoration: none;
     color:white;
-    /* margin:10px; */
     padding:10px;
-    width:37vw;
+    width: 100%;
     background-color:gray;
 
 }
@@ -93,8 +109,9 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-   height: 50px;
-   width: auto;
+    height: 100px;
+    width: 100px;
+
    border-radius: 10px;
    /* box-shadow: 5px 5px 5px 5px black; */
    margin:10px;
@@ -104,7 +121,7 @@
     display:flex;
     flex-direction: row;
     border:5px solid white;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     box-shadow: 5px 5px 5px 5px black;
     justify-content: space-evenly;
     align-items: center;
@@ -117,15 +134,16 @@
 
 }
 .itinerary-home{
-    border:5px solid white;
-    /* border-radius: 20px; */
-    background-color: rgb(179, 9, 9);
+
+
+ 
     box-shadow: 5px 5px 5px 5px black;
-    width: 40vw;
+    flex-basis: 45%;
     color:white;
   
     margin:20px;
 }
+
 .itinerary-home-img-container{
     display:flex;
     flex-direction: column;
