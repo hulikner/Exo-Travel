@@ -1,64 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { getUsersById } from "../../modules/AboutManager";
-import { ExoPlanetHomeCard } from "../exoPlanets/ExoPlanetHomeCard"
-import { ExoPlanetCard} from "../exoPlanets/ExoPlanetCard"
+// Imports
+import React from "react";
+import { ExoPlanetHomeCard } from "../exoPlanets/ExoPlanetHomeCard";
 import { ItineraryHomeCard } from "../itineraries/ItineraryHomeCard";
-import { getAllExoPlanets } from "../../modules/ExoPlanetManager";
-// import Carousel from 'react-material-ui-carousel'
-// import { Paper, Button } from '@mui/material'
+import "./Home.css";
 
-import "./Home.css"
-let user = JSON.parse(sessionStorage.getItem('exoTravel_user_firstName'))
-
+// Using logged in user name, display greeting
 const greetUser = () => {
-  if (sessionStorage.getItem('exoTravel_user_firstName') != undefined || null){
-    let userName = JSON.parse(sessionStorage.getItem('exoTravel_user_firstName'))
-    return    <p className="welcome">Welcome, {userName??''}</p>
+  if (sessionStorage.getItem("exoTravel_user_firstName") != undefined || null) {
+    let userName = JSON.parse(sessionStorage.getItem("exoTravel_user_firstName"));
+    return <p className="welcome">Welcome, {userName ?? ""}</p>;
   }
-}
+};
 
-// const ExoPlanetCarousel= (exoPlanets) =>
-// {
-  
-  
-//   return (
- 
-//     )
-//   }
+// Home page
+export const Home = () => {
+  return (
+    <>
+      <div className="home">
+        <div className="home-header">{greetUser()}</div>
+        <div className="home-cards">
+          <ExoPlanetHomeCard />
+          <ItineraryHomeCard />
+        </div>
+      </div>
+    </>
+  );
+};
 
-
-  export const Home = () => {
-    // const [exoPlanets, setExoPlanets] = useState([])
-   
-    // useEffect(() => {
-    //     getAllExoPlanets().then(setExoPlanets);
-    // }, [])
-  
-
-  return(  
-  <>
-  {greetUser()}
-  
-  <div className="home">
-  
-  {/* <Carousel>
-            {
-              exoPlanets.map( (exoPlanet) => <ExoPlanetCard 
-              key={exoPlanet.id} 
-              exoPlanet={exoPlanet} 
-              /> )
-            }
-        </Carousel> */}
-  {/* {ExoPlanetCarousel(exoPlanets)} */}
-  <ExoPlanetHomeCard />
-  <ItineraryHomeCard />
- 
-
-
-  </div>
-  </>
-  )
-}
-
-
+// Call for Home function
 Home();

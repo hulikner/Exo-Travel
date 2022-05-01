@@ -1,37 +1,39 @@
+// Imports
 import React, { useEffect, useState } from "react";
-import "./ReviewList.css"
-import { getReviewsByExoPlanet, deleteReview } from "../../modules/ReviewManager";
-import { useNavigate, useParams } from "react-router-dom";
 import { ReviewCard } from "./ReviewCard";
+import { useParams } from "react-router-dom";
+import { getReviewsByExoPlanet, deleteReview } from "../../modules/ReviewManager";
+import "./ReviewList.css";
 
-// GROUP: display a list of all the Reviews from the database
-
+// List of reviews for that Exo-Planet
 export const ReviewList = () => {
-    const [reviews, setReviews] = useState([])
-    const { exoPlanetId } = useParams();
-    const navigate = useNavigate();
+  // State setState
+  const [reviews, setReviews] = useState([]);
 
-    const handleDeleteReview = id => {
-        deleteReview(id)
-        .then(() => getReviewsByExoPlanet(exoPlanetId).then(setReviews));
-    };
+  // React-Router-Dom use
+  const { exoPlanetId } = useParams();
 
-    useEffect(() => {
-        getReviewsByExoPlanet(exoPlanetId).then(setReviews)
-    },[])
-    return(
-        <div className="review-container">
-            <div className ="review-list"  >
-                <h2 className="review-list-header">Reviews</h2>
-                <div className="review-list-content">
-                    {reviews.map(i => (
-                        <ReviewCard
-                        key={i.id}
-                        review={i}
-                        handleDeleteReview={handleDeleteReview} />
-                    ))}
-                </div>
-            </div>
+  // Handles delete
+  const handleDeleteReview = (id) => {
+    deleteReview(id).then(() => getReviewsByExoPlanet(exoPlanetId).then(setReviews));
+  };
+
+  // Gets Exo-Planets reviews
+  useEffect(() => {
+    getReviewsByExoPlanet(exoPlanetId).then(setReviews);
+  }, []);
+
+  // Displays Exo-Planets reviews
+  return (
+    <div className="review-container">
+      <div className="review-list">
+        <h2 className="review-list-header">Reviews</h2>
+        <div className="review-list-content">
+          {reviews.map((i) => (
+            <ReviewCard key={i.id} review={i} handleDeleteReview={handleDeleteReview} />
+          ))}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};

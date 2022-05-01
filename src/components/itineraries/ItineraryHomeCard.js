@@ -1,49 +1,42 @@
-import React, { useEffect, useState } from 'react';
+// Imports
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { epochDateConverter } from "../util/epochDateConverter";
+import { getItinerariesByUserId } from "../../modules/ItineraryManager";
 import "../home/Home.css";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faXmark} from '@fortawesome/free-solid-svg-icons'
-import { getAllItineraries } from '../../modules/ItineraryManager';
-import { epochDateConverter } from '../util/epochDateConverter';
-
 
 export const ItineraryHomeCard = () => {
-  let today= new Date().getTime()/1000;
-  
-  
-  const[itineraries, setItineraries] = useState([])
-  const {itineraryId} = useParams();
-  
-  
-  
+  // React-Router-Dom use
+  const { itineraryId } = useParams();
+
+  // State setState
+  const [itineraries, setItineraries] = useState([]);
+
+  // Gets current users id
+  const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
+
+  // Gets all the itineraries by user for Home page
   useEffect(() => {
-    getAllItineraries().then(setItineraries)
-  },[])
-  
-  
+    getItinerariesByUserId(currentUser).then(setItineraries);
+  }, []);
 
+  // Sends a list of users itineraries to Home Page
   return (
-
     <>
       <div className="itinerary-home">
-      <h2 className="itinerary-home-header">Itineraries</h2>
-      {itineraries.map(x =>( 
-
-        <div className='itinerary-home-content' key={x.id}>
-
-      <Link className="itinerary-home-link" to={`/itineraries/${x.id}` }>
-       
-            <div className="itinerary-home-img-container">
+        <h2 className="itinerary-home-header">Itineraries</h2>
+        {itineraries.map((x) => (
+          <div className="itinerary-home-content" key={x.id}>
+            <Link className="itinerary-home-link" to={`/itineraries/${x.id}`}>
+              <div className="itinerary-home-img-container">
                 <img className="itinerary-home-img" src={`../Images/${x.exoPlanet?.name}.jpg`} />
                 <span className="itinerary-home-img-name">{x.exoPlanet?.name}</span>
-            </div>
-            <div className= 'itinerary-home-departure'>
-            Departure: {epochDateConverter(x.departure, 'eee. MMM do')}
-            </div>
-      </Link>
+              </div>
+              <div className="itinerary-home-departure">Departure: {epochDateConverter(x.departure, "eee. MMM do")}</div>
+            </Link>
+          </div>
+        ))}
       </div>
-      ))}
-      </div>
-  </>
+    </>
   );
-}
+};

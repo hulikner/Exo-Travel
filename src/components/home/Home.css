@@ -1,6 +1,6 @@
 .home {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     margin:20px;
     /* background-color: gray; */
     /* border: 5px white solid; */
@@ -19,17 +19,29 @@
     /* border-radius: 5px; */
     
 }
+.home-header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.home-cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .welcome{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    color:rgb(179, 9, 9);
-    background-color: gray;
+    color:white;
+    /* background-color: gray; */
     box-shadow: 5px 5px 5px 5px black;
-    border:5px solid white;
+    /* border:5px solid white; */
     /* border-radius: 20px; */
     font-size: 30px;
     font-weight: 700;
+    width:30vw;
+    align-items: center;
 
 }
 
@@ -78,6 +90,9 @@
     justify-content: center;
 }
 .itinerary-home-img {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
    height: 50px;
    width: auto;
    border-radius: 10px;
@@ -119,5 +134,8 @@
     
 }
 .card-home-exoPlanet-starRating{
+    display:flex;
+    flex-direction: row;
     color:white;
+    justify-content: center;
 }

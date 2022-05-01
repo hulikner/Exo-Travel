@@ -1,42 +1,39 @@
+// Imports
 import React, { useEffect, useState } from "react";
-import "./ReceiptList.css"
-import { getAllReceipts, deleteReceipt, getReceiptByItineraryId, getReceiptById, addReceipt } from "../../modules/ReceiptManager";
-import { useNavigate, useParams } from "react-router-dom";
 import { ReceiptCard } from "./ReceiptCard";
+import { useParams } from "react-router-dom";
+import { getAllReceipts, deleteReceipt, getReceiptByItineraryId } from "../../modules/ReceiptManager";
+import "./ReceiptList.css";
 
-// GROUP: display a list of all the Receipts from the database
-
+// Receipts list
 export const ReceiptList = () => {
-    const [receipts, setReceipts] = useState([])
-    
-    const {itineraryId} = useParams();
+  // State setState
+  const [receipts, setReceipts] = useState([]);
 
-    const navigate = useNavigate();
+  // React-Router-DOM use
+  const { itineraryId } = useParams();
 
-    const handleDeleteReceipt = id => {
-        deleteReceipt(id)
-        .then(() => getAllReceipts().then(setReceipts));
-    };
+  // Handles delete
+  const handleDeleteReceipt = (id) => {
+    deleteReceipt(id).then(() => getAllReceipts().then(setReceipts));
+  };
 
-    useEffect(() => {
-        getReceiptByItineraryId(itineraryId).then(setReceipts)
-       
-    },[])
-    
+  // Gets receipt by itinerary id and sets
+  useEffect(() => {
+    getReceiptByItineraryId(itineraryId).then(setReceipts);
+  }, []);
 
-    return(
-        <div className="receipt-container">
-            <div className ="receipt-list"  >
-                <h2 className="receipt-list-header">Receipts</h2>
-                <div className="receipt-list-content">
-                    {receipts.map(i => (
-                        <ReceiptCard
-                        key={i.id}
-                        receipt={i}
-                        handleDeleteReceipt={handleDeleteReceipt} />
-                    ))}
-                </div>
-            </div>
+  // Displays receipts
+  return (
+    <div className="receipt-container">
+      <div className="receipt-list">
+        <h2 className="receipt-list-header">Receipts</h2>
+        <div className="receipt-list-content">
+          {receipts.map((i) => (
+            <ReceiptCard key={i.id} receipt={i} handleDeleteReceipt={handleDeleteReceipt} />
+          ))}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
