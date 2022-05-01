@@ -10,9 +10,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    border:5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
+    border:5px solid #C0C0C0;
+    border-radius: 50px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
     margin:20px;
     max-width: 60vw;
@@ -24,7 +24,7 @@
 .detail-hubDrive-pic{
     width:auto;
     height:500px;
-    border:10px solid black;
+    border:10px solid #C0C0C0;
     border-radius: 50px;
     box-shadow: 5px 5px 5px 5px black;
 
@@ -32,8 +32,8 @@
 img.detail-about-pic{
     width:auto;
     height: 40vh;
-    border:10px solid white;
-    /* border-radius: 50px; */
+    border:10px solid #C0C0C0;
+    border-radius: 50px;
     box-shadow: 5px 5px 5px 5px black;
 
 }
@@ -41,49 +41,51 @@ img.detail-about-pic{
     display:flex;
     flex-direction: row;
     font-size: 40px;
-    background-color: rgb(179, 9, 9);
-    border: 10px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 10px solid #C0C0C0;
+    border-radius: 20px;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
     width:120%;
     height: 100px;
     justify-content: center;
     align-items: center;
+    color: #C0C0C0;
 
 
 }
 p.detail-hubDrive-cardDetail{
     font-size: 24px;
+    color:#C0C0C0;
 }
 h3.detail-about-name{
     display:flex;
     flex-direction: row;
     font-size: 40px;
-    background-color: rgb(179, 9, 9);
-    border: 10px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 10px solid #C0C0C0;
+    border-radius: 20px;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
     width:120%;
     height: 100px;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:#C0C0C0;
 
 }
 div.about-detail-content{
     display:flex;
     flex-direction: column;
     align-items: center;
-    border:10px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
+    border:10px solid #C0C0C0;
+    border-radius: 50px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
     margin:20px;
     max-width: 60vw;
     font-size: 24px;
     font-weight: 600;
     box-shadow: 5px 5px 5px 5px black;
-    color:black;
+    color:#C0C0C0;
 }

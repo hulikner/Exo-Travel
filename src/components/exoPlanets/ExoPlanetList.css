@@ -9,11 +9,11 @@
     width:auto;
     border: 3px solid white;
     border-radius: 20px;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color:white;
     font-family: 'Play', sans-serif;
     margin:22px;
-   
+    height:40px;
 }
 .desc-button{
     width:auto;

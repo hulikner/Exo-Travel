@@ -5,11 +5,11 @@
     margin: 20px;
     width: auto;
     height: auto;
-    background-color:  rgb(179, 9, 9);
-    /* border-radius: 50px; */
-    border:5px solid white;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border-radius: 50px;
+    border:5px solid #C0C0C0;
     padding:10px;
-    color:white;
+    color:#C0C0C0;
     text-decoration: none;
     justify-content: center;
 
@@ -25,7 +25,7 @@
     flex-direction: column;
     width: 100px;
     height:100px;
-    /* border-radius: 2em; */
+    border-radius: 2em;
     padding:1em;
     justify-items: center;
     align-items: center;
@@ -60,14 +60,14 @@
     
 }
 .itinerary-card-info{
-    border:3px solid white;
+    border:3px solid #C0C0C0;
     padding:10px;
     text-decoration: none;
     box-shadow: 5px 5px 5px 5px black;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     margin:10px;
     font-weight: 600;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     width:250px;
 
 }
@@ -79,6 +79,7 @@
     display:flex;
     /* margin:10px; */
     justify-content: space-between;
+    color:#C0C0C0;
 }
 
 .itinerary-pic{
@@ -86,7 +87,7 @@
     height:75px;
     width:auto;
     border-radius: 20px;
-    /* border:5px solid white; */
+    /* border:5px solid #C0C0C0; */
     /* padding:10px; */
     box-shadow: 5px 5px 5px 5px black;
 

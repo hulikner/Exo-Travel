@@ -5,7 +5,9 @@ import { updateExoPlanet } from "../../modules/ExoPlanetManager";
 import { addReview, getReviewsByExoPlanet } from "../../modules/ReviewManager";
 import "./ReviewForm.css";
 
-export const defaultReview={
+export const defaultReview=(currentUser, exoPlanetId)=>
+(
+    {
     id: "",
     userId: currentUser,
     date: new Date().getTime() / 1000,
@@ -13,7 +15,9 @@ export const defaultReview={
     message: "",
     stars: "",
 }
+)
 export const ReviewForm = () => {
+    const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
     // React-Router-DOM use
     const { exoPlanetId } = useParams();
     
@@ -21,9 +25,8 @@ export const ReviewForm = () => {
     const [allReviews, setAllReviews] = useState();
     
     const [isLoading, setIsLoading] = useState(false);
-    const [review, setReview] = useState(defaultReview);
+    const [review, setReview] = useState(defaultReview(currentUser, exoPlanetId));
     const navigate = useNavigate();
-  const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
 
   const getStarTotal = (newStars) => {
     const reviewCount = +allReviews.length + 1;
