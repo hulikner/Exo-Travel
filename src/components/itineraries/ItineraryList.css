@@ -3,22 +3,24 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: stretch;
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
+    /* border: 5px solid #C0C0C0; */
+    border-radius: 50px;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     padding:10px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
     justify-content: space-evenly;
     max-width: 90vw;
     height:auto;
+    border-bottom: none;
    
 }
 .itinerary-list-header{
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
-    box-shadow: 5px 5px 5px 5px black;
-    color:white;
+    /* border: 5px solid #C0C0C0; */
+    border-radius: 50px;
+    /* background-color: gray; */
+    /* box-shadow: 5px 5px 5px 5px black; */
+    color:#C0C0C0;
+    border-bottom: none;
 }
 
 .itinerary-container{
@@ -31,11 +33,11 @@
 .itinerary-page-review{
     display:flex;
     flex-direction: row;
-    color:white;
+    color:#C0C0C0;
     font-size: 20px;
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
+    border: 5px solid #C0C0C0;
+    border-radius: 50px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     box-shadow: 5px 5px 5px 5px black;
     padding:10px;
     margin:10px;
@@ -43,5 +45,5 @@
     align-items: center;
 }
 .itinerary-card-data{
-    color:black;
+    color:rgb(179, 9, 9);
 }

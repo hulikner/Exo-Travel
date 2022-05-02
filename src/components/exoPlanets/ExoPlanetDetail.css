@@ -2,12 +2,14 @@
 .exoPlanet-title{
     display:flex;
     flex-direction: row;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    /* border:5px solid white; */
+    border-radius: 20px;
     width: 98vw;
-    background-color: gray;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     justify-content: center;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
+    font-size: 30px;
+    color:#c0c0c0;
 }
 .exoPlanetContainer{
     display:flex;
@@ -32,29 +34,29 @@
 }
 .back-button{
     display:flex;
-    background-color: gray;
-    border:5px solid white;
-    color:white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #C0C0C0;
+    color:#C0C0C0;
+    border-radius: 20px;
     align-items: center;
     margin:10px;
     font-family: 'Play', sans-serif;
 }
 .review-button{
     display:flex;
-    background-color: gray;
-    border:5px solid white;
-    color:white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #C0C0C0;
+    color:#C0C0C0;
+    border-radius: 20px;
     align-items: center;
     font-family: 'Play', sans-serif;
 }
 .submit-itinerary-button{
     display:flex;
-    background-color: gray;
-    border:5px solid white;
-    color:white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #C0C0C0;
+    color:#C0C0C0;
+    border-radius: 20px;
     align-items: center;
     font-family: 'Play', sans-serif;
 }
@@ -65,10 +67,10 @@
     align-items: center;
 }
 .exoPlanet-pic{
-    /* border-radius: 50px; */
+    border-radius: 50px;
     height:400px;
     width:auto;
-    border:10px solid white;
+    border:10px solid #C0C0C0;
 }
 .exoPlanet-info{
     display:flex;
@@ -81,28 +83,28 @@
     display:flex;
     flex-direction: column;
     margin:10px;
-    background-color: gray;
-    border: 5px solid white;
-    /* border-radius: 50px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #C0C0C0;
+    border-radius: 50px;
     max-width: 75vw;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-    color:white;
+    color:#C0C0C0;
 }
 .exoPlanet-detail{
     display:flex;
     flex-direction: column;
     margin:10px;
     margin-bottom: 20px;;
-    background-color: gray;
-    border: 5px solid white;
-    /* border-radius: 50px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #C0C0C0;
+    border-radius: 50px;
     max-width: 75vw;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    color:white;
+    color:#C0C0C0;
 }
 .detailsContainer{
     display:flex;
@@ -111,10 +113,10 @@
     font-weight: 600;
     width:auto;
     margin:0px;
-    background-color: gray;
-    border: 5px solid white;
-    color:white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #C0C0C0;
+    color:#C0C0C0;
+    border-radius: 20px;
     padding:10px;
     align-items: center;
 }
@@ -128,53 +130,53 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__radius{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__eqTemp{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__orbit{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet__lightYears{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 .exoPlanet-mass-label{
-    color:black;
+    color:#C0C0C0;
 }
 .exoPlanet-radius-label{
-    color:black;
+    color:#C0C0C0;
 }
 .exoPlanet-eqTemp-label{
-    color:black;
+    color:#C0C0C0;
 }
 .exoPlanet-orbit-label{
-    color:black;
+    color:#C0C0C0;
 }
 .exoPlanet-lightYears-label{
-    color:black;
+    color:#C0C0C0;
 }
 .exoPlanet__fields{
     display:flex;
     flex-direction: row;
     align-items: center;
     margin:10px;
-    color:rgb(179, 9, 9);
+    color:#f4100f;
 }
 button.ion-select {
         display:flex;
@@ -182,13 +184,13 @@ button.ion-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: auto;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
-        /* border-radius: 20px; */
+        border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
     }
@@ -200,25 +202,25 @@ button.ion-not-select {
         height: auto;
         width:10em;
         border: none;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: auto;
         transition: none;
         font-size: x-large;
-        border: 5px solid white;
-        color:white;
-        /* border-radius: 20px; */
+        border: 5px solid #C0C0C0;
+        color:#C0C0C0;
+        border-radius: 20px;
         font-family: 'Play', sans-serif;
     }
     
     button.ion-select:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.ion-not-select:hover {
         background-color: black;
-        color: gray;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     button.warp-btn {
@@ -227,13 +229,13 @@ button.ion-not-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: 10px;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
-        /* border-radius: 20px; */
+        border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
     }
@@ -244,25 +246,25 @@ button.ion-not-select {
          height: auto;
          width:10em;
          border: none;
-         background-color: gray;
+         background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
          margin: 10px;
          transition: none;
          font-size: x-large;
-         border: 5px solid white;
-         color:white;
-        /* border-radius: 20px; */
+         border: 5px solid #C0C0C0;
+         color:#C0C0C0;
+        border-radius: 20px;
         font-family: 'Play', sans-serif;
     }
     
     button.warp-btn:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.warp-not-btn:hover {
         background-color: black;
-        color: gray;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     button.wormhole-selected {
@@ -271,13 +273,13 @@ button.ion-not-select {
         border: none;
         align-items: center;
         height: auto;
-        background-color: gray;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         margin: auto;
         transition: none;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-size: x-large;
         border: 5px solid black;
-        /* border-radius: 20px; */
+        border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
     }
@@ -288,25 +290,25 @@ button.ion-not-select {
         height: auto;
         width:10em;
          border: none;
-         background-color: gray;
+         background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
          margin: auto;
          transition: none;
          font-size: x-large;
-         border: 5px solid white;
-         color:white;
-        /* border-radius: 20px; */
+         border: 5px solid #C0C0C0;
+         color:#C0C0C0;
+        border-radius: 20px;
         font-family: 'Play', sans-serif;
     }
     
     button.wormhole-selected:hover {
         background-color: black;
-        color: rgb(179, 9, 9);
+        color: #f4100f;
         font-family: 'Play', sans-serif;
     }
     
     button.wormhole-not-selected:hover {
         background-color: black;
-        color: grey;
+        color:#C0C0C0;
         font-family: 'Play', sans-serif;
     }
     
@@ -321,17 +323,17 @@ button.ion-not-select {
     }
 
     input#departure.form-control.departure{
-        background-color: white;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         color:black;
-        /* border-radius: 2em; */
+        border-radius: 2em;
         font-family: 'Play', sans-serif;
     }
 
     input#return.form-control.return{
         display: flex;
-        background-color: white;
+        background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
         color:black;
-        /* border-radius: 2em; */
+        border-radius: 2em;
         justify-items: center;
         margin:5px;
         font-family: 'Play', sans-serif;

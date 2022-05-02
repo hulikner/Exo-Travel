@@ -4,11 +4,11 @@
 }
 
 main {
-  background-color: rgb(179, 9, 9);
+  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   padding: 1em;
   font-size: xx-large;
   box-shadow: 4px 4px 4px 4px black;
-  border: 5px solid white;
+  border: 5px solid #c0c0c0;
   border-radius: 50px;
   margin: 0;
   position: absolute;
@@ -21,7 +21,7 @@ main {
 .bottom--login{
   display:flex;
   flex-direction: row;
-  min-height: 89vh;
+  min-height: 89.8vh;
 }
 h1, h2 {
   text-align: center;
@@ -29,9 +29,9 @@ h1, h2 {
 
 input[type=email]{
   resize: vertical;
-  background-color: black;
+  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   border: none;
-  color: black;
+  color: #c0c0c0;
   outline: none;
   margin-left: 1em;
   padding:.5em;
@@ -41,23 +41,23 @@ input[type=email]{
 
 h2 {
   padding-bottom: .1em;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #c0c0c0;
   margin-top: 1.3em;
   margin-bottom: 1em;
-  color:white;
+  color:#c0c0c0;
   
 }
 
 h1 {
-  background-color: gray;
+  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   box-shadow: 5px 5px 5px 5px black;
-  border:5px solid white;
+  border:5px solid #c0c0c0;
   border-radius: 50px;
   width: 115%;
   position: absolute;
   top: -9%;
   left: -8%;
-  color:black;
+  color:#c0c0c0;
 }
 
 .form--login {
@@ -68,7 +68,7 @@ h1 {
   display:flex;
   justify-content: center;
   align-content: center;
-  color: white;
+  color: #c0c0c0;
   transition: color 1s;
   font-size: x-large;
   text-decoration: none;
@@ -81,10 +81,10 @@ h1 {
 }
 
 .link--register a:hover {
-  color: gray;
+  color: #c0c0c0;
 }
 .inputEmail{
-  color:black;
+  color:#c0c0c0;
 }
 
 fieldset {
@@ -101,10 +101,10 @@ fieldset {
   display: flex;
   width: 100px;
   height: 30px;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid #c0c0c0;
+  color: #c0c0c0;
   border-radius: 5px;
-  background-color: gray;
+  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   font-weight: bold;
   font-size: large;
   transition: background-color 1s, color 1s;
@@ -114,8 +114,8 @@ fieldset {
 }
 
 .login-btn:hover{
-  background-color: black;
-  color: gray;
+  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
   cursor: pointer
 }
 
@@ -126,5 +126,5 @@ fieldset {
 .login-email{
   font-weight: 700;
   font-size: 20px;
-  color:white;
+  color:#c0c0c0;
 }

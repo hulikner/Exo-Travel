@@ -138,7 +138,7 @@ export const ExoPlanetDetail = () => {
           </div>
         </div>
         <div className="card-exoPlanet-starRating">
-          <Rating style={{ color: "rgb(179, 9, 9)" }} value={exoPlanet.rating} readOnly />{" "}
+          <Rating style={{ color: "#f4100f" }} value={exoPlanet.rating} readOnly />{" "}
         </div>
       </section>
       <div className="exoPlanet-detail">

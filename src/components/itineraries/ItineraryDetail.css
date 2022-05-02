@@ -12,6 +12,10 @@
 .itinerary-detail-title{
     position: relative;
     top:auto;
+    color:#C0C0C0;
+}
+.itinerary-detail-data{
+    color:#C0C0C0;
 }
 .itinerary-page-bottom{
     display:flex;
@@ -21,17 +25,18 @@
 .itinerary-img{
     width:auto;
     height:170px;
-     border:5px solid white; 
-    /* border-radius: 50px; */
+     /* border:5px solid #C0C0C0;  */
+    border-radius: 50px;
+    padding:10px;
 }
 
 .itinerary-img-name{
-    background-color: rgb(179, 9, 9);
-   border:5px solid white;
-   /* border-radius: 50px; */
-    padding:5px;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+   /* border:5px solid #C0C0C0; */
+   border-radius: 50px;
+    padding:10px;
     margin:5px;
-    color:white;
+    color:#C0C0C0;
 }
 .itinerary-detail-img{
     display:flex;
@@ -41,48 +46,49 @@
     align-items: center;
     font-size: 24px;
     font-weight: 700;
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
+    /* border: 5px solid #C0C0C0; */
+    border-radius: 50px;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     padding:10px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
 }
 .itinerary-detail-total{
-    border-top: 2px solid white;
+    border-top: 2px solid #C0C0C0;
 }
 .itinerary-details-title{
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
-    box-shadow: 5px 5px 5px 5px black;
-    color:white;
+    /* border: 5px solid #C0C0C0; */
+    border-radius: 50px;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    /* box-shadow: 5px 5px 5px 5px black; */
+    color:#C0C0C0;
+    border-bottom:none;
     
 }
 .itinerary-price-summary{
     display:flex;
     flex-direction: column;
     align-items: left;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    background-color: gray;
+    border:5px solid #C0C0C0;
+    border-radius: 20px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:15px;
     height:225px;
     width:30vw;
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
-    color:white;
+    color:#C0C0C0;
 
 }
 .itinerary-departure-return{
     display:flex;
     flex-direction: row;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    background-color: gray;
+    border:5px solid #C0C0C0;
+    border-radius: 20px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
     margin:10px;
     font-size:12px;
@@ -100,15 +106,15 @@
 .itinerary-departureToReturn{
     display:flex;
     flex-direction: column;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    border:5px solid #C0C0C0;
+    border-radius: 20px;
     padding:10px;
-    background-color: rgb(179, 9, 9);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     width:100%;
     height:120px;
-    color:white;
+    color:#C0C0C0;
 
     margin:19px;
 }
@@ -122,17 +128,17 @@
 }
 
 .itinerary-price-summary-button{
-    border:3px solid white;
-    /* border-radius: 10px; */
-    color:white;
-    background-color: gray;
+    border:3px solid #C0C0C0;
+    border-radius: 10px;
+    color:#C0C0C0;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     font-family: 'Play', sans-serif;
 }
 .itinerary-price-summary-button:hover{
-    color:black;
-    background-color: gray;
+    color:#C0C0C0;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     transform: scale(1.1);
     transition: 0.5s;
     font-weight: 600;
@@ -148,17 +154,17 @@
 
 .itinerary-page-button{
     margin:10px;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     box-shadow: 5px 5px 5px 5px black;
-    border:3px solid white;
-    /* border-radius: 10px; */
-    color:white;
+    border:3px solid #C0C0C0;
+    border-radius: 10px;
+    color:#C0C0C0;
     font-weight: 600;
     font-family: 'Play', sans-serif;
 }
 .itinerary-page-button:hover{
-    color:black;
-    background-color: gray;
+    color:#C0C0C0;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     transform: scale(1.1);
     transition: 0.5s;
     font-weight: 600;

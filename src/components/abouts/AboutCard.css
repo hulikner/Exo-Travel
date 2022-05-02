@@ -3,10 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid white;
-    /* border-radius: 20px; */
-    color:black;
-    background-color: gray;
-    
-
+    border: 5px solid #c0c0c0;
+    border-radius: 20px;
+    color:#c0c0c0;
+/* Created with https://www.css-gradient.com */
+background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
 }

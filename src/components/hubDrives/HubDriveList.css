@@ -3,7 +3,7 @@ div.hubDrive-container{
    flex-direction: row;
     min-width: 100%;
     text-decoration: none;
-    color: white;
+    color: #C0C0C0;
     justify-items: center;
     justify-content: space-evenly;
     /* align-items: center; */
@@ -13,11 +13,11 @@ div.hubDrive-container{
 .detail-hubDrive-title{
     display:flex;
     flex-direction: row;
-    border: 5px solid white;
-    /* border-radius: 50px; */
-    background-color: gray;
-    box-shadow: 5px 5px 5px 5px black;
-    color:white;
+    /* border: 5px solid #C0C0C0; */
+    border-radius: 50px;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    /* box-shadow: 5px 5px 5px 5px black; */
+    color:#C0C0C0;
     justify-content: center;
     font-size: 30px;
     font-weight: 700;
@@ -30,10 +30,10 @@ div.hubDrive-container{
     image-rendering: auto;
     width:auto;
     height:200px;
-    /* border-radius: 2em; */
+    border-radius: 2em;
     box-shadow: 5px 5px 5px 5px black;
     text-decoration: none;
-    border:3px solid white;
+    /* border:3px solid #C0C0C0; */
     max-width: 300px;
     margin: 20px;
 }
@@ -49,10 +49,10 @@ div.hubDrive-container{
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color:white;
+    color:#C0C0C0;
     box-shadow: 5px 5px 5px 5px black;
-    border:5px solid white;
-    /* border-radius: 50px; */
+    border:5px solid #C0C0C0;
+    border-radius: 50px;
     align-items: center;
-    background-color: gray;
-}
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    }
