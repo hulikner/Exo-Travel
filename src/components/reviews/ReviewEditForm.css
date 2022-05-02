@@ -1,29 +1,30 @@
 .review__edit__header{
     background-color: gray;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    width:100vw;
+    border:5px solid f4100f;
+    border-radius: 20px;
+    width:30vw;
+    color:#C0C0C0;
 
 }
 .review__edit__form{
-    background-color: gray;
-    color:white;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
     display:flex;
     flex-direction: column;
-    border: 5px solid white;
-    /* border-radius: 20px; */
-    width: 50vw;
+    border: 5px solid #f4100f;
+    border-radius: 20px;
+    width: 20vw;
 }
 .review-inputs{
     display:flex;
     flex-direction: column;
     align-items: center;
-    min-height: 87vh;
+    min-height: 93vh;
 }
 .edit-review-save-cancel{
     display:flex;
     flex-direction: row;
-    background-color: gray;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     justify-content: flex-end;
     align-items: center;
     
@@ -32,25 +33,66 @@
 .edit-review-save-button{
     display:flex;
     align-items: center;
-    border: 5px solid white;
-    /* border-radius: 20px; */
+    border: 5px solid #C0C0C0;
+    border-radius: 20px;
     width: auto;
     height: 30px;
-    color:white;
+    color:#f4100f;
     font-weight: 600;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    font-family: 'Play', sans-serif;
+    padding:10px;
 }
 .review-edit-fields{
     display:flex;
+    flex-direction: row;
     font-size: 20px;
     font-weight: 600;
+    
 }
-.edit-cancel-button{
+button.edit-review-cancel-button{
     display:flex;
     align-items: center;
-    border: 5px solid white;
-    /* border-radius: 20px; */
-    width: auto;
+    border: 5px solid #C0C0C0;
+    border-radius: 20px;
+    width:auto;
     height: 30px;
-    color:white;
+    color:#f4100f;
     font-weight: 600;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    padding:10px;
+}
+.review-edit-message{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-edit-stars{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea#message.form-control-message{
+    display: flex;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
+    border-radius: 10px;
+    justify-items: center;
+    margin:5px;
+    font-family: 'Play', sans-serif;
+    resize:none;
+    padding:5px;
+width: 300px;
+height:100px;
+
+}
+input#stars.form-control-stars{
+    display: flex;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
+    border-radius: 2em;
+    justify-items: center;
+    margin:5px;
+    font-family: 'Play', sans-serif;
 }

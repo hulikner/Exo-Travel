@@ -4,7 +4,7 @@
     align-items: center;
     margin:10px;
     padding:10px;
-    min-height: 87vh;
+    min-height: 90vh;
 }
 .about-detail-content{
     display:flex;
@@ -20,7 +20,7 @@
 .detail-about-pic{
     width:75%;
     height:300px;
-    border:3px solid #C0C0C0;
+    /* border:3px solid #C0C0C0; */
     border-radius: 50px;
 }
 p.detail-about-detail{

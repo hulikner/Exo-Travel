@@ -117,10 +117,12 @@ export const ItineraryDetail = () => {
 
   // Itinerary details and buttons to DOM
   return (
-    <>
+    <> <div className="itinerary-details-title-container">
       <h2 className="itinerary-details-title">
         {itinerary.user?.firstName}, Here Is The Details On Your Trip To {itinerary.exoPlanet?.name}
+        
       </h2>
+      </div>
       <div className="itinerary-detail-image">
         <div className="itinerary-detail-img">
           <img className="itinerary-img" src={`../Images/${itinerary.exoPlanet?.name}.jpg`} />

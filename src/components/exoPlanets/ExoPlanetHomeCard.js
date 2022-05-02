@@ -20,19 +20,21 @@ export const ExoPlanetHomeCard = () => {
 
   // Exo-Planet Home Card info sent to DOM
   return (
-    <div className="exoPlanet-home-card">
+    <div className="exoPlanet-home-container">
       <h2 className="exoPlanet-home-header">Exo-Planets</h2>
+    <div className="exoPlanet-home-card">
       {exoPlanets.map((x) => (
         <div className="exoPlanet-home-content" key={x.id}>
           <Link className="exoPlanet-home-link" to={`/exoPlanets/${x.id}`}>
             <span className="exoPlanet-home-name">{x.name}</span>
             <img className="exoPlanet-home-img" src={`./Images/${x.name}.jpg`} />
             <p className="card-home-exoPlanet-starRating">
-              <Rating style={{ color: "rgb(179, 9, 9)" }} value={x.rating} readOnly />{" "}
+              <Rating style={{ color: "#c0c0c0" }} value={x.rating} readOnly />{" "}
             </p>
           </Link>
         </div>
       ))}
+    </div>
     </div>
   );
 };

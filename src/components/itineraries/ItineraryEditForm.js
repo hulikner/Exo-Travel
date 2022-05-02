@@ -95,7 +95,7 @@ export const ItineraryEditForm = () => {
               <label htmlFor="departure">Departure Date: </label>
               <input type="date" id="departure" onChange={handleFieldChange} required className="edit-control departure " placeholder="exoPlanet departure" value={formattedDeparture} />
             </div>
-            <div className="edit-exoPlanet__fields">
+            <div className="edit-exoPlanet-fields">
               <label htmlFor="return">Return Date: </label>
               <input type="date" id="return" onChange={handleFieldChange} required className="edit-control return " placeholder="exoPlanet return" value={formattedReturn} />
             </div>

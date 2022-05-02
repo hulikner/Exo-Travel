@@ -26,8 +26,8 @@ export const ReceiptList = () => {
   // Displays receipts
   return (
     <div className="receipt-container">
-      <div className="receipt-list">
         <h2 className="receipt-list-header">Receipts</h2>
+      <div className="receipt-list">
         <div className="receipt-list-content">
           {receipts.map((i) => (
             <ReceiptCard key={i.id} receipt={i} handleDeleteReceipt={handleDeleteReceipt} />

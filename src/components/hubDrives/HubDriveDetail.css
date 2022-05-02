@@ -4,7 +4,7 @@
     align-items: center;
     margin:10px;
     padding:10px;
-    min-height: 87vh;
+    min-height: 90vh;
 }
 .hubDrive-detail-content{
     display:flex;
@@ -24,17 +24,17 @@
 .detail-hubDrive-pic{
     width:auto;
     height:500px;
-    border:10px solid #C0C0C0;
+    /* border:10px solid #C0C0C0; */
     border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
 
 }
 img.detail-about-pic{
     width:auto;
     height: 40vh;
-    border:10px solid #C0C0C0;
+    /* border:10px solid #C0C0C0; */
     border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
 
 }
 .detail-hubDrive-name{

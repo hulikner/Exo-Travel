@@ -4,7 +4,7 @@
     flex-direction: row;
     /* border:5px solid white; */
     border-radius: 20px;
-    width: 98vw;
+    width: 30vw;
     /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     justify-content: center;
     /* box-shadow: 5px 5px 5px 5px black; */
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    min-height: 87vh;
+    min-height: 93.2vh;
 }
 .mode-buttons{
     display:flex;
@@ -35,7 +35,7 @@
 .back-button{
     display:flex;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #C0C0C0;
+    border:5px solid #f4100f;
     color:#C0C0C0;
     border-radius: 20px;
     align-items: center;
@@ -45,7 +45,7 @@
 .review-button{
     display:flex;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #C0C0C0;
+    border:5px solid #f4100f;
     color:#C0C0C0;
     border-radius: 20px;
     align-items: center;
@@ -54,7 +54,7 @@
 .submit-itinerary-button{
     display:flex;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #C0C0C0;
+    border:5px solid #f4100f;
     color:#C0C0C0;
     border-radius: 20px;
     align-items: center;
@@ -70,7 +70,7 @@
     border-radius: 50px;
     height:400px;
     width:auto;
-    border:10px solid #C0C0C0;
+    /* border:10px solid #C0C0C0; */
 }
 .exoPlanet-info{
     display:flex;
@@ -98,7 +98,7 @@
     margin:10px;
     margin-bottom: 20px;;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid #C0C0C0;
+    border: 5px solid #f4100f;
     border-radius: 50px;
     max-width: 75vw;
     align-items: center;
@@ -189,7 +189,7 @@ button.ion-select {
         transition: none;
         color: #f4100f;
         font-size: x-large;
-        border: 5px solid black;
+        border: 5px solid #f4100f;
         border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
@@ -234,7 +234,7 @@ button.ion-not-select {
         transition: none;
         color: #f4100f;
         font-size: x-large;
-        border: 5px solid black;
+        border: 5px solid #f4100f;
         border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
@@ -278,7 +278,7 @@ button.ion-not-select {
         transition: none;
         color: #f4100f;
         font-size: x-large;
-        border: 5px solid black;
+        border: 5px solid #f4100f;
         border-radius: 20px;
         width:10em;
         font-family: 'Play', sans-serif;
