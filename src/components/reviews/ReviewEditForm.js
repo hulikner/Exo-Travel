@@ -52,22 +52,22 @@ export const ReviewEditForm = () => {
         <h2 className="review__edit__header">Edit Review</h2>
         <form className="review__edit__form">
           <fieldset className="review-edit-fields">
-            <div>
+            <div className="review-edit-message">
               <label htmlFor="message">Review:</label>
               <textarea type="text" id="message" onChange={handleFieldChange} required className="form-control-message" placeholder="Review" value={review.message} />
             </div>
           </fieldset>
           <fieldset className="review-edit-fields">
-            <div>
+            <div className="review-edit-stars">
               <label htmlFor="stars">Number of Stars:</label>
-              <input type="text" id="stars" onChange={handleFieldChange} required className="form-control-stars " placeholder="Number of Stars" value={review.stars} />
+              <input type="text" max='5' id="stars" onChange={handleFieldChange} required className="form-control-stars " placeholder="Number of Stars" value={review.stars} />
             </div>
           </fieldset>
           <div className="edit-review-save-cancel">
             <button type="button" className="edit-review-save-button" disabled={isLoading} onClick={updateExistingReview}>
               Save
             </button>
-            <button type="button" className="edit-cancel-button" disabled={isLoading} onClick={() => navigate(`/exoPlanets/${review.exoPlanetId}/reviews`)}>
+            <button type="button" className="edit-review-cancel-button" disabled={isLoading} onClick={() => navigate(`/exoPlanets/${review.exoPlanetId}/reviews`)}>
               Cancel
             </button>
           </div>

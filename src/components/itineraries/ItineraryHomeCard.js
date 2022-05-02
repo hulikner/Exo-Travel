@@ -22,9 +22,9 @@ export const ItineraryHomeCard = () => {
 
   // Sends a list of users itineraries to Home Page
   return (
-    <>
-      <div className="itinerary-home">
-        <h2 className="itinerary-home-header">Itineraries</h2>
+    <div className="itinerary-home-container">
+      <h2 className="itinerary-home-header">Itineraries</h2>
+      <div className="itinerary-home-card">
         {itineraries.map((x) => (
           <div className="itinerary-home-content" key={x.id}>
             <Link className="itinerary-home-link" to={`/itineraries/${x.id}`}>
@@ -37,6 +37,6 @@ export const ItineraryHomeCard = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

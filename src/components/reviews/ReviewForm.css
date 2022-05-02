@@ -7,7 +7,7 @@
     
 }
 .review-form-bottom{
-    min-height: 29vh;
+    min-height: 41vh;
 }
 form.review-form{
     display:flex;
@@ -15,10 +15,10 @@ form.review-form{
     align-items: center;
     padding:10px;
     margin:10px;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     box-shadow: 5px 5px 5px 5px black;
-    border:20px solid white;
-    /* border-radius: 20px; */
+    border:10px solid #C0C0C0;
+    border-radius: 20px;
     width: 60vw;
     margin:10px;
     justify-content: center;
@@ -28,28 +28,28 @@ form.review-form{
     display:flex;
     flex-direction: row;
     font-size: 40px;
-    background-color: rgb(179, 9, 9);
-    border: 10px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 10px solid #f4100f;
+    border-radius: 20px;
     padding:10px;
     box-shadow: 5px 5px 5px 5px black;
     width:120%;
     height: 100px;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:#C0C0C0;
 }
 .review-fields{
     display:flex;
     flex-direction: row;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(179, 9, 9);
-    border:5px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #f4100f;
+    border-radius: 20px;
     max-width: 50vw;
    
-    color:white;
+    color:#f4100f;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
 
@@ -61,28 +61,28 @@ form.review-form{
 .submit-review-button{
     display:flex;
     flex-direction: row;
-    background-color: rgb(179, 9, 9);
-    border:5px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #f4100f;
+    border-radius: 20px;
     width: auto;
     height: auto;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
-    color:white;
+    color:#C0C0C0;
 }
 .cancel-review-button{
     display:flex;
     flex-direction: row;
-    background-color: rgb(179, 9, 9);
-    border:5px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #f4100f;
+    border-radius: 20px;
     width: auto;
     height: auto;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
-    color:white;
+    color:#C0C0C0;
 }
 .review-input-fields{
     display:flex;
@@ -92,12 +92,25 @@ form.review-form{
 
 
 #message.form-control.message{
-    background-color: black;
-    color:white;
-    box-shadow: 5px 5px 5px 5px black;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    padding:10px;
-    margin:20px;
+    display: flex;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
+    border-radius: 10px;
+    justify-items: center;
+    margin:5px;
+    font-family: 'Play', sans-serif;
+    resize:none;
+    padding:5px;
+width: 300px;
+height:100px;
 
+}
+input#stars.form-control.stars{
+    display: flex;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
+    border-radius: 2em;
+    justify-items: center;
+    margin:5px;
+    font-family: 'Play', sans-serif;
 }

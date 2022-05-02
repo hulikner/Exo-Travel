@@ -9,13 +9,13 @@
     border: none;
     align-items: center;
     height: 3em;
-    background-color: rgb(179, 9, 9);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     margin: 10px;
     transition: none;
-    color: white;
+    color: #f4100f;
     font-size: x-large;
-    border: 5px solid white;
-    /* border-radius: 20px; */
+    border: 5px solid #f4100f;
+    border-radius: 20px;
     width:auto;
     font-family: 'Play', sans-serif;
 }
@@ -26,24 +26,24 @@
     height: 3em;
     width:auto;
     border: none;
-    background-color: rgb(179, 9, 9);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     margin: 10px;
     transition: none;
-    color: black;
+    color: #c0c0c0;
     font-size: x-large;
-    border: 5px solid gray;
-    /* border-radius: 20px; */
+    border: 5px solid #c0c0c0;
+    border-radius: 20px;
     font-family: 'Play', sans-serif;
 }
 
 .edit-ion-selected:hover {
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: white;
     font-family: 'Play', sans-serif;
 }
 
 .edit-ion-not-selected:hover {
-    background-color: black;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: gray;
     font-family: 'Play', sans-serif;
 }
@@ -53,13 +53,13 @@
     border: none;
     align-items: center;
     height: 3em;
-    background-color: rgb(179, 9, 9);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     margin: 10px;
     transition: none;
-    color: white;
+    color: #f4100f;
     font-size: x-large;
-    border: 5px solid white;
-    /* border-radius: 20px; */
+    border: 5px solid #f4100f;
+    border-radius: 20px;
     width:auto;
     font-family: 'Play', sans-serif;
 
@@ -71,24 +71,24 @@
      height: 3em;
      width:auto;
      border: none;
-     background-color: rgb(179, 9, 9);
+     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
      margin: 10px;
      transition: none;
-     color: black;
+     color: #c0c0c0;
      font-size: x-large;
-     border: 5px solid gray;
-    /* border-radius: 20px; */
+     border: 5px solid #c0c0c0;
+    border-radius: 20px;
     font-family: 'Play', sans-serif;
 }
 
 .edit-warp-selected:hover {
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: white;
     font-family: 'Play', sans-serif;
 }
 
 .edit-warp-not-selected:hover {
-    background-color: black;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: gray;
     font-family: 'Play', sans-serif;
 }
@@ -98,13 +98,13 @@
     border: none;
     align-items: center;
     height: 3em;
-    background-color: rgb(179, 9, 9);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     margin: 10px;
     transition: none;
-    color: white;
+    color: #f4100f;
     font-size: x-large;
-    border: 5px solid white;
-    /* border-radius: 20px; */
+    border: 5px solid #f4100f;
+    border-radius: 20px;
     width:auto;
     font-family: 'Play', sans-serif;
 }
@@ -115,24 +115,24 @@
      height: 3em;
      width:auto;
      border: none;
-     background-color: rgb(179, 9, 9);
+     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
      margin: 10px;
      transition: none;
-     color: black;
+     color: #c0c0c0;
      font-size: x-large;
-     border: 5px solid gray;
-    /* border-radius: 20px; */
+     border: 5px solid #c0c0c0;
+    border-radius: 20px;
     font-family: 'Play', sans-serif;
 }
 
 .edit-wormhole-selected:hover {
-    background-color: black;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: white;
     font-family: 'Play', sans-serif;
 }
 
 .edit-wormhole-not-selected:hover {
-    background-color: black;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     color: grey;
     font-family: 'Play', sans-serif;
 }
@@ -152,10 +152,10 @@
 .itinerary-edit-save-button{
     display:flex;
     flex-direction: row;
-    background-color: gray;
-    border: 5px solid white;
-    color:white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #f4100f;
+    color:#c0c0c0;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin:20px;
@@ -163,20 +163,20 @@
 }
 .itinerary-edit-cancel-button{
     display:flex;
-    background-color: gray;
-    border: 5px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #f4100f;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin:20px;
-    color:white;
+    color:#c0c0c0;
     font-family: 'Play', sans-serif;
 }
 .edit-save-button{
     display:flex;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     border: 5px solid black;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin:20px;
@@ -184,36 +184,40 @@
 }
 .edit-detailsContainer{
     display:flex;
-    flex-direction: column;
-    background-color: gray;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    flex-direction: row;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #f4100f;
+    border-radius: 20px;
     max-width: 50vw;
     min-width: 30vw;
     height: 150px;
     align-items: center;
     justify-content: space-around;
     margin:20px;
-    color:white;
+    color:#c0c0c0;
     font-weight: 600;
     font-size: 20px;
+}
+.edit-exoPlanet-fields{
+    display:flex;
+    flex-direction: column;
 }
 .editDetails{
     display:flex;
     flex-direction: column;
    
     margin:20px;
-    background-color:gray;
-    border: 5px solid white;
-    /* border-radius: 50px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border: 5px solid #f4100f;
+    border-radius: 50px;
     max-width: 50vw;
     align-items: center;
 }
 .edit-itinerary-img{
     height:200px;
     width:auto;
-    /* border-radius: 20px; */
-    border:5px solid white;
+    border-radius: 20px;
+    /* border:5px solid white; */
     margin:10px;
 }
 .edit-itinerary-pic{
@@ -225,21 +229,39 @@
 .edit-itinerary-img-name{
     font-weight: 600;
     font-size: 28px;
-    background-color: rgb(179, 9, 9);
-    border:5px solid white;
-    /* border-radius: 20px; */
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    /* color: rgb(179, 9, 9); */
+    /* border:5px solid #f4100f; */
+    border-radius: 20px;
     padding:10px;
-    color:white;
+    color:#C0C0C0;
 }
 .edit-itinerary-title{
     display:flex;
     flex-direction: row;
-    background-color: gray;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border:5px solid #f4100f;
+    border-radius: 20px;
     width:100vw;
     justify-content: center;
 }
 .itinerary-edit-form{
-    min-height: 87vh;
+    min-height: 93.5vh;
+}
+
+input#departure.edit-control.departure{
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:black;
+    border-radius: 2em;
+    font-family: 'Play', sans-serif;
+}
+
+input#return.edit-control.return{
+    display: flex;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:black;
+    border-radius: 2em;
+    justify-items: center;
+    margin:5px;
+    font-family: 'Play', sans-serif;
 }

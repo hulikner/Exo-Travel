@@ -28,12 +28,13 @@ export const ReviewList = () => {
     <div className="review-container">
       <div className="review-list">
         <h2 className="review-list-header">Reviews</h2>
+        </div>
         <div className="review-list-content">
           {reviews.map((i) => (
             <ReviewCard key={i.id} review={i} handleDeleteReview={handleDeleteReview} />
           ))}
         </div>
-      </div>
+      
     </div>
   );
 };

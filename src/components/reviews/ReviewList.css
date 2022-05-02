@@ -2,8 +2,8 @@
     height:100px;
     width: auto;
     /* border-radius: 20px; */
-    box-shadow: 5px 5px 5px 5px black;
-    border:5px solid white;
+    /* box-shadow: 5px 5px 5px 5px black; */
+    /* border:5px solid white; */
 
 
 }
@@ -16,33 +16,33 @@
     display:flex;
     flex-direction: column;
     width:15vw;
-    border:5px solid white;
-    /* border-radius: 20px; */
+    border:5px solid #f4100f;
+    border-radius: 20px;
     padding: 10px;
     margin: 20px;
-    background-color: gray;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     align-items: center;
     
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
 }
 .review-card-name{
     font-size:20px;
     font-weight: 600;
-    background-color:rgb(179, 9, 9) ;
-    color:white;
-    border:3px solid white;
-    /* border-radius: 5px; */
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    color:#C0C0C0;
+    /* border:3px solid #f4100f; */
+    border-radius: 5px;
     margin:10px;
-    box-shadow: 5px 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px 5px black; */
 
 }
 .review-card-details{
     display:flex;
     flex-direction: column;
-    border:5px solid white;
-    /* border-radius: 20px; */
-    background-color:gray;
-    color:white;
+    border:5px solid #f4100f;
+    border-radius: 20px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
     padding:10px;
     margin:10px;
     /* box-shadow: 5px 5px 5px 5px black; */
@@ -50,25 +50,32 @@
    
 
 }
+.review-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .review-list-header{
-    background-color: gray;
-    /* border-radius: 20px; */
-    color: white;
-    border:5px solid white;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    border-radius: 20px;
+    color: #f4100f;
+    border:5px solid #f4100f;
 }
 .review-card-dates{
     display:flex;
     flex-direction: column;
     align-items:flex-end;
     font-weight: 600;
-    color:black;
+    color:#C0C0C0;
     padding:10px;
 
 }
-.edit-cancel-button{
+button.edit-cancel-button{
     display:flex;
-    border:5px solid white;
-    color:white;
+    border:5px solid #f4100f;
+    border-radius: 10px;
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    color:#C0C0C0;
     justify-content: flex-start;
     max-width:50px;
     justify-content: center;
@@ -86,6 +93,6 @@
     /* box-shadow: 5px 5px 5px 5px black; */
 }
 .review-card-time{
-    color:white;
+    color:#C0C0C0;
     padding:5px;
 }
