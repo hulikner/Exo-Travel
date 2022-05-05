@@ -6,6 +6,9 @@
     border: 5px solid #f4100f;
     border-radius: 20px;
     color:#c0c0c0;
-/* Created with https://www.css-gradient.com */
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    width: 516px;
 background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
 }

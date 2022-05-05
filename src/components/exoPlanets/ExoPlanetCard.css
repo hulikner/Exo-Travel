@@ -62,6 +62,9 @@ img.card-exoPlanet-img {
     align-items: center;
     width:auto;
     text-decoration: none;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    font-size: 18px;
 
 }
 .exoPlanet-card-lightYears{

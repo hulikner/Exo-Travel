@@ -235,15 +235,20 @@
     border-radius: 20px;
     padding:10px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 .edit-itinerary-title{
     display:flex;
     flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    border:none;
     border-radius: 20px;
     width:100vw;
     justify-content: center;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
 }
 .itinerary-edit-form{
     min-height: 93.5vh;

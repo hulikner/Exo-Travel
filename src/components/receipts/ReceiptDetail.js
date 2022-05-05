@@ -6,6 +6,7 @@ import { epochDateConverter } from "../util/epochDateConverter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 import "./ReceiptDetail.css";
+import { WindowSharp } from "@mui/icons-material";
 
 // Receipt details page
 export const ReceiptDetail = () => {
@@ -76,19 +77,32 @@ export const ReceiptDetail = () => {
             <span className="receipt-detail-title">Price Summary</span>
             <br />
             <span className="receipt-detail">
-              Transport to The Citadel: <FontAwesomeIcon icon={faBitcoin} /> 10
+              Transport to The Citadel:{" "}
+              <span className="receipt-detail-data">
+                <FontAwesomeIcon icon={faBitcoin} />
+                10
+              </span>
             </span>
             <br />
             <span className="receipt-detail">
-              {receipt.mode} to {receipt.exoPlanet?.name}: <FontAwesomeIcon icon={faBitcoin} /> {selectedVal}
+              {receipt.mode} to {receipt.exoPlanet?.name}:{" "}
+              <span className="receipt-detail-data">
+                <FontAwesomeIcon icon={faBitcoin} /> {selectedVal}{" "}
+              </span>
             </span>
             <br />
             <span className="receipt-detail">
-              Exo-Travel Fees: <FontAwesomeIcon icon={faBitcoin} /> 5
+              Exo-Travel Fees:{" "}
+              <span className="receipt-detail-data">
+                <FontAwesomeIcon icon={faBitcoin} /> 5
+              </span>
             </span>
             <br />
             <span className="receipt-detail-total">
-              Total: <FontAwesomeIcon icon={faBitcoin} /> {finalPrice}
+              Total:{" "}
+              <span className="receipt-detail-data">
+                <FontAwesomeIcon icon={faBitcoin} /> {finalPrice}
+              </span>
             </span>
             <br />
           </div>
@@ -139,7 +153,7 @@ export const ReceiptDetail = () => {
         </div>
       </div>
       <div className="receipt-page-buttons">
-        <button type="button" className="receipt-page-button" onClick={() => navigate(`/exoPlanets/${receipt.exoPlanetId}/reviews/create`)}>
+        <button type="button" className="receipt-page-button" onClick={() => print()}>
           Print
         </button>
         <button type="button" className="receipt-page-button" onClick={() => navigate(`/itineraries`)}>

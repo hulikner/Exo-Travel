@@ -8,11 +8,6 @@
 1. Clone this repository
 1. `cd` into the directory it creates
 1. Run `npm install` and wait for all dependencies to be installed.
-1. Run `npm install @mui/material @emotion/react @emotion/styled` and wait for all dependencies to be installed.
-1. Run `npm i --save material-ui-rating` and wait for all dependencies to be installed.
-1. Run `npm install --save @fortawesome/fontawesome-free` and wait for all dependencies to be installed.
-1. Run `npm i react-material-ui-carousel` and wait for all dependencies to be installed.
-1. Run `npm install date-fns --save` and wait for all dependencies to be installed.
 1. Run `npm start` to verify that installation was successful.
 
 

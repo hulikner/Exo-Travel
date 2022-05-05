@@ -35,8 +35,6 @@ export const ExoPlanetDetail = () => {
     departure: "",
     return: "",
     exoPlanetId: Number(exoPlanetId),
-    receiptId: "",
-    reviewId: "",
   });
 
   // Formatting for all the dates from epoch time to readable date

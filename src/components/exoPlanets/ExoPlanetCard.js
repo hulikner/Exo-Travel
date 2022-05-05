@@ -17,7 +17,7 @@ export const ExoPlanetCard = ({ exoPlanet }) => {
               Light-Years Away:<span className="exoPlanet-lightYears-number"> {exoPlanet.lightYears}</span>{" "}
             </p>
         
-          <Rating style={{ color: "#C0C0C0" }} value={exoPlanet.rating} readOnly />{" "}
+          <Rating style={{ color: "#2f53d8" }} value={+exoPlanet.rating} readOnly />{" "}
         </Link>
       
     

@@ -41,8 +41,8 @@
   font-weight: 700;
   width: 30vw;
   align-items: center;
-  -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: #c0c0c0;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .exoPlanet-home-container {
   text-decoration: none;
@@ -106,9 +106,12 @@
   color: #c0c0c0;
   padding: 10px;
   width: 100%;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
 }
- h2 {
+ h2.exoPlanet-home-header {
   display: flex;
   flex-direction: row;
   width: 40vw;
@@ -119,9 +122,22 @@
   border-radius: 20px;
   background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   align-items: center;
-  -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: #f4100f;
-
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+ h2.itinerary-home-header {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: center;
+  font-size: 40px;
+  color: #c0c0c0;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  align-items: center;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 /* .itinerary-home-header {
   display: flex;
@@ -151,16 +167,19 @@
   box-shadow: 5px 5px 5px 5px black;
   justify-content: space-evenly;
   align-items: center;
-  width:100%;
+  width:600px;
   text-decoration: none;
   color: #c0c0c0;
   margin: 20px;
   padding: 10px;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
 }
 .itinerary-home-card {
   display: flex;
-  max-height: 77vh;
+  max-height: 77.5vh;
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-styles: none;
@@ -177,6 +196,7 @@
   color: #c0c0c0;
   height: auto;
   margin:-40px;
+  
 }
 
 .itinerary-home-img-container {

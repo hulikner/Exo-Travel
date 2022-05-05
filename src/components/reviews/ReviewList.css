@@ -10,7 +10,7 @@
 .review-container{
     display:flex;
     flex-direction: column;
-    min-height: 89vh;
+    min-height: 93.5vh;
 }
 .review-card-img{
     display:flex;
@@ -34,6 +34,8 @@
     border-radius: 5px;
     margin:10px;
     /* box-shadow: 5px 5px 5px 5px black; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
 }
 .review-card-details{
@@ -47,6 +49,8 @@
     margin:10px;
     /* box-shadow: 5px 5px 5px 5px black; */
     font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
    
 
 }
@@ -56,10 +60,14 @@
     align-items: center;
 }
 .review-list-header{
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     border-radius: 20px;
     color: #f4100f;
-    border:5px solid #f4100f;
+    border:none;
+    padding:5px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
 }
 .review-card-dates{
     display:flex;
@@ -95,4 +103,6 @@ button.edit-cancel-button{
 .review-card-time{
     color:#C0C0C0;
     padding:5px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }

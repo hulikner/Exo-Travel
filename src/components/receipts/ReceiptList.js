@@ -2,11 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { ReceiptCard } from "./ReceiptCard";
 import { useParams } from "react-router-dom";
-import { getAllReceipts, deleteReceipt, getReceiptByItineraryId } from "../../modules/ReceiptManager";
+import { getAllReceipts, deleteReceipt, getReceiptByUserId } from "../../modules/ReceiptManager";
 import "./ReceiptList.css";
 
 // Receipts list
 export const ReceiptList = () => {
+  // Get user
+  const currentUser = JSON.parse(sessionStorage.getItem("exoTravel_user"));
+
   // State setState
   const [receipts, setReceipts] = useState([]);
 
@@ -20,7 +23,7 @@ export const ReceiptList = () => {
 
   // Gets receipt by itinerary id and sets
   useEffect(() => {
-    getReceiptByItineraryId(itineraryId).then(setReceipts);
+    getReceiptByUserId(currentUser).then(setReceipts);
   }, []);
 
   // Displays receipts

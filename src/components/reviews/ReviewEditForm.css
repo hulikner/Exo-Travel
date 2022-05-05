@@ -1,9 +1,12 @@
 .review__edit__header{
-    background-color: gray;
-    border:5px solid f4100f;
+    /* background-color: gray; */
+    border:none;
     border-radius: 20px;
     width:30vw;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
 
 }
 .review__edit__form{
@@ -33,7 +36,7 @@
 .edit-review-save-button{
     display:flex;
     align-items: center;
-    border: 5px solid #C0C0C0;
+    border: 3px solid #C0C0C0;
     border-radius: 20px;
     width: auto;
     height: 30px;
@@ -48,12 +51,14 @@
     flex-direction: row;
     font-size: 20px;
     font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     
 }
 button.edit-review-cancel-button{
     display:flex;
     align-items: center;
-    border: 5px solid #C0C0C0;
+    border: 3px solid #C0C0C0;
     border-radius: 20px;
     width:auto;
     height: 30px;
@@ -61,6 +66,7 @@ button.edit-review-cancel-button{
     font-weight: 600;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
+    font-family: 'Play', sans-serif;
 }
 .review-edit-message{
     display:flex;

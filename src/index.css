@@ -9,6 +9,15 @@ body {
   background-size: cover;
   /* min-height: 100vh; */
   background-attachment: fixed;
+ 
+  
+  
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-styles: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {

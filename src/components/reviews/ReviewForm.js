@@ -23,7 +23,6 @@ export const ReviewForm = () => {
     
     // State setState for all reviews
     const [allReviews, setAllReviews] = useState();
-    
     const [isLoading, setIsLoading] = useState(false);
     const [review, setReview] = useState(defaultReview(currentUser, exoPlanetId));
     const navigate = useNavigate();
@@ -87,7 +86,7 @@ export const ReviewForm = () => {
             </fieldset>
             <fieldset className="review-fields">
               <label htmlFor="stars">Number of Stars:</label>
-              <input type="text" id="stars" onChange={handleControlledInputChange} required className="form-control stars" placeholder="stars" value={review.stars} />
+              <input type="number" min="1" max="5" id="stars" onChange={handleControlledInputChange} required className="form-control stars" placeholder="stars" value={review.stars} />
             </fieldset>
           </div>
           <div className="review-form-buttons">

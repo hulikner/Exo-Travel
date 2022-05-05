@@ -29,7 +29,7 @@ export const ExoPlanetHomeCard = () => {
             <span className="exoPlanet-home-name">{x.name}</span>
             <img className="exoPlanet-home-img" src={`./Images/${x.name}.jpg`} />
             <p className="card-home-exoPlanet-starRating">
-              <Rating style={{ color: "#c0c0c0" }} value={x.rating} readOnly />{" "}
+              <Rating style={{ color: "#2f53d8" }} value={+x.rating} readOnly />{" "}
             </p>
           </Link>
         </div>

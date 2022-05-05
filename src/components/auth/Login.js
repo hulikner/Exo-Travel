@@ -48,7 +48,10 @@ export const Login = ({setAuthUser}) => {
 			</dialog>
 			<section>
 				<form className="form--login" onSubmit={handleLogin}>
-					<h1>Exo-Travel</h1>
+					{/* <h1>Exo-Travel</h1> */}
+					<div className="login-logo-home">
+					<img  className="login-logo-home" src="/Images/Exo-Travel-Logo.svg" />
+					</div>
 					<h2>Sign In</h2>
 					<fieldset>
 						<label className="login-email" htmlFor="inputEmail"> Email Address</label>

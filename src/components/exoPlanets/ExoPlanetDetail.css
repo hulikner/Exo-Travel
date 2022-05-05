@@ -2,14 +2,17 @@
 .exoPlanet-title{
     display:flex;
     flex-direction: row;
-    /* border:5px solid white; */
+    border:none;
     border-radius: 20px;
     width: 30vw;
     /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     justify-content: center;
     /* box-shadow: 5px 5px 5px 5px black; */
     font-size: 30px;
-    color:#c0c0c0;
+    color:#f4100f;
+    font-size: 40px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 .exoPlanetContainer{
     display:flex;

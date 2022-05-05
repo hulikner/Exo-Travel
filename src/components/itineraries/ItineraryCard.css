@@ -12,6 +12,9 @@
     color:#C0C0C0;
     text-decoration: none;
     justify-content: center;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+
 
 }
 .itinerary-card-link{
@@ -52,6 +55,8 @@
     flex-direction: row;
     justify-content: center;
     color:black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .itinerary-detail-total{
     display:flex;
