@@ -173,6 +173,11 @@ export const ItineraryDetail = () => {
                   Pay Now
                 </button>
               )}
+              {itinerary.paid && (
+                <button type="button" className="itinerary-price-summary-button" onClick={() => navigate(`/itineraries/${itinerary.id}/receipts`)}>
+                  Receipt
+                </button>
+              )}
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 ## Setup: Follow these steps exactly
 
 1. Clone the Exo-Travel-Database
-1. `cd` into the directory it creates
+1. `cd` into the directory it creates for the database
 1. Run `json-server -p 8088 -w database.json` from the `api` directory.
 1. Clone this repository
 1. `cd` into the directory it creates

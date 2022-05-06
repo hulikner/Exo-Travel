@@ -76,6 +76,8 @@ form.review-form{
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 .cancel-review-button{
     display:flex;
@@ -89,10 +91,13 @@ form.review-form{
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 .review-input-fields{
     display:flex;
     flex-direction: column;
+    
     
 }
 
