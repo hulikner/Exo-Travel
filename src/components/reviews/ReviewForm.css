@@ -1,129 +1,133 @@
-.review-entire-form{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin:20px;
-    padding:20px;
-    
+.review-entire-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
 }
+
 form.review-form::-webkit-scrollbar {
-    display: none;
-  }
-.review-form-bottom{
-    min-height: 40.5vh;
-}
-form.review-form{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding:10px;
-    margin:10px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    box-shadow: 5px 5px 5px 5px black;
-    border:10px solid #C0C0C0;
-    border-radius: 20px;
-    width: 60vw;
-    margin:10px;
-    justify-content: center;
-    scrollbar-width: none;
-}
-.review-header{
-    display:flex;
-    flex-direction: row;
-    font-size: 40px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 10px solid #f4100f;
-    border-radius: 20px;
-    padding:10px;
-    box-shadow: 5px 5px 5px 5px black;
-    width:120%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    color:#C0C0C0;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-.review-fields{
-    display:flex;
-    flex-direction: row;
-    font-size: 20px;
-    font-weight: 600;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    max-width: 50vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color:#f4100f;
-    margin:10px;
-    box-shadow: 5px 5px 5px 5px black;
-
-}
-.review-form-buttons{
-    display:flex;
-    flex-direction: row;
-}
-.submit-review-button{
-    display:flex;
-    flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    width: auto;
-    height: auto;
-    margin:10px;
-    box-shadow: 5px 5px 5px 5px black;
-    padding: 5px;
-    color:#C0C0C0;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-}
-.cancel-review-button{
-    display:flex;
-    flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    width: auto;
-    height: auto;
-    margin:10px;
-    box-shadow: 5px 5px 5px 5px black;
-    padding: 5px;
-    color:#C0C0C0;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-}
-.review-input-fields{
-    display:flex;
-    flex-direction: column;
-    
-    
+  display: none;
 }
 
-
-#message.form-control.message{
-    display: flex;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#C0C0C0;
-    border-radius: 10px;
-    justify-items: center;
-    margin:5px;
-    font-family: 'Play', sans-serif;
-    resize:none;
-    padding:5px;
-width: 300px;
-height:100px;
-
+.review-form-bottom {
+  min-height: 40.5vh;
 }
-input#stars.form-control.stars{
-    display: flex;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#C0C0C0;
-    border-radius: 2em;
-    justify-items: center;
-    margin:5px;
-    font-family: 'Play', sans-serif;
-    border:none;
-    width:40px;
+
+form.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  box-shadow: 5px 5px 5px 5px black;
+  border: 10px solid #c0c0c0;
+  border-radius: 20px;
+  width: 60vw;
+  margin: 10px;
+  justify-content: center;
+  scrollbar-width: none;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 10px solid #f4100f;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+  width: 120%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.review-fields {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: 600;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  max-width: 50vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #f4100f;
+  margin: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+.review-form-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-review-button {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+  padding: 5px;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.cancel-review-button {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+  padding: 5px;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.review-input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+#message.form-control.message {
+  display: flex;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
+  border-radius: 10px;
+  justify-items: center;
+  margin: 5px;
+  font-family: "Play", sans-serif;
+  resize: none;
+  padding: 5px;
+  width: 300px;
+  height: 100px;
+}
+
+input#stars.form-control.stars {
+  display: flex;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
+  border-radius: 2em;
+  justify-items: center;
+  margin: 5px;
+  font-family: "Play", sans-serif;
+  border: none;
+  width: 40px;
 }

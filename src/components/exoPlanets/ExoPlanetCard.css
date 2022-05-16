@@ -1,74 +1,54 @@
 .exoPlanet-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    margin: 1em;
-    width: auto;
-    height: auto;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid #f4100f;
-    border-radius: 50px;
-    padding:1em;
-    /* color:white; */
-    /* box-shadow: 5px 5px 5px 5px black; */
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  width: auto;
+  height: auto;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 50px;
+  padding: 1em;
 }
 
 .exoPlanet-card {
-    display:flex;
-    flex-direction: column;
-    margin: 2em;
-    /* background-color: rgb(179, 9, 9); */
-    /* border: 10px white solid; */
-    /* border-radius: 50px; */
-    color:#C0C0C0;
-    /* box-shadow: 5px 5px 5px 5px black; */
-    width:300px;
-
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  color: #c0c0c0;
+  width: 300px;
 }
-.exoPlanet-lightYears-number{
-    /* display:flex; */
-    /* flex-direction: row; */
-    justify-content: center;
-    color:#C0C0C0;
+.exoPlanet-lightYears-number {
+  justify-content: center;
+  color: #c0c0c0;
 }
 img.card-exoPlanet-img {
-    image-rendering: auto;
-    width:auto;
-    height:100px;
-    border-radius: 2em;
-    padding:10px;
-    
-} 
-.card-exoPlanet-name{
-    color:#C0C0C0;
-
+  image-rendering: auto;
+  width: auto;
+  height: 100px;
+  border-radius: 2em;
+  padding: 10px;
+}
+.card-exoPlanet-name {
+  color: #c0c0c0;
 }
 
-/* .card-exoPlanet-starRating{
-    color:white;
-} */
-
-.card-exoPlanet-lightyears{
-    /* display:flex; */
-    /* flex-direction: row; */
-    color:#C0C0C0;
-    font-weight: 700;
+.card-exoPlanet-lightyears {
+  color: #c0c0c0;
+  font-weight: 700;
 }
 
-.exoPlanet-link{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:auto;
-    text-decoration: none;
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: black;
-    font-size: 18px;
-
+.exoPlanet-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  text-decoration: none;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+  font-size: 18px;
 }
-.exoPlanet-card-lightYears{
-    display:flex;
-    flex-direction: row;
-
+.exoPlanet-card-lightYears {
+  display: flex;
+  flex-direction: row;
 }

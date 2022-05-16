@@ -13,7 +13,7 @@
 
 ## What is Exo-Travel?
 
-Exo-Travel is a travel app for different Exo-Planets around the universe. After the founder, Hulikner, cracked FTL, (Faster than Light), travel, he quickly monopolized all transportation around the universe for Earth inhabitants.
+Exo-Travel is a travel app for different Exo-Planets around the universe. After the founder Hulikner cracked FTL, Faster than Light, travel, he quickly monopolized all transportation around the universe for Earth inhabitants.
 
 
 ### users

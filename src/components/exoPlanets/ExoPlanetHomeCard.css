@@ -1,27 +1,22 @@
+.exoPlanet-home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  width: 15em;
+  background-color: rgb(179, 9, 9);
+  border: 10px black;
+  border-radius: 5px;
+}
 
-   
-    .exoPlanet-home-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
-        margin: 1em;
-        width: 15em;
-        background-color:  rgb(179, 9, 9);
-        border: 10px black;
-        border-radius: 5px;
-    }
-    
-    .exoPlanet-home {
-        margin: 2em;
-        background-color: gray;
-        border: 4px black solid;
-        border-radius: 10px;
-    }
-    
-    img.exoPlanet-home-img {
-       height: 75px;
-       width: 75px;
-    } 
-    
-    
+.exoPlanet-home {
+  margin: 2em;
+  background-color: gray;
+  border: 4px black solid;
+  border-radius: 10px;
+}
 
+img.exoPlanet-home-img {
+  height: 75px;
+  width: 75px;
+}

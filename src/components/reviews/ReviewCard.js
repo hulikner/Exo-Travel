@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Rating from "@mui/material/Rating";
 import { useNavigate } from "react-router-dom";
 import { epochDateConverter } from "../util/epochDateConverter";
-import "./ReviewCard.css";
 
 // Review Card
 export const ReviewCard = ({ review }) => {

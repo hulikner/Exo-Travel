@@ -1,280 +1,289 @@
-.itinerary-edit-form{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.itinerary-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .edit-ion-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    margin: 10px;
-    transition: none;
-    color: #f4100f;
-    font-size: x-large;
-    border: 5px solid #f4100f;
-    border-radius: 20px;
-    width:auto;
-    font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  align-items: center;
+  height: 3em;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #f4100f;
+  font-size: x-large;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  width: auto;
+  font-family: "Play", sans-serif;
 }
+
 .edit-ion-not-selected {
-   display:flex;
-   flex-direction: column;
-    align-items: center;
-    height: 3em;
-    width:auto;
-    border: none;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    margin: 10px;
-    transition: none;
-    color: #c0c0c0;
-    font-size: x-large;
-    border: 5px solid #c0c0c0;
-    border-radius: 20px;
-    font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3em;
+  width: auto;
+  border: none;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #c0c0c0;
+  font-size: x-large;
+  border: 5px solid #c0c0c0;
+  border-radius: 20px;
+  font-family: "Play", sans-serif;
 }
 
 .edit-ion-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: white;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: white;
+  font-family: "Play", sans-serif;
 }
 
 .edit-ion-not-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: gray;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: gray;
+  font-family: "Play", sans-serif;
 }
-.edit-warp-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    margin: 10px;
-    transition: none;
-    color: #f4100f;
-    font-size: x-large;
-    border: 5px solid #f4100f;
-    border-radius: 20px;
-    width:auto;
-    font-family: 'Play', sans-serif;
 
+.edit-warp-selected {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  align-items: center;
+  height: 3em;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #f4100f;
+  font-size: x-large;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  width: auto;
+  font-family: "Play", sans-serif;
 }
+
 .edit-warp-not-selected {
-    display:flex;
-    flex-direction: column;
-     align-items: center;
-     height: 3em;
-     width:auto;
-     border: none;
-     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-     margin: 10px;
-     transition: none;
-     color: #c0c0c0;
-     font-size: x-large;
-     border: 5px solid #c0c0c0;
-    border-radius: 20px;
-    font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3em;
+  width: auto;
+  border: none;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #c0c0c0;
+  font-size: x-large;
+  border: 5px solid #c0c0c0;
+  border-radius: 20px;
+  font-family: "Play", sans-serif;
 }
 
 .edit-warp-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: white;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: white;
+  font-family: "Play", sans-serif;
 }
 
 .edit-warp-not-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: gray;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: gray;
+  font-family: "Play", sans-serif;
 }
+
 .edit-wormhole-selected {
-    display:flex;
-    flex-direction: column;
-    border: none;
-    align-items: center;
-    height: 3em;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    margin: 10px;
-    transition: none;
-    color: #f4100f;
-    font-size: x-large;
-    border: 5px solid #f4100f;
-    border-radius: 20px;
-    width:auto;
-    font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  align-items: center;
+  height: 3em;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #f4100f;
+  font-size: x-large;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  width: auto;
+  font-family: "Play", sans-serif;
 }
+
 .edit-wormhole-not-selected {
-    display:flex;
-    flex-direction: column;
-     align-items: center;
-     height: 3em;
-     width:auto;
-     border: none;
-     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-     margin: 10px;
-     transition: none;
-     color: #c0c0c0;
-     font-size: x-large;
-     border: 5px solid #c0c0c0;
-    border-radius: 20px;
-    font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3em;
+  width: auto;
+  border: none;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  margin: 10px;
+  transition: none;
+  color: #c0c0c0;
+  font-size: x-large;
+  border: 5px solid #c0c0c0;
+  border-radius: 20px;
+  font-family: "Play", sans-serif;
 }
 
 .edit-wormhole-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: white;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: white;
+  font-family: "Play", sans-serif;
 }
 
 .edit-wormhole-not-selected:hover {
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color: grey;
-    font-family: 'Play', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: grey;
+  font-family: "Play", sans-serif;
 }
 
-.edit-mode-buttons{
-    display:flex;
-    flex-direction: row;
-    margin:20px;
-
-}
-.edit-save-cancel{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: 'Play', sans-serif;
-}
-.itinerary-edit-save-button{
-    display:flex;
-    flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid #f4100f;
-    color:#c0c0c0;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    font-family: 'Play', sans-serif;
-    font-size:14px;
-    padding-left:10px;
-    padding-right:10px;
-}
-.itinerary-edit-cancel-button{
-    display:flex;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid #f4100f;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    color:#c0c0c0;
-    font-family: 'Play', sans-serif;
-    font-size:14px;
-    padding-left:10px;
-    padding-right:10px;
-}
-.edit-save-button{
-    display:flex;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid black;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    font-family: 'Play', sans-serif;
-    
-}
-.edit-detailsContainer{
-    display:flex;
-    flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    max-width: 50vw;
-    min-width: 30vw;
-    height: 150px;
-    align-items: center;
-    justify-content: space-around;
-    margin:20px;
-    color:#c0c0c0;
-    font-weight: 600;
-    font-size: 20px;
-}
-.edit-exoPlanet-fields{
-    display:flex;
-    flex-direction: column;
-}
-.editDetails{
-    display:flex;
-    flex-direction: column;
-   
-    margin:20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border: 5px solid #f4100f;
-    border-radius: 50px;
-    max-width: 50vw;
-    align-items: center;
-}
-.edit-itinerary-img{
-    height:200px;
-    width:auto;
-    border-radius: 20px;
-    /* border:5px solid white; */
-    margin:10px;
-}
-.edit-itinerary-pic{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.edit-itinerary-img-name{
-    font-weight: 600;
-    font-size: 28px;
-    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
-    /* color: rgb(179, 9, 9); */
-    /* border:5px solid #f4100f; */
-    border-radius: 20px;
-    padding:10px;
-    color:#C0C0C0;
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: black;
-}
-.edit-itinerary-title{
-    display:flex;
-    flex-direction: row;
-    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
-    border:none;
-    border-radius: 20px;
-    width:100vw;
-    justify-content: center;
-    color:#f4100f;
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: black;
-    font-size: 40px;
-}
-.itinerary-edit-form{
-    min-height: 93.5vh;
+.edit-mode-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
 }
 
-input#departure.edit-control.departure{
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:black;
-    border-radius: 2em;
-    font-family: 'Play', sans-serif;
+.edit-save-cancel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Play", sans-serif;
 }
 
-input#return.edit-control.return{
-    display: flex;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:black;
-    border-radius: 2em;
-    justify-items: center;
-    margin:5px;
-    font-family: 'Play', sans-serif;
+.itinerary-edit-save-button {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  color: #c0c0c0;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itinerary-edit-cancel-button {
+  display: flex;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: #c0c0c0;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.edit-save-button {
+  display: flex;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid black;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Play", sans-serif;
+}
+
+.edit-detailsContainer {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  max-width: 50vw;
+  min-width: 30vw;
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  color: #c0c0c0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.edit-exoPlanet-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.editDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border: 5px solid #f4100f;
+  border-radius: 50px;
+  max-width: 50vw;
+  align-items: center;
+}
+
+.edit-itinerary-img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.edit-itinerary-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-itinerary-img-name {
+  font-weight: 600;
+  font-size: 28px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+}
+
+.edit-itinerary-title {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-radius: 20px;
+  width: 100vw;
+  justify-content: center;
+  color: #f4100f;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+  font-size: 40px;
+}
+
+.itinerary-edit-form {
+  min-height: 93.5vh;
+}
+
+input#departure.edit-control.departure {
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: black;
+  border-radius: 2em;
+  font-family: "Play", sans-serif;
+}
+
+input#return.edit-control.return {
+  display: flex;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: black;
+  border-radius: 2em;
+  justify-items: center;
+  margin: 5px;
+  font-family: "Play", sans-serif;
 }
