@@ -107,7 +107,7 @@ h2.itinerary-details-title{
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
     margin:10px;
-    font-size:12px;
+    font-size:16px;
     box-shadow: 5px 5px 5px 5px black;
 
 }
@@ -140,6 +140,7 @@ h2.itinerary-details-title{
     flex-direction: row;
     justify-content: space-evenly;
     font-family: 'Play', sans-serif;
+    
    
  
 }
@@ -152,6 +153,9 @@ h2.itinerary-details-title{
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-price-summary-button:hover{
     color:#C0C0C0;
@@ -169,6 +173,9 @@ h2.itinerary-details-title{
     font-family: 'Play', sans-serif;
     -webkit-text-stroke-width: 0.75px;
     -webkit-text-stroke-color: black;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 .itinerary-page-button{
@@ -182,6 +189,9 @@ h2.itinerary-details-title{
     font-family: 'Play', sans-serif;
     -webkit-text-stroke-width: 0.75px;
     -webkit-text-stroke-color: black;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-page-button:hover{
     color:#C0C0C0;

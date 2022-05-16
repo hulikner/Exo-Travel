@@ -10,5 +10,5 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     width: 516px;
-background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
 }

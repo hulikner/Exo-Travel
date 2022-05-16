@@ -35,6 +35,15 @@
     
     
 }
+
+.exoPlanet-pic-name-details{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
 .back-button{
     display:flex;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
@@ -44,6 +53,9 @@
     align-items: center;
     margin:10px;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .review-button{
     display:flex;
@@ -53,6 +65,9 @@
     border-radius: 20px;
     align-items: center;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .submit-itinerary-button{
     display:flex;
@@ -62,10 +77,13 @@
     border-radius: 20px;
     align-items: center;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .exoPlanet-img{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     width:auto;
     align-items: center;
 }
@@ -90,6 +108,7 @@
     border: 5px solid #C0C0C0;
     border-radius: 50px;
     max-width: 75vw;
+    height:250px;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
@@ -103,11 +122,12 @@
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     border: 5px solid #f4100f;
     border-radius: 50px;
-    max-width: 75vw;
+    max-width: 50vw;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
     color:#C0C0C0;
+    padding-left:40px;
 }
 .detailsContainer{
     display:flex;

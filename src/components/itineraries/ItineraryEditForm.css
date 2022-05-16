@@ -160,6 +160,9 @@
     justify-content: center;
     margin:20px;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-edit-cancel-button{
     display:flex;
@@ -171,6 +174,9 @@
     margin:20px;
     color:#c0c0c0;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .edit-save-button{
     display:flex;
@@ -181,6 +187,7 @@
     justify-content: center;
     margin:20px;
     font-family: 'Play', sans-serif;
+    
 }
 .edit-detailsContainer{
     display:flex;
@@ -246,6 +253,7 @@
     border-radius: 20px;
     width:100vw;
     justify-content: center;
+    color:#f4100f;
     -webkit-text-stroke-width: 0.75px;
     -webkit-text-stroke-color: black;
     font-size: 40px;

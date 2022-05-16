@@ -34,7 +34,7 @@ div.hubDrive-container{
     width:auto;
     height:200px;
     border-radius: 2em;
-    /* box-shadow: 5px 5px 5px 5px black; */
+    box-shadow: 5px 5px 5px 5px black;
     text-decoration: none;
     /* border:3px solid #C0C0C0; */
     max-width: 300px;

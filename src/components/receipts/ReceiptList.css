@@ -67,7 +67,7 @@ h2.receipt-list-header{
     border:5px solid #C0C0C0;
     border-radius: 20px;
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#f4100f;
+    color:#C0C0C0;
     padding:10px;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
@@ -86,6 +86,7 @@ h2.receipt-list-header{
     width: auto;
     height: auto;
     padding:10px;
+    font-size:20px;
 }
 .receipt-card{
     text-decoration: none;
