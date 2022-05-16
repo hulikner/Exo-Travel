@@ -1,176 +1,176 @@
-.receipt-detail-summary{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    width:auto;
-    font-size: 17px;
-    margin: 20px;
-    
-}
-.receipt-detail-title{
-    position: relative;
-    top:auto;
-}
-.receipt-img{
-    width:auto;
-    height:170px;
-     /* border:10px solid #C0C0C0;  */
-    border-radius: 20px;
-}
-.receipt-page-bottom{
-    display:flex;
-    flex-direction: column;
-    min-height: 37vh;
-}
-.receipt-detail-data{
-    color:#C0C0C0;
+.receipt-detail-summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  font-size: 17px;
+  margin: 20px;
 }
 
-.receipt-img-name{
-    /* background-color: rgb(179, 9, 9); */
-   /* border:5px solid #C0C0C0; */
-   border-radius: 5px;
-    padding:4px;
-    margin:5px;
-    color:#C0C0C0;
-    font-size: 30px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-.receipt-detail-img{
-    display:flex;
-    flex-direction: column;
-    width:30vw;
-    height:80%;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 700;
-    /* border: 5px solid #C0C0C0; */
-    border-radius: 50px;
-    /* background-color: gray; */
-    padding:10px;
-    /* box-shadow: 5px 5px 5px 5px black; */
-}
-.receipt-detail-total{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 2px solid #C0C0C0;
-}
-.receipt-detail{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-span.receipt-detail-data{
-    color:#C0C0C0;
-}
-.receipt-details-title{
-    border:none;
-    border-radius: 50px;
-    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
-    /* box-shadow: 5px 5px 5px 5px black; */
-    color:#f4100f;
-    font-size: 40px;
-    margin-top: 10px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-.receipt-price-summary{
-    display:flex;
-    flex-direction: column;
-    align-items: left;
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    padding:15px;
-    height:250px;
-    width:45vw;
-    box-shadow: 5px 5px 5px 5px black;
-    font-weight: 600;
-    color:#C0C0C0;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-.receipt-departure-return{
-    display:flex;
-    flex-direction: row;
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    padding:10px;
-    margin:10px;
-    font-size:12px;
-    box-shadow: 5px 5px 5px 5px black;
-    font-size:16px;
-
-}
-.receipt-detail-image{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    width:100%;
-    height:300px;
-    justify-content: space-evenly;
-}
-.receipt-departureToReturn{
-    display:flex;
-    flex-direction: column;
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    padding:10px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    box-shadow: 5px 5px 5px 5px black;
-    font-weight: 600;
-    width:100%;
-    height:auto;
-    color:#C0C0C0;
-
-    margin:19px;
+.receipt-detail-title {
+  position: relative;
+  top: auto;
 }
 
-.receipt-price-summary-buttons{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: 'Play', sans-serif;
- 
+.receipt-img {
+  width: auto;
+  height: 170px;
+  border-radius: 20px;
 }
 
-.receipt-price-summary-button{
-    font-family: 'Play', sans-serif;
-    color:#C0C0C0;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-}
-.receipt-price-summary-button:hover{
-    color:black;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    transform: scale(1.1);
-    transition: 0.5s;
-    font-family: 'Play', sans-serif;
-}
-.receipt-page-buttons{
-    display:flex;
-    flex-direction: row;
-    margin:10px;
-    justify-content: flex-end;
-    font-family: 'Play', sans-serif;
-    
-    
+.receipt-page-bottom {
+  display: flex;
+  flex-direction: column;
+  min-height: 37vh;
 }
 
-.receipt-page-button{
-    margin:10px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    box-shadow: 5px 5px 5px 5px black;
-    border:5px solid #f4100f;
-    border-radius: 10px;
-    color:#C0C0C0;
-    font-family: 'Play', sans-serif;
-    font-size:14px;
-    padding-left:10px;
-    padding-right:10px;
+.receipt-detail-data {
+  color: #c0c0c0;
+}
+
+.receipt-img-name {
+  border-radius: 5px;
+  padding: 4px;
+  margin: 5px;
+  color: #c0c0c0;
+  font-size: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.receipt-detail-img {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 80%;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.receipt-detail-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid #c0c0c0;
+}
+
+.receipt-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span.receipt-detail-data {
+  color: #c0c0c0;
+}
+
+.receipt-details-title {
+  border: none;
+  border-radius: 50px;
+  color: #f4100f;
+  font-size: 40px;
+  margin-top: 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.receipt-price-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  padding: 15px;
+  height: 250px;
+  width: 45vw;
+  box-shadow: 5px 5px 5px 5px black;
+  font-weight: 600;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.receipt-departure-return {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  box-shadow: 5px 5px 5px 5px black;
+  font-size: 16px;
+}
+
+.receipt-detail-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: space-evenly;
+}
+
+.receipt-departureToReturn {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  padding: 10px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  box-shadow: 5px 5px 5px 5px black;
+  font-weight: 600;
+  width: 100%;
+  height: auto;
+  color: #c0c0c0;
+  margin: 19px;
+}
+
+.receipt-price-summary-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Play", sans-serif;
+}
+
+.receipt-price-summary-button {
+  font-family: "Play", sans-serif;
+  color: #c0c0c0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+}
+
+.receipt-price-summary-button:hover {
+  color: black;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  transform: scale(1.1);
+  transition: 0.5s;
+  font-family: "Play", sans-serif;
+}
+
+.receipt-page-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: flex-end;
+  font-family: "Play", sans-serif;
+}
+
+.receipt-page-button {
+  margin: 10px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  box-shadow: 5px 5px 5px 5px black;
+  border: 5px solid #f4100f;
+  border-radius: 10px;
+  color: #c0c0c0;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

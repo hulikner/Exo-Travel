@@ -1,108 +1,96 @@
-.review-pic{
-    height:100px;
-    width: auto;
-    /* border-radius: 20px; */
-    /* box-shadow: 5px 5px 5px 5px black; */
-    /* border:5px solid white; */
-
-
-}
-.review-container{
-    display:flex;
-    flex-direction: column;
-    min-height: 93.5vh;
-}
-.review-card-img{
-    display:flex;
-    flex-direction: column;
-    width:15vw;
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    align-items: center;
-    
-    /* box-shadow: 5px 5px 5px 5px black; */
-}
-.review-card-name{
-    font-size:20px;
-    font-weight: 600;
-    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
-    color:#C0C0C0;
-    /* border:3px solid #f4100f; */
-    border-radius: 5px;
-    margin:10px;
-    /* box-shadow: 5px 5px 5px 5px black; */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-
-}
-.review-card-details{
-    display:flex;
-    flex-direction: column;
-    border:5px solid #f4100f;
-    border-radius: 20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#C0C0C0;
-    padding:10px;
-    margin:10px;
-    /* box-shadow: 5px 5px 5px 5px black; */
-    font-weight: 600;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-   
-
-}
-.review-list{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.review-list-header{
-    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
-    border-radius: 20px;
-    color: #f4100f;
-    border:none;
-    padding:5px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 40px;
-}
-.review-card-dates{
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-    font-weight: 600;
-    color:#C0C0C0;
-    padding:10px;
-
-}
-button.edit-cancel-button{
-    display:flex;
-    border:5px solid #f4100f;
-    border-radius: 10px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#C0C0C0;
-    justify-content: flex-start;
-    max-width:50px;
-    justify-content: center;
-    font-family: 'Play', sans-serif;
+.review-pic {
+  height: 100px;
+  width: auto;
 }
 
-.review-card-content{
-    display:flex;
-    flex-direction: column;
-    /* background-color: black; */
-    
-    /* border:5px solid white; */
-    /* border-radius: 50px; */
-    margin:15px;
-    /* box-shadow: 5px 5px 5px 5px black; */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 93.5vh;
 }
-.review-card-time{
-    color:#C0C0C0;
-    padding:5px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+
+.review-card-img {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  align-items: center;
+}
+
+.review-card-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #c0c0c0;
+  border-radius: 5px;
+  margin: 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.review-card-details {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #f4100f;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-list-header {
+  border-radius: 20px;
+  color: #f4100f;
+  border: none;
+  padding: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 40px;
+}
+
+.review-card-dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 600;
+  color: #c0c0c0;
+  padding: 10px;
+}
+
+button.edit-cancel-button {
+  display: flex;
+  border: 5px solid #f4100f;
+  border-radius: 10px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
+  justify-content: flex-start;
+  max-width: 50px;
+  justify-content: center;
+  font-family: "Play", sans-serif;
+}
+
+.review-card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.review-card-time {
+  color: #c0c0c0;
+  padding: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

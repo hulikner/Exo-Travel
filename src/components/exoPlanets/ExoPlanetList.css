@@ -1,34 +1,31 @@
 .exoPlanets-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: stretch;
-    justify-content: space-evenly;
-}
-.asc-button{
-    width:auto;
-    border: 3px solid #f4100f;
-    border-radius: 20px;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    color:#C0C0C0;
-    font-family: 'Play', sans-serif;
-    margin:22px;
-    height:40px;
-}
-.desc-button{
-    width:auto;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color: #C0C0C0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
 }
 
+.asc-button {
+  width: auto;
+  border: 3px solid #f4100f;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  color: #c0c0c0;
+  font-family: "Play", sans-serif;
+  margin: 22px;
+  height: 40px;
+}
 
+.desc-button {
+  width: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #c0c0c0;
+}
 
-
-.exoPlanet-list-buttons{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    
-   
+.exoPlanet-list-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

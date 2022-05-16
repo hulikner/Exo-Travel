@@ -1,27 +1,19 @@
 body {
-  /* margin-top: 10px; */
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(179, 9, 9);
-  background-image: url('/public/Images/space_background8.jpg');
-
+  background-image: url("/public/Images/space_background8.jpg");
   background-size: cover;
-  /* min-height: 100vh; */
   background-attachment: fixed;
- 
-  
-  
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-styles: none;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-styles: none;
 }
 body::-webkit-scrollbar {
   display: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
