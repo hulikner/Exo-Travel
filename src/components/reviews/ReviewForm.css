@@ -6,8 +6,11 @@
     padding:20px;
     
 }
+form.review-form::-webkit-scrollbar {
+    display: none;
+  }
 .review-form-bottom{
-    min-height: 41vh;
+    min-height: 40.5vh;
 }
 form.review-form{
     display:flex;
@@ -22,7 +25,7 @@ form.review-form{
     width: 60vw;
     margin:10px;
     justify-content: center;
-
+    scrollbar-width: none;
 }
 .review-header{
     display:flex;
@@ -38,6 +41,8 @@ form.review-form{
     justify-content: center;
     align-items: center;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .review-fields{
     display:flex;
@@ -48,7 +53,8 @@ form.review-form{
     border:5px solid #f4100f;
     border-radius: 20px;
     max-width: 50vw;
-   
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     color:#f4100f;
     margin:10px;
     box-shadow: 5px 5px 5px 5px black;
@@ -70,6 +76,8 @@ form.review-form{
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 .cancel-review-button{
     display:flex;
@@ -83,10 +91,13 @@ form.review-form{
     box-shadow: 5px 5px 5px 5px black;
     padding: 5px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 .review-input-fields{
     display:flex;
     flex-direction: column;
+    
     
 }
 
@@ -113,4 +124,6 @@ input#stars.form-control.stars{
     justify-items: center;
     margin:5px;
     font-family: 'Play', sans-serif;
+    border:none;
+    width:40px;
 }

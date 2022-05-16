@@ -51,12 +51,15 @@ img.detail-about-pic{
     justify-content: center;
     align-items: center;
     color:#C0C0C0;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
 }
 p.detail-hubDrive-cardDetail{
     font-size: 24px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 h3.detail-about-name{
     display:flex;

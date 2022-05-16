@@ -6,7 +6,7 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <footer>
-      <img className="logo" src="/Images/Exo-Travel-Logo.jpg" />
+      <img className="logo" src="/Images/Exo-Travel-Logo.svg" />
       <p className="footer-signature">&copy; Derick Cravens - C55</p>
     </footer>
   );

@@ -7,7 +7,7 @@ export const getAllItineraries = () => {
 }
 
 export const getItineraryById = (id) => {
-    return fetch(`${remoteURL}/itineraries/${id}?_expand=exoPlanet&_expand=user&_expand=review`)
+    return fetch(`${remoteURL}/itineraries/${id}?_expand=exoPlanet&_expand=user`)
     .then(res => res.json())
 }
 export const getItinerariesByUserId = (id) => {

@@ -2,6 +2,7 @@
 import React from "react";
 import { ExoPlanetHomeCard } from "../exoPlanets/ExoPlanetHomeCard";
 import { ItineraryHomeCard } from "../itineraries/ItineraryHomeCard";
+import { ReceiptHomeList } from "../receipts/ReceiptHomeList";
 import "./Home.css";
 
 // Using logged in user name, display greeting
@@ -21,6 +22,8 @@ export const Home = () => {
         <div className="home-cards">
           <ExoPlanetHomeCard />
           <ItineraryHomeCard />
+          <ReceiptHomeList />
+         
         </div>
       </div>
     </>

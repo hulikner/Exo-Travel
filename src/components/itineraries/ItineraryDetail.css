@@ -19,9 +19,11 @@
     position: relative;
     top:auto;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .itinerary-detail-data{
-    color:#C0C0C0;
+    color:#f4100f;
 }
 .itinerary-page-bottom{
     display:flex;
@@ -43,6 +45,8 @@
     padding:10px;
     margin:5px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 .itinerary-detail-img{
     display:flex;
@@ -70,11 +74,13 @@ h2.itinerary-details-title{
     border-radius: 50px;
     /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
     /* box-shadow: 5px 5px 5px 5px black; */
-    color:#C0C0C0;
+    color:#f4100f;
     width:auto;
     padding:10px;
+    border:none;
+    font-size:40px;
     -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: #f4100f;
+    -webkit-text-stroke-color: black;
 }
 .itinerary-price-summary{
     display:flex;
@@ -89,6 +95,8 @@ h2.itinerary-details-title{
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 
 }
 .itinerary-departure-return{
@@ -99,7 +107,7 @@ h2.itinerary-details-title{
     background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
     padding:10px;
     margin:10px;
-    font-size:12px;
+    font-size:16px;
     box-shadow: 5px 5px 5px 5px black;
 
 }
@@ -132,6 +140,8 @@ h2.itinerary-details-title{
     flex-direction: row;
     justify-content: space-evenly;
     font-family: 'Play', sans-serif;
+    
+   
  
 }
 
@@ -143,6 +153,9 @@ h2.itinerary-details-title{
     box-shadow: 5px 5px 5px 5px black;
     font-weight: 600;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-price-summary-button:hover{
     color:#C0C0C0;
@@ -158,6 +171,11 @@ h2.itinerary-details-title{
     margin:10px;
     justify-content: flex-end;
     font-family: 'Play', sans-serif;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 .itinerary-page-button{
@@ -169,6 +187,11 @@ h2.itinerary-details-title{
     color:#C0C0C0;
     font-weight: 600;
     font-family: 'Play', sans-serif;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-page-button:hover{
     color:#C0C0C0;

@@ -100,7 +100,7 @@ export const ItineraryDetail = () => {
   };
 
   // Deletes itinerary when button is clicked
-  const handleDelete = () => {
+  const handleDelete = (itineraryId) => {
     setIsLoading(true);
     deleteItinerary(itineraryId).then(() => navigate("/itineraries"));
   };
@@ -165,12 +165,17 @@ export const ItineraryDetail = () => {
               <button type="button" className="itinerary-price-summary-button" onClick={() => navigate(`/itineraries/${itinerary.id}/edit`)}>
                 Edit
               </button>
-              <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itinerary.id)}>
+              <button type="button" className="itinerary-price-summary-button" onClick={() => handleDelete(itineraryId)}>
                 Delete
               </button>
               {!itinerary.paid && (
                 <button type="button" className="itinerary-price-summary-button" onClick={handleClickSaveEvent}>
                   Pay Now
+                </button>
+              )}
+              {itinerary.paid && (
+                <button type="button" className="itinerary-price-summary-button" onClick={() => navigate(`/itineraries/${itinerary.id}/receipts`)}>
+                  Receipt
                 </button>
               )}
             </div>

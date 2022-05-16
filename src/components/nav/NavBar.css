@@ -70,6 +70,8 @@
     color: #c0c0c0;
     transition: color 1s, scale 1s;
     /* box-shadow: 5px 5px 5px 5px whitesmoke; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .navbar__link:visited{

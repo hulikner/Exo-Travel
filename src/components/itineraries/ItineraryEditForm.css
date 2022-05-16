@@ -160,6 +160,9 @@
     justify-content: center;
     margin:20px;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .itinerary-edit-cancel-button{
     display:flex;
@@ -171,6 +174,9 @@
     margin:20px;
     color:#c0c0c0;
     font-family: 'Play', sans-serif;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:10px;
 }
 .edit-save-button{
     display:flex;
@@ -181,6 +187,7 @@
     justify-content: center;
     margin:20px;
     font-family: 'Play', sans-serif;
+    
 }
 .edit-detailsContainer{
     display:flex;
@@ -235,15 +242,21 @@
     border-radius: 20px;
     padding:10px;
     color:#C0C0C0;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 .edit-itinerary-title{
     display:flex;
     flex-direction: row;
-    background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-    border:5px solid #f4100f;
+    /* background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%); */
+    border:none;
     border-radius: 20px;
     width:100vw;
     justify-content: center;
+    color:#f4100f;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
 }
 .itinerary-edit-form{
     min-height: 93.5vh;

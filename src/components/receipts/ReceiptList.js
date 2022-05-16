@@ -26,7 +26,7 @@ export const ReceiptList = () => {
   // Displays receipts
   return (
     <div className="receipt-container">
-        <h2 className="receipt-list-header">Receipts</h2>
+        <h2 className="receipt-list-header">Receipt</h2>
       <div className="receipt-list">
         <div className="receipt-list-content">
           {receipts.map((i) => (

@@ -35,8 +35,6 @@ export const ExoPlanetDetail = () => {
     departure: "",
     return: "",
     exoPlanetId: Number(exoPlanetId),
-    receiptId: "",
-    reviewId: "",
   });
 
   // Formatting for all the dates from epoch time to readable date
@@ -112,8 +110,9 @@ export const ExoPlanetDetail = () => {
   // Details info being sent to the DOM
   return (
     <div className="exoPlanetContainer">
-      <h2 className="exoPlanet-title">{exoPlanet.name}</h2>
+      <div className="exoPlanet-pic-name-details">
       <div className="exoPlanet-img">
+      <h2 className="exoPlanet-title">{exoPlanet.name}</h2>
         <img className="exoPlanet-pic" src={`../Images/${exoPlanet.name}.jpg`} />
       </div>
       <section className="exoPlanet">
@@ -141,6 +140,7 @@ export const ExoPlanetDetail = () => {
           <Rating style={{ color: "#f4100f" }} value={exoPlanet.rating} readOnly />{" "}
         </div>
       </section>
+      </div>
       <div className="exoPlanet-detail">
         <span className="detailsLabel"> </span> {exoPlanet.detail}
       </div>

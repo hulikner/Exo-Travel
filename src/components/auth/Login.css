@@ -4,11 +4,11 @@
 }
 
 main {
-  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   padding: 1em;
   font-size: xx-large;
   box-shadow: 4px 4px 4px 4px black;
-  border: 5px solid #c0c0c0;
+  border: 5px solid #f4100f;
   border-radius: 50px;
   margin: 0;
   position: absolute;
@@ -16,56 +16,85 @@ main {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
+  width: 40vw;
 }
-.bottom--login{
-  display:flex;
+.bottom--login {
+  display: flex;
   flex-direction: row;
   min-height: 93.5vh;
 }
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
-input[type=email]{
+input[type="email"] {
   resize: vertical;
-  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   border: none;
   color: #c0c0c0;
   outline: none;
   margin-left: 1em;
-  padding:.5em;
+  padding: 0.5em;
   box-shadow: 3px 3px 3px 3px black;
   border-radius: 5px;
+  font-family: "Play", sans-serif;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
 }
+input#firstName.form-control {
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px black;
+  outline: none;
+  color: #c0c0c0;
 
-h2 {
-  padding-bottom: .1em;
-  border-bottom: 5px solid #c0c0c0;
-  margin-top: 1.3em;
-  margin-bottom: 1em;
-  color:#c0c0c0;
-  
+  font-family: "Play", sans-serif;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+}
+input#lastName.form-control {
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px black;
+  outline: none;
+  color: #c0c0c0;
+
+  font-family: "Play", sans-serif;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
 }
 
 h1 {
-  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
-  box-shadow: 5px 5px 5px 5px black;
-  border:5px solid #c0c0c0;
+  text-align: center;
   border-radius: 50px;
   width: 115%;
   position: absolute;
   top: -9%;
   left: -8%;
-  color:#c0c0c0;
+  color: #f4100f;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
+h2 {
+  padding-bottom: 0.1em;
+  border-bottom: 5px solid #f4100f;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+}
+
+
 .form--login {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 .link--register a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-content: center;
   color: #c0c0c0;
@@ -74,17 +103,25 @@ h1 {
   text-decoration: none;
   font-weight: 700;
   border-radius: 10px;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
 }
 
 .link--register {
   text-align: center;
 }
-
+.login-logo-home {
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
 .link--register a:hover {
   color: #c0c0c0;
 }
-.inputEmail{
-  color:#c0c0c0;
+.inputEmail {
+  color: #c0c0c0;
 }
 
 fieldset {
@@ -92,39 +129,41 @@ fieldset {
   justify-content: center;
   align-items: center;
   border: none;
+  color: #c0c0c0;
+  margin: 10px;
 }
-
-
 
 .login-btn {
   margin: 0;
   display: flex;
   width: 100px;
   height: 30px;
-  border: 3px solid #c0c0c0;
+  border: 3px solid #f4100f;
   color: #c0c0c0;
   border-radius: 5px;
-  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   font-weight: bold;
   font-size: large;
   transition: background-color 1s, color 1s;
- justify-content: center;
- box-shadow: 2px 2px 2px 2px black;
-
+  justify-content: center;
+  box-shadow: 2px 2px 2px 2px black;
+  font-family: "Play", sans-serif;
 }
 
-.login-btn:hover{
-  background:radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
+.login-btn:hover {
+  background: radial-gradient(ellipse at 50% 50%, rgba(119, 119, 114, 1) 0%, rgba(0, 0, 0, 0.97) 100%);
   color: #c0c0c0;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.mb-3{
+.mb-3 {
   font-size: 48px;
   top: -35%;
 }
-.login-email{
+.login-email {
   font-weight: 700;
   font-size: 20px;
-  color:#c0c0c0;
+  color: #c0c0c0;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
 }
