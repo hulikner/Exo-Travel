@@ -84,7 +84,7 @@ h2 {
   margin-bottom: 1em;
   color: #c0c0c0;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -104,7 +104,7 @@ h2 {
   font-weight: 700;
   border-radius: 10px;
   -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: 0.75px rgb(0, 0, 0);
 }
 
 .link--register {
