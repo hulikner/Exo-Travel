@@ -17,7 +17,7 @@ Exo-Travel is a travel app for different Exo-Planets around the universe. After 
 
 
 ### users
-![Login](/Images/Exo-Travel-Login.png)
+![Login](./Images/Exo-Travel-Login.png)
 ```json
 { 
    "id": 1, 
