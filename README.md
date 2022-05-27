@@ -14,17 +14,17 @@
 ## What is Exo-Travel?
 
 Exo-Travel is a travel app for different Exo-Planets around the universe. After the founder Hulikner cracked FTL, Faster than Light, travel, he quickly monopolized all transportation around the universe for Earth inhabitants.
-![Login](public\Images\Exo-Travel-Login.png)
-![Planet-List](public\Images\Exo-Travel-planet-list.png)
-![Planet-Detail](public\Images\Exo-Travel-planet-detail.png)
-![HowItWorks](public\Images\Exo-Travel-howitworks.png)
-![HowItWorksDetail](public\Images\Exo-Travel-howitworksdetail.png)
-![AboutUsList](public\Images\Exo-Travel-aboutuslist.png)
-![AboutUsDetail](public\Images\Exo-Travel-aboutusdetail.png)
-![ItinerariesList](public\Images\Exo-Travel-itinerarieslist.png)
-![Itinerary-Detail](public\Images\Exo-Travel-itinerarydetail.png)
-![Receipt](public\Images\Exo-Travel-receiptdetail.png)
-![Review](public\Images\Exo-Travel-reviewlist.png)
+![Login](public/Images/Exo-Travel-Login.png)
+![Planet-List](public/Images/Exo-Travel-planet-list.png)
+![Planet-Detail](public/Images/Exo-Travel-planet-detail.png)
+![HowItWorks](public/Images/Exo-Travel-howitworks.png)
+![HowItWorksDetail](public/Images/Exo-Travel-howitworksdetail.png)
+![AboutUsList](public/Images/Exo-Travel-aboutuslist.png)
+![AboutUsDetail](public/Images/Exo-Travel-aboutusdetail.png)
+![ItinerariesList](public/Images/Exo-Travel-itinerarieslist.png)
+![Itinerary-Detail](public/Images/Exo-Travel-itinerarydetail.png)
+![Receipt](public/Images/Exo-Travel-receiptdetail.png)
+![Review](public/Images/Exo-Travel-reviewlist.png)
 
 
 ### users
